@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "首頁",
+    "contact": "聯絡方式",
+    "projects": "項目",
+    "resume": "履歷",
+    "work": "工作"
+  },
+  "homepage": {
+    "title": "test title zhongwne"
+  }
+}

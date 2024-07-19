@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "resume": "Currículum",
+    "work": "Trabajo"
+  },
+  "homepage": {
+    "title": "test title espanish"
+  }
+}

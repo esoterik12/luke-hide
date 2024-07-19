@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Home",
+    "contact": "Contact",
+    "projects": "Projects",
+    "resume": "Resume",
+    "work": "Work"
+  },
+  "homepage": {
+    "title": "test title english"
+  }
+}

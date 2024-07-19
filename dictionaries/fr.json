@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "contact": "Contact",
+    "projects": "Projets",
+    "resume": "CV",
+    "work": "Travail"
+  },
+  "homepage": {
+    "title": "test title fransays"
+  }
+}
