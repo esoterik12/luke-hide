@@ -11,7 +11,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='z-10 py-2'>
+    <header className='z-20 py-2'>
       {/* <MobileNavHeader lang={lang} /> */}
       <nav className='hidden items-center justify-between md:flex'>
         {/* Logo */}

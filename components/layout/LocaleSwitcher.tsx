@@ -40,7 +40,9 @@ export default function LocaleSwitcher() {
               <div
                 className={clsx(
                   classes,
-                  currentPathState === locale ? 'bg-red-200' : 'bg-gray-100 dark:bg-gray-400'
+                  currentPathState === locale
+                    ? ''
+                    : 'bg-gray-100 dark:bg-gray-400'
                 )}
               >
                 {locale === 'zh' && '中'}

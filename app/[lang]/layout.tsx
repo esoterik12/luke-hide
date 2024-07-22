@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavHeader from '@/components/layout/NavHeader'
 import Providers from '@/components/layout/shared/Providers'
+import ThreeBackground from '@/components/layout/shared/ThreeBackground'
+import ThreeCanvasComp from '@/components/layout/shared/ThreeCanvas'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,9 @@ export const viewport: Viewport = {
 
 // Unfinished: i18n integration
 export const metadata: Metadata = {
-  // Unfinished: Update URL
+  // Unfinished: Update URL and description
+  title: 'Luke Hide | Web Services',
+  description: 'Unfinished',
   metadataBase: new URL('https://nextjs-i18n-enite-test.vercel.app/en'),
   openGraph: {
     siteName: 'Luke Hide | Web Services',
@@ -56,6 +60,7 @@ export default function RootLayout({
         className={`${inter.className} bg-white text-gray-900 dark:bg-gray-900 dark:text-white`}
       >
         <Providers>
+          <ThreeCanvasComp />
           <NavHeader lang={params.lang} />
           {children}
         </Providers>

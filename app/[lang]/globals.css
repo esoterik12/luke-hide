@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.canvas-container {
+  pointer-events: none;
+}
+
+.canvas-content {
+  pointer-events: auto;
+}
