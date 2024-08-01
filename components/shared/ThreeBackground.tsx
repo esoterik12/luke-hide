@@ -12,7 +12,7 @@ export default function ThreeBackground() {
   ).current
   const positions = useRef<[number, number, number][]>([])
 
-  // Initialize positions only once
+  // Initialize positions once
   if (positions.current.length === 0) {
     for (let i = 0; i < 100; i++) {
       positions.current.push([

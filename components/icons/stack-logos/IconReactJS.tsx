@@ -1,4 +1,10 @@
-export default function IconReactJS({ classes }: { classes: string }) {
+export default function IconReactJS({
+  classes,
+  hslColor
+}: {
+  classes: string
+  hslColor: string | undefined
+}) {
   return (
     <svg
       width='800px'
@@ -7,6 +13,7 @@ export default function IconReactJS({ classes }: { classes: string }) {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       className={classes}
+      style={{ color: `hsl(${hslColor}, 100%, 50%)` }}
     >
       <path
         d='M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z'

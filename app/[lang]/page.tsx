@@ -1,10 +1,7 @@
 import { Locale } from '@/i18n.config'
-import Image from 'next/image'
 import { getDictionary } from '@/lib/utils/dictionary'
-import SelectIcon from '@/components/icons/SelectIcon'
-import ThreeCube from '@/components/layout/shared/ThreeCube'
-import BallCanvas from '@/components/layout/shared/ThreeBall'
-import CubeCanvas from '@/components/layout/shared/ThreeCube'
+import CubeCanvas from '@/components/shared/ThreeCube'
+import Socials from '@/components/shared/Socials'
 
 export default async function Home({
   params: { lang }
@@ -23,20 +20,15 @@ export default async function Home({
           {homepage.subtitle}
         </h2>
         <div className='h-32'>
-          {/* <BallCanvas /> */}
           <CubeCanvas />
         </div>
-        <div className='mt-6 mb-6'>
+        <div className='mb-6 mt-6'>
           <p className='mb-2 text-lg text-gray-500'>
             {homepage.area}, {homepage.city}
           </p>
           <p className='text-lg text-gray-500'>{homepage.country}</p>
         </div>
-        <div className='flex flex-row justify-center gap-2'>
-          <SelectIcon iconClasses='h-8 w-8' iconSelection='github' />
-          <SelectIcon iconClasses='h-8 w-8' iconSelection='instagram' />
-          <SelectIcon iconClasses='h-8 w-8' iconSelection='facebook' />
-        </div>
+        <Socials />
       </div>
     </main>
   )

@@ -1,4 +1,10 @@
-export default function IconTailwind({ classes }: { classes: string }) {
+export default function IconTailwind({
+  classes,
+  hslColor
+}: {
+  classes: string
+  hslColor: string | undefined
+}) {
   return (
     <svg
       width='800px'
@@ -7,6 +13,7 @@ export default function IconTailwind({ classes }: { classes: string }) {
       xmlns='http://www.w3.org/2000/svg'
       fill="#38B2AC"
       className={classes}
+      style={{ color: `hsl(${hslColor}, 100%, 50%)` }}
     >
       <title>file_type_tailwind</title>
       <path

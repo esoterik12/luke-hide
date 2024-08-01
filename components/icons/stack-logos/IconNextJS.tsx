@@ -1,4 +1,10 @@
-export default function IconNextJS({ classes }: { classes: string }) {
+export default function IconNextJS({
+  classes,
+  hslColor
+}: {
+  classes: string
+  hslColor: string | undefined
+}) {
   return (
     <svg
       width='800px'
@@ -8,6 +14,7 @@ export default function IconNextJS({ classes }: { classes: string }) {
       xmlns='http://www.w3.org/2000/svg'
       preserveAspectRatio='xMidYMid'
       className={classes}
+      style={{ color: `hsl(${hslColor}, 100%, 50%)` }}
     >
       <g>
         <path

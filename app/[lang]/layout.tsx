@@ -3,9 +3,9 @@ import { Locale, i18n } from '@/i18n.config'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavHeader from '@/components/layout/NavHeader'
-import Providers from '@/components/layout/shared/Providers'
-import ThreeBackground from '@/components/layout/shared/ThreeBackground'
-import ThreeCanvasComp from '@/components/layout/shared/ThreeCanvas'
+import Providers from '@/components/shared/Providers'
+import ThreeBackground from '@/components/shared/ThreeBackground'
+import ThreeCanvasComp from '@/components/shared/ThreeCanvas'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,7 +60,9 @@ export default function RootLayout({
         className={`${inter.className} bg-white text-gray-900 dark:bg-gray-900 dark:text-white`}
       >
         <Providers>
-          <ThreeCanvasComp />
+          <ThreeCanvasComp>
+            <ThreeBackground />
+          </ThreeCanvasComp>
           <NavHeader lang={params.lang} />
           {children}
         </Providers>

@@ -1,9 +1,9 @@
-import NavLink from './ui/NavLink'
+import NavLink from '../ui/NavLink'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
 import LocaleSwitcher from './LocaleSwitcher'
 import Logo from './Logo'
-import ThemeButton from './ui/ThemeButton'
+import ThemeButton from '../ui/ThemeButton'
 // import MobileNavHeader from './MobileNavHeader'
 
 export default async function NavHeader({ lang }: { lang: Locale }) {

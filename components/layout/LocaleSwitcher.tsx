@@ -14,19 +14,6 @@ export default function LocaleSwitcher() {
     setCurrentPathState(pathName.split('/')[1])
   }, [])
 
-  console.log('currentPathState', currentPathState)
-
-  // // Function to change the path name based on the selected locale in the LocaleSwitcher below
-  // useEffect(() => {
-  //   const redirectedPathName = (locale: string) => {
-  //     if (!pathName) return '/'
-  //     const segments = pathName.split('/')
-  //     segments[1] = locale
-  //     return segments.join('/')
-  //   }
-  //   setCurrentPathState(currentPathState)
-  // }, [])
-
   const classes =
     'w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white hover:bg-red-200 text-sm text-gray-800 transition-colors transition duration-350 ease-in-out'
 

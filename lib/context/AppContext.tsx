@@ -12,7 +12,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [value, setValue] = useState<number>(0);
 
-  // Used to set random color
+  // Used to set random color for background and cube interactions
   const setRandomColorValue = () => {
     const randomValue = Math.floor(Math.random() * 360) + 1;
     setValue(randomValue);

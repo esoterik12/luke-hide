@@ -1,4 +1,10 @@
-export default function IconMongoDB({ classes }: { classes: string }) {
+export default function IconMongoDB({
+  classes,
+  hslColor
+}: {
+  classes: string
+  hslColor: string | undefined
+}) {
   return (
     <svg
       width='800px'
@@ -7,6 +13,7 @@ export default function IconMongoDB({ classes }: { classes: string }) {
       version='1.1'
       xmlns='http://www.w3.org/2000/svg'
       className={classes}
+      style={{ color: `hsl(${hslColor}, 100%, 50%)` }}
     >
       <title>databases-and-servers/databases/mongodb</title>
       <desc>Created with Sketch.</desc>

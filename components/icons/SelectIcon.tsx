@@ -11,45 +11,46 @@ import IconMongoDB from './stack-logos/IconMongoDB'
 import IconTailwind from './stack-logos/IconTailwind'
 import IconTypeScript from './stack-logos/IconTypeScript'
 
-interface ISelectIconProps {
+interface SelectIconProps {
   iconSelection: string
   iconClasses: string
+  hslColor?: string
 }
 
 export default function SelectIcon({
   iconSelection,
-  iconClasses
-}: ISelectIconProps) {
+  iconClasses,
+  hslColor
+}: SelectIconProps) {
   let icon
 
   switch (iconSelection) {
     case 'facebook':
-      icon = <IconFacebook classes={iconClasses} />
+      icon = <IconFacebook classes={iconClasses} hslColor={hslColor} />
       break
     case 'instagram':
-      icon = <IconInstagram classes={iconClasses} />
+      icon = <IconInstagram classes={iconClasses} hslColor={hslColor} />
       break
     case 'github':
-      icon = <IconGithub classes={iconClasses} />
+      icon = <IconGithub classes={iconClasses} hslColor={hslColor} />
       break
     case 'soundcloud':
-      icon = <IconSoundcloud classes={iconClasses} />
+      icon = <IconSoundcloud classes={iconClasses} hslColor={hslColor} />
       break
-
     case 'reactjs':
-      icon = <IconReactJS classes={iconClasses} />
+      icon = <IconReactJS classes={iconClasses} hslColor={hslColor} />
       break
     case 'nextjs':
-      icon = <IconNextJS classes={iconClasses} />
+      icon = <IconNextJS classes={iconClasses} hslColor={hslColor} />
       break
     case 'mongodb':
-      icon = <IconMongoDB classes={iconClasses} />
+      icon = <IconMongoDB classes={iconClasses} hslColor={hslColor} />
       break
     case 'tailwind':
-      icon = <IconTailwind classes={iconClasses} />
+      icon = <IconTailwind classes={iconClasses} hslColor={hslColor} />
       break
     case 'typescript':
-      icon = <IconTypeScript classes={iconClasses} />
+      icon = <IconTypeScript classes={iconClasses} hslColor={hslColor} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

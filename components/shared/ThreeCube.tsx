@@ -2,16 +2,12 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Float, OrbitControls } from '@react-three/drei'
 import { useRef, useEffect } from 'react'
-import { Mesh, BoxGeometry, MeshStandardMaterial, Color, ACESFilmicToneMapping } from 'three'
+import { Mesh, MeshStandardMaterial, ACESFilmicToneMapping } from 'three'
 import { useAppContext } from '@/lib/context/AppContext'
 
 function ThreeCube() {
   const { value, setRandomColorValue } = useAppContext()
   const cubeRef = useRef<Mesh>(null)
-
-  const boxGeometry = new BoxGeometry(0.02, 0.02, 0.02)
-  const materialColor = new Color('white')
-  let boxMaterial = new MeshStandardMaterial({ color: materialColor })
 
   useEffect(() => {
     if (
@@ -35,7 +31,7 @@ function ThreeCube() {
 
   return (
     <>
-      <ambientLight intensity={0.25} />
+      <ambientLight intensity={0.55} />
       <directionalLight position={[0, 0, 0.05]} />
       <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
         <mesh
@@ -52,9 +48,10 @@ function ThreeCube() {
             document.body.style.cursor = 'default'
           }}
         >
+          
           <boxGeometry args={[1.5, 1.5, 1.5]} />
           <meshStandardMaterial
-            color='hotpink'
+            // color='hotpink'
             polygonOffset
             polygonOffsetFactor={-5}
             flatShading

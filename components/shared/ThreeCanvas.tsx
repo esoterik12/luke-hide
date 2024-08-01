@@ -4,7 +4,11 @@ import { ACESFilmicToneMapping } from 'three'
 import { OrbitControls, Lightformer, Environment } from '@react-three/drei'
 import ThreeBackground from './ThreeBackground'
 
-export default function ThreeCanvasComp() {
+export default function ThreeCanvasComp({
+  children
+}: {
+  children: React.ReactNode
+}) {
   return (
     <main className='absolute -z-10 h-full w-full'>
       <Canvas
@@ -22,7 +26,6 @@ export default function ThreeCanvasComp() {
         }}
       >
         <>
-          <OrbitControls makeDefault />
           <directionalLight position={[1, 2, 3]} intensity={1.5} />
           <ambientLight intensity={0.5} />
           <Environment>
@@ -35,7 +38,8 @@ export default function ThreeCanvasComp() {
               form='ring'
             />
           </Environment>
-          <ThreeBackground />
+          {/* <ThreeBackground /> */}
+          {children}
         </>
       </Canvas>
     </main>
