@@ -12,5 +12,19 @@
     "area": "Puerto Banus",
     "city": "Marbella",
     "country": "Espagne"
-  }
+  },
+  "projects": [
+    {
+      "title": "Next Chinese",
+      "description": "Application de cartes mémoire en mandarin traditionnel avec 8 000 mots et génération de phrases."
+    },
+    {
+      "title": "E-Nite | Party Services",
+      "description": "Services de location de lumière et de son et boutique en ligne."
+    },
+    {
+      "title": "Classroom Reactor",
+      "description": "Système de gestion de l'apprentissage."
+    }
+  ]
 }

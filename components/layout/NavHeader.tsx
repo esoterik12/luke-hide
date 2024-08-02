@@ -14,8 +14,8 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
     <header className='z-20 py-2'>
       {/* <MobileNavHeader lang={lang} /> */}
       <nav className='hidden items-center justify-between md:flex'>
-        {/* Logo */}
-        <div className='mr-7 flex flex-row'>
+        {/* Logo - Left Side */}
+        <div className='w-30 flex flex-row'>
           <Logo
             text='Luke Hide'
             image='/e-nite/android-chrome-512x512.png'
@@ -47,7 +47,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
         </div>
 
         {/* Buttons */}
-        <div className='mr-4 flex flex-row gap-6'>
+        <div className='mr-4 w-30 flex flex-row gap-6'>
           <LocaleSwitcher />
         </div>
       </nav>

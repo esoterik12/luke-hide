@@ -1,8 +1,8 @@
 'use client'
 import { Canvas } from '@react-three/fiber'
 import { ACESFilmicToneMapping } from 'three'
-import { OrbitControls, Lightformer, Environment } from '@react-three/drei'
-import ThreeBackground from './ThreeBackground'
+import { Lightformer, Environment } from '@react-three/drei'
+import { Perf } from 'r3f-perf'
 
 export default function ThreeCanvasComp({
   children
@@ -19,13 +19,15 @@ export default function ThreeCanvasComp({
         }}
         camera={{
           fov: 45,
-          zoom: 1,
+          zoom: 0.7,
           near: 0.1,
           far: 200,
-          position: [3, 2, 6]
+          position: [0.8, 1.5, 6.6]
         }}
       >
         <>
+          <Perf position='bottom-left' />
+
           <directionalLight position={[1, 2, 3]} intensity={1.5} />
           <ambientLight intensity={0.5} />
           <Environment>
@@ -38,7 +40,6 @@ export default function ThreeCanvasComp({
               form='ring'
             />
           </Environment>
-          {/* <ThreeBackground /> */}
           {children}
         </>
       </Canvas>

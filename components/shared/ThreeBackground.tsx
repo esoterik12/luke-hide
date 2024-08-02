@@ -28,7 +28,7 @@ export default function ThreeBackground() {
     boxMaterial.color.set(`hsl(${value}, 100%, 75%)`)
   }, [value, boxMaterial])
 
-  useFrame(state => {
+  useFrame((state) => {
     const angle = state.clock.elapsedTime * 0.05
     state.camera.position.x = Math.sin(angle) * 8
     state.camera.position.z = Math.cos(angle) * 4

@@ -21,7 +21,7 @@ const ProjectDisplay = ({
 
   return (
     <group>
-      {/* Acts as an overlay over the image */}
+      {/* Acts as a frame around the image (behind) */}
       <mesh position={[-0.6, 0.4, -0.04]}>
         <planeGeometry args={[6.4, 3.4]} />
         <meshBasicMaterial
@@ -41,24 +41,26 @@ const ProjectDisplay = ({
 
       {/* Display of project title - below image */}
       <Text
-        position={[-1.6, -1.2, 0.1]}
+        position={[-0.6, -1.55, 0.1]}
         maxWidth={4}
         fontSize={0.3}
         color={theme === 'light' ? 'black' : 'white'}
-        anchorX='left'
-        anchorY='top'
+        anchorX='center'
+        anchorY='middle'
+        textAlign='center'
+        
       >
         {title}
       </Text>
 
-      {/* Display of project title - below image + title */}
+      {/* Display of project description - below image + title */}
       <Text
-        position={[0, -1.2, 1]}
-        fontSize={0.16}
+        position={[-0.46, -1.75, 0.8]}
+        fontSize={0.2}
         color={theme === 'light' ? 'black' : 'white'}
         anchorX='center'
         anchorY='middle'
-        maxWidth={10}
+        maxWidth={8}
         textAlign='center'
       >
         {description}

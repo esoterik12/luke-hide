@@ -10,6 +10,9 @@ import IconNextJS from './stack-logos/IconNextJS'
 import IconMongoDB from './stack-logos/IconMongoDB'
 import IconTailwind from './stack-logos/IconTailwind'
 import IconTypeScript from './stack-logos/IconTypeScript'
+// General Icons:
+import IconRightArrowCircle from './IconRightArrowCircle'
+import IconLeftArrowCircle from './IconLeftArrowCircle'
 
 interface SelectIconProps {
   iconSelection: string
@@ -51,6 +54,12 @@ export default function SelectIcon({
       break
     case 'typescript':
       icon = <IconTypeScript classes={iconClasses} hslColor={hslColor} />
+      break
+    case 'rightArrowCircle':
+      icon = <IconRightArrowCircle classes={iconClasses} />
+      break
+    case 'leftArrowCircle':
+      icon = <IconLeftArrowCircle classes={iconClasses} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

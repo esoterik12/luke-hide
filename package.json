@@ -16,14 +16,17 @@
     "@types/three": "^0.166.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.19",
+    "framer-motion-3d": "^11.3.21",
     "negotiator": "^0.6.3",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
+    "r3f-perf": "^7.2.1",
     "react": "^18",
     "react-dom": "^18",
     "three": "^0.166.1"
   },
   "devDependencies": {
+    "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -12,5 +12,19 @@
     "area": "Puerto Banus",
     "city": "馬貝拉",
     "country": "西班牙"
-  }
+  },
+  "projects": [
+    {
+      "title": "Next Chinese",
+      "description": "傳統中文閃卡應用程序, 包含8,000個單詞和句子生成。"
+    },
+    {
+      "title": "E-Nite | Party Services",
+      "description": "燈光和音響租賃服務及網上商店。"
+    },
+    {
+      "title": "Classroom Reactor",
+      "description": "學習管理系統。"
+    }
+  ]
 }
