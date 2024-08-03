@@ -2,8 +2,8 @@ import ProjectsCarousel from '@/components/display/ProjectsCarousel'
 import ThreeCanvasComp from '@/components/shared/ThreeCanvas'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
-import ThreeBackground from '@/components/shared/ThreeBackground'
 import ProjectSelectors from '@/components/ui/ProjectSelectors'
+import ProjectTech from '@/components/display/ProjectTech'
 
 const ProjectsPage = async ({
   params: { lang }
@@ -15,6 +15,7 @@ const ProjectsPage = async ({
   return (
     <section className='flex flex-col items-center'>
       <ProjectSelectors />
+      <ProjectTech />
       <ThreeCanvasComp>
         <ProjectsCarousel projects={projects} />
       </ThreeCanvasComp>

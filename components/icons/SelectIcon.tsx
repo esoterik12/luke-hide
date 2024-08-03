@@ -10,20 +10,24 @@ import IconNextJS from './stack-logos/IconNextJS'
 import IconMongoDB from './stack-logos/IconMongoDB'
 import IconTailwind from './stack-logos/IconTailwind'
 import IconTypeScript from './stack-logos/IconTypeScript'
+
 // General Icons:
 import IconRightArrowCircle from './IconRightArrowCircle'
 import IconLeftArrowCircle from './IconLeftArrowCircle'
+import IconThreeJS from './stack-logos/IconThreeJS'
 
 interface SelectIconProps {
   iconSelection: string
   iconClasses: string
   hslColor?: string
+  fillHex?: string | undefined
 }
 
 export default function SelectIcon({
   iconSelection,
   iconClasses,
-  hslColor
+  hslColor,
+  fillHex
 }: SelectIconProps) {
   let icon
 
@@ -44,7 +48,13 @@ export default function SelectIcon({
       icon = <IconReactJS classes={iconClasses} hslColor={hslColor} />
       break
     case 'nextjs':
-      icon = <IconNextJS classes={iconClasses} hslColor={hslColor} />
+      icon = (
+        <IconNextJS
+          classes={iconClasses}
+          hslColor={hslColor}
+          fillHex={fillHex}
+        />
+      )
       break
     case 'mongodb':
       icon = <IconMongoDB classes={iconClasses} hslColor={hslColor} />
@@ -54,6 +64,15 @@ export default function SelectIcon({
       break
     case 'typescript':
       icon = <IconTypeScript classes={iconClasses} hslColor={hslColor} />
+      break
+    case 'threejs':
+      icon = (
+        <IconThreeJS
+          classes={iconClasses}
+          hslColor={hslColor}
+          fillHex={fillHex}
+        />
+      )
       break
     case 'rightArrowCircle':
       icon = <IconRightArrowCircle classes={iconClasses} />
