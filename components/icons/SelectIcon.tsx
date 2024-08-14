@@ -15,6 +15,8 @@ import IconTypeScript from './stack-logos/IconTypeScript'
 import IconRightArrowCircle from './IconRightArrowCircle'
 import IconLeftArrowCircle from './IconLeftArrowCircle'
 import IconThreeJS from './stack-logos/IconThreeJS'
+import IconCSS from './stack-logos/IconCSS'
+import IconPostgres from './stack-logos/IconPostgres'
 
 interface SelectIconProps {
   iconSelection: string
@@ -73,6 +75,12 @@ export default function SelectIcon({
           fillHex={fillHex}
         />
       )
+      break
+    case 'css':
+      icon = <IconCSS classes={iconClasses} />
+      break
+    case 'postgres':
+      icon = <IconPostgres classes={iconClasses} fillHex={fillHex} />
       break
     case 'rightArrowCircle':
       icon = <IconRightArrowCircle classes={iconClasses} />

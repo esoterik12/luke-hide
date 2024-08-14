@@ -16,15 +16,61 @@
   "projects": [
     {
       "title": "Next Chinese",
-      "description": "傳統中文閃卡應用程序, 包含8,000個單詞和句子生成。"
+      "description": "傳統中文閃卡應用程序，包含8,000個單詞和句子生成。",
+      "features": [
+        "ChatGPT API 生成上下文句子、翻譯和音譯。",
+        "根據學習結果更新數據庫。",
+        "數據庫搜索功能。",
+        "Clerk 身份驗證。"
+      ]
     },
     {
       "title": "E-Nite | Party Services",
-      "description": "燈光和音響租賃服務及網上商店。"
+      "description": "燈光和音響租賃服務及網上商店。",
+      "features": [
+        "支持三種語言的 i18n。",
+        "使用 Redux ToolKit 的購物車。",
+        "Sendgrid 電子郵件 API。",
+        "使用 React Hook Form 的聯繫頁面。"
+      ]
     },
     {
       "title": "Classroom Reactor",
-      "description": "學習管理系統。"
+      "description": "學習管理系統。",
+      "features": [
+        "由 Slate.js 提供支持的 WYSIWYG 富文本編輯器。",
+        "用於用戶、課程、模塊和評論的 MongoDB 數據庫的擴展 CRUD 功能。",
+        "NextJS 服務器操作。",
+        "複雜的 MongoDB / Mongoose 數據庫功能，如最近活動管道。",
+        "Clerk 用戶身份驗證以及用戶角色和權限管理。",
+        "Zod 輸入驗證。"
+      ]
+    },
+    {
+      "title": "Reactive Games",
+      "description": "教師的課堂遊戲和工作表生成器。",
+      "features": [
+        "由 NextAuth 和 PostgreSQL 提供支持的身份驗證。",
+        "Redux Tool Kit 狀態管理。",
+        "由 PostgreSQL 提供支持的用戶作品和創作的 CRUD 功能。",
+        "jsPDF 文件導出。",
+        "自定義輸入驗證功能。"
+      ]
+    },
+    {
+      "title": "Marbella Luxury Cars",
+      "description": "由 Three JS 提供支持的交互式3D豪華汽車展廳。",
+      "features": [
+        "支持三種語言的 i18n。",
+        "汽車和摩托車的3D互動展廳。",
+        "動態和交互式3D登陸頁面。",
+        "服務器端渲染和SEO優化。"
+      ]
+    },
+    {
+      "title": "Protfolio Page",
+      "description": "由 NextJS 和 ThreeJS 提供支持的 SSR 個人作品集頁面。",
+      "features": ["支持四種語言的 i18n。", "動態和交互式3D登陸頁面。"]
     }
   ]
 }

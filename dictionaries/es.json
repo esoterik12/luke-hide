@@ -16,15 +16,64 @@
   "projects": [
     {
       "title": "Next Chinese",
-      "description": "Aplicación de tarjetas de memoria en mandarín tradicional con 8,000 palabras y generación de frases."
+      "description": "Aplicación de tarjetas de memoria en mandarín tradicional con 8,000 palabras y generación de frases.",
+      "features": [
+        "API de ChatGPT generando frases de contexto, traducciones y transliteraciones.",
+        "Actualizaciones de la base de datos según el resultado del aprendizaje.",
+        "Búsqueda en la base de datos.",
+        "Autenticación con Clerk."
+      ]
     },
     {
       "title": "E-Nite | Party Services",
-      "description": "Servicios de alquiler de luz y sonido y tienda en línea."
+      "description": "Servicios de alquiler de luz y sonido y tienda en línea.",
+      "features": [
+        "Soporte i18n para tres idiomas.",
+        "Carrito de compras con Redux ToolKit.",
+        "API de correo electrónico Sendgrid.",
+        "Página de contacto potenciada por React Hook Form."
+      ]
     },
     {
       "title": "Classroom Reactor",
-      "description": "Sistema de gestión del aprendizaje."
+      "description": "Sistema de gestión del aprendizaje.",
+      "features": [
+        "Editor de texto enriquecido WYSIWYG potenciado por Slate.js.",
+        "Amplia funcionalidad CRUD para usuarios, cursos, módulos y comentarios en una base de datos MongoDB.",
+        "Acciones de servidor de NextJS.",
+        "Funciones complejas de base de datos MongoDB / Mongoose como el pipeline de actividad reciente.",
+        "Autenticación de usuario con Clerk y gestión de roles y permisos.",
+        "Validación de entrada con Zod."
+      ]
+    },
+    {
+      "title": "Reactive Games",
+      "description": "Generador de juegos y hojas de trabajo para maestros.",
+      "features": [
+        "Autenticación potenciada por NextAuth y PostgreSQL.",
+        "Gestión de estado con Redux Tool Kit.",
+        "Funcionalidad CRUD potenciada por PostgreSQL para trabajos y creaciones de usuarios.",
+        "Exportación de archivos con jsPDF.",
+        "Funciones personalizadas de validación de entrada."
+      ]
+    },
+    {
+      "title": "Marbella Luxury Cars",
+      "description": "Showroom interactivo 3D de autos de lujo potenciado por Three JS.",
+      "features": [
+        "Soporte i18n para tres idiomas.",
+        "Showroom interactivo 3D para autos y motocicletas.",
+        "Página de aterrizaje dinámica e interactiva en 3D.",
+        "Renderizado del lado del servidor y optimizaciones de SEO."
+      ]
+    },
+    {
+      "title": "Protfolio Page",
+      "description": "Página de portafolio SSR potenciada por NextJS y ThreeJS.",
+      "features": [
+        "Soporte i18n para cuatro idiomas.",
+        "Página de aterrizaje dinámica e interactiva en 3D."
+      ]
     }
   ]
 }

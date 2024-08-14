@@ -20,7 +20,6 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             text='Luke Hide'
             image='/e-nite/android-chrome-512x512.png'
             lang={lang}
-            
           />
           <ThemeButton />
         </div>
@@ -43,11 +42,14 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             <li>
               <NavLink href={`/${lang}/work`}>{navigation.work}</NavLink>
             </li>{' '}
+            <li>
+              <NavLink href={`/${lang}/singlepage`}>{navigation.work}</NavLink>
+            </li>{' '}
           </ul>
         </div>
 
         {/* Buttons */}
-        <div className='mr-4 w-30 flex flex-row gap-6'>
+        <div className='w-30 mr-4 flex flex-row gap-6'>
           <LocaleSwitcher />
         </div>
       </nav>

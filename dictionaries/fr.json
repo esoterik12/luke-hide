@@ -16,15 +16,64 @@
   "projects": [
     {
       "title": "Next Chinese",
-      "description": "Application de cartes mémoire en mandarin traditionnel avec 8 000 mots et génération de phrases."
+      "description": "Application de cartes mémoire en mandarin traditionnel avec 8 000 mots et génération de phrases.",
+      "features": [
+        "API ChatGPT générant des phrases de contexte, des traductions et des translittérations.",
+        "Mises à jour de la base de données en fonction des résultats d'apprentissage.",
+        "Recherche dans la base de données.",
+        "Authentification Clerk."
+      ]
     },
     {
       "title": "E-Nite | Party Services",
-      "description": "Services de location de lumière et de son et boutique en ligne."
+      "description": "Services de location de lumière et de son et boutique en ligne.",
+      "features": [
+        "Support i18n pour trois langues.",
+        "Panier d'achat avec Redux ToolKit.",
+        "API de courrier électronique Sendgrid.",
+        "Page de contact alimentée par React Hook Form."
+      ]
     },
     {
       "title": "Classroom Reactor",
-      "description": "Système de gestion de l'apprentissage."
+      "description": "Système de gestion de l'apprentissage.",
+      "features": [
+        "Éditeur de texte enrichi WYSIWYG alimenté par Slate.js.",
+        "Fonctionnalité CRUD étendue pour les utilisateurs, les cours, les modules et les commentaires dans une base de données MongoDB.",
+        "Actions serveur de NextJS.",
+        "Fonctions complexes de base de données MongoDB / Mongoose telles que le pipeline d'activité récente.",
+        "Authentification des utilisateurs Clerk et gestion des rôles et des permissions.",
+        "Validation d'entrée avec Zod."
+      ]
+    },
+    {
+      "title": "Reactive Games",
+      "description": "Générateur de jeux et de feuilles de travail pour les enseignants.",
+      "features": [
+        "Authentification alimentée par NextAuth et PostgreSQL.",
+        "Gestion d'état avec Redux Tool Kit.",
+        "Fonctionnalité CRUD alimentée par PostgreSQL pour les travaux et créations des utilisateurs.",
+        "Exportations de fichiers avec jsPDF.",
+        "Fonctions personnalisées de validation des entrées."
+      ]
+    },
+    {
+      "title": "Marbella Luxury Cars",
+      "description": "Showroom interactif 3D de voitures de luxe alimenté par Three JS.",
+      "features": [
+        "Support i18n pour trois langues.",
+        "Showroom interactif 3D pour voitures et motos.",
+        "Page d'accueil dynamique et interactive en 3D.",
+        "Rendu côté serveur et optimisations SEO."
+      ]
+    },
+    {
+      "title": "Protfolio Page",
+      "description": "Page de portfolio SSR alimentée par NextJS et ThreeJS.",
+      "features": [
+        "Support i18n pour quatre langues.",
+        "Page d'accueil dynamique et interactive en 3D."
+      ]
     }
   ]
 }
