@@ -17,6 +17,7 @@ import IconLeftArrowCircle from './IconLeftArrowCircle'
 import IconThreeJS from './stack-logos/IconThreeJS'
 import IconCSS from './stack-logos/IconCSS'
 import IconPostgres from './stack-logos/IconPostgres'
+import IconBackArrow from './IconBackArrow'
 
 interface SelectIconProps {
   iconSelection: string
@@ -87,6 +88,9 @@ export default function SelectIcon({
       break
     case 'leftArrowCircle':
       icon = <IconLeftArrowCircle classes={iconClasses} />
+      break
+    case 'backArrow':
+      icon = <IconBackArrow classes={iconClasses} fillHex={fillHex} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

@@ -18,7 +18,7 @@
       "title": "Next Chinese",
       "description": "Application de cartes mémoire en mandarin traditionnel avec 8 000 mots et génération de phrases.",
       "features": [
-        "API ChatGPT générant des phrases de contexte, des traductions et des translittérations.",
+        "API ChatGPT générant des phrases de contexte et des traductions.",
         "Mises à jour de la base de données en fonction des résultats d'apprentissage.",
         "Recherche dans la base de données.",
         "Authentification Clerk."
@@ -38,12 +38,11 @@
       "title": "Classroom Reactor",
       "description": "Système de gestion de l'apprentissage.",
       "features": [
-        "Éditeur de texte enrichi WYSIWYG alimenté par Slate.js.",
-        "Fonctionnalité CRUD étendue pour les utilisateurs, les cours, les modules et les commentaires dans une base de données MongoDB.",
-        "Actions serveur de NextJS.",
-        "Fonctions complexes de base de données MongoDB / Mongoose telles que le pipeline d'activité récente.",
-        "Authentification des utilisateurs Clerk et gestion des rôles et des permissions.",
-        "Validation d'entrée avec Zod."
+        "Éditeur de texte enrichi alimenté par Slate.js.",
+        "Fonctionnalité CRUD pour les utilisateurs, les cours, les modules et les commentaires.",
+        "Actions serveur.",
+        "Fonctions complexes de base de données telles que le pipeline d'activité récente.",
+        "Authentification des utilisateurs Clerk et gestion des rôles et des permissions."
       ]
     },
     {

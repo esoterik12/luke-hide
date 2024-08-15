@@ -18,7 +18,7 @@
       "title": "Next Chinese",
       "description": "Traditional Mandarin flashcard app with 8,000 words and sentence generation.",
       "features": [
-        "ChatGPT API generating context sentences, translations, and transliterations.",
+        "ChatGPT API generating context sentences & translations.",
         "Database updates depending on learning outcome.",
         "Database search.",
         "Clerk authentication."
@@ -38,12 +38,11 @@
       "title": "Classroom Reactor",
       "description": "Learning management system.",
       "features": [
-        "WYSIWYG Rich Text editor powered by Slate.js.",
-        "Expansive CRUD functionality for user, courses, modules, and comments in a MongoDB database.",
-        "NextJS server actions.",
-        "Complex MongoDB / Mongoose database functions such as recent activity pipeline.",
-        "Clerk user authentication and user roles and permissions.",
-        "Zod input validation."
+        "Rich Text Editor powered by Slate.js.",
+        "CRUD functionality for users, courses, modules, and comments.",
+        "Server actions.",
+        "Complex database functions such as recent activity.",
+        "Clerk user authentication, user roles, and permissions."
       ]
     },
     {

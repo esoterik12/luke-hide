@@ -16,10 +16,10 @@ const SinglePagePortfolio = async ({
 
   return (
     <section>
-      <div className='flex w-full flex-col items-center py-24 text-center'>
-        <h1 className='text-2xl font-bold'>Hi, I'm Luke</h1>
-        <h1 className='text-2xl font-bold'>Full-stack developer</h1>
-      </div>
+      {/* <div className='flex w-full flex-col items-center py-48 text-center'>
+        <h1 className='text-6xl font-bold'>Hi, I'm Luke</h1>
+        <h1 className='text-5xl font-bold'>Full-stack developer</h1>
+      </div> */}
       <div className='flex w-full flex-col items-center text-center'>
         {mergedArray.map(project => (
           <ProjectCard
@@ -30,6 +30,7 @@ const SinglePagePortfolio = async ({
             techStack={project.tech}
             description={project.description}
             features={project.features}
+            repo={project.repo}
           />
         ))}
       </div>

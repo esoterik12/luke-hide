@@ -18,7 +18,7 @@
       "title": "Next Chinese",
       "description": "傳統中文閃卡應用程序，包含8,000個單詞和句子生成。",
       "features": [
-        "ChatGPT API 生成上下文句子、翻譯和音譯。",
+        "ChatGPT API 生成上下文句子和翻譯。",
         "根據學習結果更新數據庫。",
         "數據庫搜索功能。",
         "Clerk 身份驗證。"
@@ -38,12 +38,11 @@
       "title": "Classroom Reactor",
       "description": "學習管理系統。",
       "features": [
-        "由 Slate.js 提供支持的 WYSIWYG 富文本編輯器。",
-        "用於用戶、課程、模塊和評論的 MongoDB 數據庫的擴展 CRUD 功能。",
-        "NextJS 服務器操作。",
-        "複雜的 MongoDB / Mongoose 數據庫功能，如最近活動管道。",
-        "Clerk 用戶身份驗證以及用戶角色和權限管理。",
-        "Zod 輸入驗證。"
+        "由 Slate.js 提供支持的富文本編輯器。",
+        "用於用戶、課程、模塊和評論的 CRUD 功能。",
+        "服務器操作。",
+        "複雜的數據庫功能，如最近活動管道。",
+        "Clerk 用戶身份驗證以及用戶角色和權限管理。"
       ]
     },
     {

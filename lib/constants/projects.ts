@@ -28,12 +28,13 @@ export const projectsArrayTech = [
     title: 'Next Chinese',
     image: '/images/next-chinese-flashcard.png',
     url: 'https://next-chinese.vercel.app/',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
-      { name: 'MongoDB', icon: 'mongodb' },
       { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' }
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'MongoDB', icon: 'mongodb' }
     ]
   },
   {
@@ -41,6 +42,7 @@ export const projectsArrayTech = [
     title: 'E-Nite | Party Services',
     image: '/images/e-nite-homepage.png',
     url: 'https://nextjs-i18n-enite-test.vercel.app/en',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
@@ -53,12 +55,13 @@ export const projectsArrayTech = [
     title: 'Classroom Reactor',
     image: '/images/classroom-reactor-dashboard.png',
     url: 'https://social-app-skeleton-five.vercel.app/',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
-      { name: 'MongoDB', icon: 'mongodb' },
       { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' }
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'MongoDB', icon: 'mongodb' }
     ]
   },
   {
@@ -66,6 +69,7 @@ export const projectsArrayTech = [
     title: 'Reactive Games',
     image: '/images/reactive-classroom-wordsearch.png',
     url: 'https://reactive-classroom.vercel.app/',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
@@ -79,10 +83,10 @@ export const projectsArrayTech = [
     title: 'Marbella Luxury Cars',
     image: '/images/marbella-cars.png',
     url: 'https://social-app-skeleton-five.vercel.app/',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
-      { name: 'PostgreSQL', icon: 'postgres' },
       { name: 'TypeScript', icon: 'typescript' },
       { name: 'Tailwind', icon: 'tailwind' },
       { name: 'ThreeJS', icon: 'threejs' }
@@ -93,12 +97,13 @@ export const projectsArrayTech = [
     title: 'Protfolio Page',
     image: '/images/portfolio-v1-homepage.png',
     url: 'https://social-app-skeleton-five.vercel.app/',
+    repo: 'https://github.com/esoterik12/social-app-skeleton',
     tech: [
       { name: 'NextJS', icon: 'nextjs' },
       { name: 'React', icon: 'reactjs' },
-      { name: 'MongoDB', icon: 'mongodb' },
       { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' }
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'ThreeJS', icon: 'threejs' }
     ]
   }
 ]
