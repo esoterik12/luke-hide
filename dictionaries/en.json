@@ -74,5 +74,14 @@
         "Dynamic and interactive 3D landing page."
       ]
     }
-  ]
+  ],
+  "contact": {
+    "title": "Contact me",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "buttonText": "Send",
+    "sendingText": "Sending...",
+    "loadingText": "Loading..."
+  }
 }

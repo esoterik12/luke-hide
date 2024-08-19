@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavHeader from '@/components/layout/NavHeader'
 import Providers from '@/components/shared/Providers'
+import BotBarMobileOnly from '@/components/layout/BotBarMobileOnly'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -59,6 +60,7 @@ export default function RootLayout({
       >
         <Providers>
           <NavHeader lang={params.lang} />
+          <BotBarMobileOnly lang={params.lang} />
           {children}
         </Providers>
       </body>

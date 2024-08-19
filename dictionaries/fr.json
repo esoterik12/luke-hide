@@ -74,5 +74,14 @@
         "Page d'accueil dynamique et interactive en 3D."
       ]
     }
-  ]
+  ],
+  "contact": {
+    "title": "Contactez-moi",
+    "nameLabel": "Votre nom",
+    "emailLabel": "Votre e-mail",
+    "messageLabel": "Votre message",
+    "buttonText": "Envoyer",
+    "sendingText": "Envoi en cours...",
+    "loadingText": "Chargement en cours..."
+  }
 }

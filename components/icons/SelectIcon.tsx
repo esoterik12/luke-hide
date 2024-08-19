@@ -18,6 +18,9 @@ import IconThreeJS from './stack-logos/IconThreeJS'
 import IconCSS from './stack-logos/IconCSS'
 import IconPostgres from './stack-logos/IconPostgres'
 import IconBackArrow from './IconBackArrow'
+import IconWeb from './IconWeb'
+import IconAcademicCap from './IconAcademicCap'
+import IconEmail from './IconEmail'
 
 interface SelectIconProps {
   iconSelection: string
@@ -91,6 +94,15 @@ export default function SelectIcon({
       break
     case 'backArrow':
       icon = <IconBackArrow classes={iconClasses} fillHex={fillHex} />
+      break
+    case 'web':
+      icon = <IconWeb classes={iconClasses} />
+      break
+    case 'email':
+      icon = <IconEmail classes={iconClasses} />
+      break
+    case 'academic':
+      icon = <IconAcademicCap classes={iconClasses} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

@@ -1,0 +1,59 @@
+'use server'
+import { contactSchema } from '../schemas/schema'
+import sgMail from '@sendgrid/mail'
+import { ContactFormData } from '../types/types'
+
+export async function sendContact(data: ContactFormData) {
+  const result = contactSchema.safeParse({
+    name: data.name,
+    organization: data.organization,
+    email: data.email,
+    text: data.text
+  })
+
+  if (result.success) {
+    console.log('success in _actions.ts: ', result.data)
+
+    // Sendgrid //
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY!)
+    const msg = {
+      to: 'luke.hide@gmail.com',
+      from: 'luke.hide@gmail.com',
+      subject: 'Contact Request from E-Nite Services',
+      text: 'We have recieved a contact request from E-Nite Sevices.',
+      html: `
+        <p>Contact Name: ${result.data.name}</p>
+        <p>Contact Organization: ${result.data.organization}</p>
+        <p>Contact Email: ${result.data.email}</p>
+        <p>Message: ${result.data.text}</p>
+      `
+    }
+
+    try {
+      await sgMail.send(msg)
+      console.log('Email sent')
+    } catch (error: unknown) {
+      console.error('Failed to send email due to an unexpected error.')
+
+      if (error instanceof Error) {
+        console.error('Error message:', error.message)
+        // If the error is from SendGrid and includes a response
+        if ('response' in error && error.response) {
+          console.error('SendGrid error response:', error.response)
+        }
+      } else {
+        // Not an Error object
+        console.error('Unexpected error:', error)
+      }
+    }
+
+    // End sendgrid //
+
+    return { data: result.data, message: 'Request Successful' }
+  }
+
+  if (result.error) {
+    console.log('error in _actions.ts: ', result.error)
+    return { error: result.error.format(), message: 'Request Failed' }
+  }
+}

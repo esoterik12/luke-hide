@@ -74,5 +74,14 @@
         "Página de aterrizaje dinámica e interactiva en 3D."
       ]
     }
-  ]
+  ],
+  "contact": {
+    "title": "Contácteme",
+    "nameLabel": "Su nombre",
+    "emailLabel": "Su correo electrónico",
+    "messageLabel": "Su mensaje",
+    "buttonText": "Enviar",
+    "sendingText": "Enviando...",
+    "loadingText": "Cargando..."
+  }
 }

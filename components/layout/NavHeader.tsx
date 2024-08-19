@@ -13,11 +13,11 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
   return (
     <header className='z-20 py-2'>
       {/* <MobileNavHeader lang={lang} /> */}
-      <nav className='hidden items-center justify-between md:flex'>
+      <nav className='flex items-center justify-between'>
         {/* Logo - Left Side */}
-        <div className='w-30 flex flex-row'>
+        <div className='flex w-1/4 flex-row'>
           <Logo
-            text='Luke Hide'
+            text='LH'
             image='/e-nite/android-chrome-512x512.png'
             lang={lang}
           />
@@ -25,7 +25,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
         </div>
 
         {/* NavLinks */}
-        <div className='hidden flex-row sm:block'>
+        <div className='hidden w-1/2 flex-row justify-center sm:block md:flex'>
           <ul className='flex gap-x-5 sm:text-sm'>
             {/* KEY: These links include the lang / locale in their href */}
             <li>
@@ -42,14 +42,11 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             <li>
               <NavLink href={`/${lang}/work`}>{navigation.work}</NavLink>
             </li>{' '}
-            <li>
-              <NavLink href={`/${lang}/singlepage`}>{navigation.work}</NavLink>
-            </li>{' '}
           </ul>
         </div>
 
         {/* Buttons */}
-        <div className='w-30 mr-4 flex flex-row gap-6'>
+        <div className='mr-4 flex w-1/4 flex-row justify-end gap-6'>
           <LocaleSwitcher />
         </div>
       </nav>

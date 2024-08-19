@@ -71,5 +71,14 @@
       "description": "由 NextJS 和 ThreeJS 提供支持的 SSR 個人作品集頁面。",
       "features": ["支持四種語言的 i18n。", "動態和交互式3D登陸頁面。"]
     }
-  ]
+  ],
+  "contact": {
+    "title": "聯絡我",
+    "nameLabel": "您的名字",
+    "emailLabel": "您的電子郵件",
+    "messageLabel": "您的訊息",
+    "buttonText": "發送",
+    "sendingText": "發送中...",
+    "loadingText": "載入中..."
+  }
 }
