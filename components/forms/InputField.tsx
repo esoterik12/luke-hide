@@ -10,7 +10,7 @@ interface InputFieldProps {
   loading: boolean
   type: string
   label: string
-  placeholder: string
+  placeholder?: string
   containerClasses?: string
   labelClasses?: string
   inputClasses?: string
@@ -40,10 +40,7 @@ const InputField: React.ForwardRefExoticComponent<
   ) => (
     <div className={`${containerClasses}`}>
       {label && (
-        <label
-          htmlFor={id}
-          className={`${labelClasses} block p-1 font-medium text-gray-500`}
-        >
+        <label htmlFor={id} className={`${labelClasses} block p-1 font-medium`}>
           {label}
         </label>
       )}
@@ -53,7 +50,7 @@ const InputField: React.ForwardRefExoticComponent<
         type={type}
         id={id}
         placeholder={placeholder}
-        className={`${inputClasses} ml-1 block rounded-md border border-gray-300 p-1 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400`}
+        className={`${inputClasses} ml-1 block rounded-md border text-xl h-12 border-gray-300 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400`}
         {...rest}
       />
       <div className='ml-1.5 mr-1 min-h-8 p-1'>

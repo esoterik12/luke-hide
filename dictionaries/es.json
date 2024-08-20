@@ -3,8 +3,7 @@
     "home": "Inicio",
     "contact": "Contacto",
     "projects": "Proyectos",
-    "resume": "Currículum",
-    "work": "Trabajo"
+    "resume": "Currículum"
   },
   "homepage": {
     "title": "Luke Hide",
@@ -78,7 +77,7 @@
   "contact": {
     "title": "Contácteme",
     "nameLabel": "Su nombre",
-    "emailLabel": "Su correo electrónico",
+    "emailLabel": "Su email",
     "messageLabel": "Su mensaje",
     "buttonText": "Enviar",
     "sendingText": "Enviando...",

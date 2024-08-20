@@ -19,8 +19,8 @@ export async function sendContact(data: ContactFormData) {
     const msg = {
       to: 'luke.hide@gmail.com',
       from: 'luke.hide@gmail.com',
-      subject: 'Contact Request from E-Nite Services',
-      text: 'We have recieved a contact request from E-Nite Sevices.',
+      subject: 'Contact Request from Portfolio Page',
+      text: 'You have recieved a contact request from your portfolio page.',
       html: `
         <p>Contact Name: ${result.data.name}</p>
         <p>Contact Organization: ${result.data.organization}</p>
@@ -34,22 +34,30 @@ export async function sendContact(data: ContactFormData) {
       console.log('Email sent')
     } catch (error: unknown) {
       console.error('Failed to send email due to an unexpected error.')
+      let errorMessage = 'An unknown error occurred.'
+      let errorCode = 'UNKNOWN_ERROR'
 
       if (error instanceof Error) {
         console.error('Error message:', error.message)
         // If the error is from SendGrid and includes a response
         if ('response' in error && error.response) {
+          const sgError = error as any
+          errorCode = sgError.response?.statusCode || 'SENDGRID_ERROR'
           console.error('SendGrid error response:', error.response)
         }
       } else {
         // Not an Error object
         console.error('Unexpected error:', error)
       }
+      return {
+        error: { message: errorMessage, code: errorCode },
+        message: 'Request Failed'
+      }
     }
 
     // End sendgrid //
 
-    return { data: result.data, message: 'Request Successful' }
+    return { code: 200, data: result.data, message: 'Request Successful' }
   }
 
   if (result.error) {

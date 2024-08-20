@@ -26,7 +26,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
 
         {/* NavLinks */}
         <div className='hidden w-1/2 flex-row justify-center sm:block md:flex'>
-          <ul className='flex gap-x-5 sm:text-sm'>
+          <ul className='flex gap-x-5 sm:text-md'>
             {/* KEY: These links include the lang / locale in their href */}
             <li>
               <NavLink href={`/${lang}/contact`}>{navigation.contact}</NavLink>
@@ -38,9 +38,6 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             </li>{' '}
             <li>
               <NavLink href={`/${lang}/resume`}>{navigation.resume}</NavLink>
-            </li>{' '}
-            <li>
-              <NavLink href={`/${lang}/work`}>{navigation.work}</NavLink>
             </li>{' '}
           </ul>
         </div>

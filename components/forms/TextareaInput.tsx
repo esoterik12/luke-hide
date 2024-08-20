@@ -36,10 +36,7 @@ const TextareaInput: React.ForwardRefExoticComponent<
   ) => (
     <div className={`${containerClasses}`}>
       {label && (
-        <label
-          htmlFor={id}
-          className={`${labelClasses} block p-1 font-medium text-gray-500`}
-        >
+        <label htmlFor={id} className={`${labelClasses} block p-1 font-medium`}>
           {label}
         </label>
       )}
@@ -48,7 +45,7 @@ const TextareaInput: React.ForwardRefExoticComponent<
         id={id}
         disabled={loading}
         placeholder={placeholder}
-        className={`${inputClasses} ml-1 block rounded-md border border-gray-300 p-1 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400`}
+        className={`${inputClasses} pt-2 ml-1 block rounded-md border text-xl border-gray-300 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400`}
         {...rest}
       />
       <div className='ml-1.5 mr-1 min-h-8 p-1'>

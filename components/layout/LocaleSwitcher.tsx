@@ -2,8 +2,9 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
-import { i18n } from '@/i18n.config' // i18n config object
+import { i18n } from '@/i18n.config'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function LocaleSwitcher() {
   const pathName = usePathname() // Get current path name (allows changing lang on any page)
@@ -22,7 +23,9 @@ export default function LocaleSwitcher() {
   }, [pathName, currentPathState])
 
   const classes =
-    'w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white text-sm text-gray-800 transition-colors transition duration-350 ease-in-out hover:bg-red-200 hover:dark:bg-red-200'
+    'w-8 h-8 relative items-center justify-center rounded-full border border-gray-200 bg-white text-sm text-gray-800 transition-colors transition duration-300 ease-in-out hover:bg-red-200 hover:dark:bg-red-200'
+
+  const overlayClasses = 'absolute z-10 h-full w-full rounded-full bg-gray-100 transition-colors transition duration-300 ease-in-out hover:bg-red-400 hover:dark:bg-red-400'
 
   return (
     <ul className='flex gap-x-3'>
@@ -31,16 +34,22 @@ export default function LocaleSwitcher() {
         return (
           <li key={locale}>
             <Link href={redirectedPathName(locale)} className='text-white'>
-              <div
-                className={clsx(
-                  classes,
-                  currentPathState === locale
-                    ? ''
-                    : 'bg-gray-200 dark:bg-gray-400'
-                )}
-              >
-                {locale === 'zh' && '中'}
-                {locale !== 'zh' && locale}
+              <div className={classes}>
+                {/* This is an overlay - conditionally rendered to disappear for currently selected language */}
+                <div
+                  className={clsx(
+                    overlayClasses,
+                    currentPathState === locale ? 'opacity-0' : 'opacity-60'
+                  )}
+                />
+                <Image
+                  // SVG file names match locale strings
+                  src={`/images/flags/${locale}.svg`}
+                  alt='china'
+                  height={200}
+                  width={200}
+                  className='absolute rounded-full'
+                />
               </div>
             </Link>
           </li>
