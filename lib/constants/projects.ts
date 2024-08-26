@@ -89,7 +89,7 @@ export const projectsArrayTech = [
       { name: 'React', icon: 'reactjs' },
       { name: 'TypeScript', icon: 'typescript' },
       { name: 'Tailwind', icon: 'tailwind' },
-      { name: 'ThreeJS', icon: 'threejs' }
+      { name: 'Three.js', icon: 'threejs' }
     ]
   },
   {
@@ -103,7 +103,7 @@ export const projectsArrayTech = [
       { name: 'React', icon: 'reactjs' },
       { name: 'TypeScript', icon: 'typescript' },
       { name: 'Tailwind', icon: 'tailwind' },
-      { name: 'ThreeJS', icon: 'threejs' }
+      { name: 'Three.js', icon: 'threejs' }
     ]
   }
 ]

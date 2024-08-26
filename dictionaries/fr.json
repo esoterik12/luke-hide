@@ -82,5 +82,164 @@
     "buttonText": "Envoyer",
     "sendingText": "Envoi en cours...",
     "loadingText": "Chargement en cours..."
+  },
+  "resume": {
+    "headerSection": {
+      "titleOne": "Développeur Full-stack Aspiran avec un Focus sur React et Next.js",
+      "titleTwo": "Administrateur de Technologie Éducative",
+      "bio": "Développeur full-stack autodidacte avec plus de 18 mois d'études à temps plein, spécialisé dans la création d'applications dynamiques en utilisant React, Next.js et MongoDB. Adaptable, avide d'apprendre de nouveaux outils, et engagé à contribuer positivement dans des environnements d'équipe.",
+      "projectsLink": "Voir mes projets ici.",
+      "ageText": "Âge",
+      "address": "Adresse",
+      "phone": "Téléphone"
+    },
+    "experience": {
+      "title": "Expérience Professionnelle",
+      "positions": [
+        {
+          "role": "Administrateur du Système de Gestion de l'Apprentissage",
+          "company": "BigByte Education",
+          "location": "Taipei, Taïwan",
+          "dates": "Août 2019 - Octobre 2023",
+          "responsibilities": [
+            "Administré le LMS Canvas pour 500-700 utilisateurs, en mettant l'accent sur la cohérence des données et l'amélioration de l'expérience utilisateur.",
+            "Supervision des comptes utilisateurs, des permissions, et des mises à jour de contenu avec un souci de fiabilité et de cohérence.",
+            "Amélioration de l'expérience utilisateur pour les parents et les étudiants en créant des pages d'accueil accessibles résumant le contenu hebdomadaire.",
+            "Fourniture de support technique quotidien et formation à tous les employés, étudiants et parents.",
+            "Dirigé une équipe de quatre personnes pour la mise à jour complète du programme CCSS Wonders 2020 sur trois ans.",
+            "Création d'évaluations de programme de base, y compris la gestion de matériel en ligne, la conception de matériel imprimé, la relecture, et le contrôle des versions.",
+            "Création de matériel numérique supplémentaire pour distribution à six agences, utilisé régulièrement par plus de 65 % des employés."
+          ]
+        },
+        {
+          "role": "Enseignant Principal",
+          "company": "BigByte Education",
+          "location": "Taipei, Taïwan",
+          "dates": "Août 2020 - Octobre 2023",
+          "responsibilities": [
+            "Géré et formé quatre employés à temps plein dans une agence privée chaque année, spécialisée dans l'enseignement de cours d'anglais supplémentaires.",
+            "Création d'un environnement accueillant et engageant en identifiant de manière proactive les besoins des étudiants et en mettant en œuvre des stratégies ciblées.",
+            "Géré trois agences différentes chaque année, affecté à l'agence représentant le plus grand défi pour l'entreprise.",
+            "Maintenu un taux de rétention des étudiants supérieur à 85 % grâce à un leadership stratégique et des interventions ciblées.",
+            "Enseignement de 10 heures par semaine de cours de 2 heures avec des étudiants âgés de 7 à 18 ans dans des environnements d'immersion en anglais.",
+            "Entretien et recrutement d'employés sur trois ans, avec sept embauches réussies et quatre employés restés plus de deux ans."
+          ]
+        },
+        {
+          "role": "Éducateur à Temps Plein",
+          "company": "AGI Language Institute",
+          "location": "Séoul, Corée du Sud",
+          "dates": "2014 - 2018"
+        },
+        {
+          "role": "Éducateur à Temps Plein",
+          "company": "ENI Language",
+          "location": "Anyang, Corée du Sud",
+          "dates": "2012 - 2014"
+        }
+      ]
+    },
+    "education": {
+      "title": "Formation",
+      "degrees": [
+        {
+          "degree": "Licence en Économie",
+          "institution": "Université d'East Anglia, Royaume-Uni",
+          "dates": "Septembre 2006 - Juin 2009"
+        }
+      ]
+    },
+    "technicalProficiency": {
+      "title": "Compétences Techniques",
+      "content": [
+        {
+          "id": 1,
+          "title": "Technologies Web",
+          "content": ["HTML", "JavaScript", "TypeScript", "React", "NextJS"]
+        },
+        {
+          "id": 2,
+          "title": "Back-end et Bases de Données",
+          "content": ["Node.js", "MongoDB", "PostgreSQL"]
+        },
+        {
+          "id": 3,
+          "title": "Stylisation & Design",
+          "content": ["CSS", "Tailwind", "Three.js"]
+        },
+        {
+          "id": 4,
+          "title": "Authentification & APIs",
+          "content": ["NextAuth", "Clerk", "SendGrid", "API ChatGPT"]
+        },
+        {
+          "id": 5,
+          "title": "Gestion d'État",
+          "content": ["React Context", "Redux Toolkit", "React Hook Form"]
+        },
+        {
+          "id": 6,
+          "title": "Internationalisation",
+          "content": ["i18n"]
+        },
+        {
+          "id": 7,
+          "title": "UI & Gestion de Fichiers",
+          "content": ["Slate.js", "jsPDF"]
+        },
+        {
+          "id": 8,
+          "title": "Rendu & SEO",
+          "content": ["Rendu Côté Serveur (SSR)", "Optimisation SEO"]
+        },
+        {
+          "id": 9,
+          "title": "Outils & Contrôle de Version",
+          "content": ["GitHub", "ESLint"]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Langues",
+      "list": [
+        {
+          "language": "Anglais",
+          "level": "C2"
+        },
+        {
+          "language": "Français",
+          "level": "C1"
+        },
+        {
+          "language": "Mandarin",
+          "level": "B2"
+        },
+        {
+          "language": "Espagnol",
+          "level": "B2"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences Additionnelles",
+      "list": [
+        {
+          "name": "InDesign",
+          "icon": "/images/indesign.png"
+        },
+        {
+          "name": "Premiere Pro",
+          "icon": "/images/premiere-pro.svg"
+        },
+        {
+          "name": "After Effects",
+          "icon": "/images/after-effects.svg"
+        },
+        {
+          "name": "Ableton",
+          "icon": "/images/ableton.png"
+        }
+      ]
+    }
   }
 }

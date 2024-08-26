@@ -21,6 +21,16 @@ import IconBackArrow from './IconBackArrow'
 import IconWeb from './IconWeb'
 import IconAcademicCap from './IconAcademicCap'
 import IconEmail from './IconEmail'
+import IconHTML from './stack-logos/IconHTML'
+import IconNode from './stack-logos/IconNode'
+import IconClerk from './tech-icons/IconClerk'
+import IconSendgrid from './tech-icons/IconTwilio'
+import IconJavascript from './stack-logos/IconJavaScript'
+import IconChatGPT from './tech-icons/IconChatGPT'
+import IconNextAuth from './tech-icons/IconNextAuth'
+import IconReactContext from './tech-icons/IconReactContext'
+import IconRTK from './tech-icons/IconRTK'
+import IconReactHookForm from './tech-icons/IconReactHookForm'
 
 interface SelectIconProps {
   iconSelection: string
@@ -50,28 +60,22 @@ export default function SelectIcon({
     case 'soundcloud':
       icon = <IconSoundcloud classes={iconClasses} hslColor={hslColor} />
       break
-    case 'reactjs':
+    case 'React':
       icon = <IconReactJS classes={iconClasses} hslColor={hslColor} />
       break
-    case 'nextjs':
-      icon = (
-        <IconNextJS
-          classes={iconClasses}
-          hslColor={hslColor}
-          fillHex={fillHex}
-        />
-      )
+    case 'NextJS':
+      icon = <IconNextJS classes={iconClasses} />
       break
-    case 'mongodb':
+    case 'MongoDB':
       icon = <IconMongoDB classes={iconClasses} hslColor={hslColor} />
       break
-    case 'tailwind':
+    case 'Tailwind':
       icon = <IconTailwind classes={iconClasses} hslColor={hslColor} />
       break
-    case 'typescript':
+    case 'TypeScript':
       icon = <IconTypeScript classes={iconClasses} hslColor={hslColor} />
       break
-    case 'threejs':
+    case 'Three.js':
       icon = (
         <IconThreeJS
           classes={iconClasses}
@@ -80,10 +84,10 @@ export default function SelectIcon({
         />
       )
       break
-    case 'css':
+    case 'CSS':
       icon = <IconCSS classes={iconClasses} />
       break
-    case 'postgres':
+    case 'PostgreSQL':
       icon = <IconPostgres classes={iconClasses} fillHex={fillHex} />
       break
     case 'rightArrowCircle':
@@ -103,6 +107,36 @@ export default function SelectIcon({
       break
     case 'academic':
       icon = <IconAcademicCap classes={iconClasses} />
+      break
+    case 'HTML':
+      icon = <IconHTML classes={iconClasses} />
+      break
+    case 'Node.js':
+      icon = <IconNode classes={iconClasses} />
+      break
+    case 'Clerk':
+      icon = <IconClerk classes={iconClasses} />
+      break
+    case 'SendGrid':
+      icon = <IconSendgrid classes={iconClasses} />
+      break
+    case 'JavaScript':
+      icon = <IconJavascript classes={iconClasses} />
+      break
+    case 'ChatGPT API':
+      icon = <IconChatGPT classes={iconClasses} />
+      break
+    case 'NextAuth':
+      icon = <IconNextAuth classes={iconClasses} />
+      break
+    case 'React Context':
+      icon = <IconReactContext classes={iconClasses} />
+      break
+    case 'Redux Toolkit':
+      icon = <IconRTK classes={iconClasses} />
+      break
+    case 'React Hook Form':
+      icon = <IconReactHookForm classes={iconClasses} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

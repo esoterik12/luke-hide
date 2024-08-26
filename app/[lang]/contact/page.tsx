@@ -10,7 +10,7 @@ const ContactPage = async ({
   const { contact } = await getDictionary(lang)
 
   return (
-    <main className='px-4 py-4 sm:px-24 sm:py-12 flex flex-col items-center'>
+    <main className='flex flex-col items-center px-4 py-4'>
       <ContactForm
         title={contact.title}
         nameLabel={contact.nameLabel}

@@ -82,5 +82,164 @@
     "buttonText": "Send",
     "sendingText": "Sending...",
     "loadingText": "Loading..."
+  },
+  "resume": {
+    "headerSection": {
+      "titleOne": "Aspiring Full-stack Developer with a Focus on React and Next.js",
+      "titleTwo": "Educational Technology Administrator",
+      "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
+      "projectsLink": "See my projects here.",
+      "ageText": "Age",
+      "address": "Address",
+      "phone": "Phone"
+    },
+    "experience": {
+      "title": "Work Experience",
+      "positions": [
+        {
+          "role": "Learning Management System Administrator",
+          "company": "BigByte Education",
+          "location": "Taipei, Taiwan",
+          "dates": "August 2019 - October 2023",
+          "responsibilities": [
+            "Administered the Canvas LMS for 500-700 users, focusing on data consistency and enhancing user experience.",
+            "Oversaw user accounts, permissions, and content updates with a focus on reliability and consistency.",
+            "Improved UX for parents and students by creating accessible homepages summarizing weekly content.",
+            "Provided daily technical support and training to all employees, students, and parents.",
+            "Led a team of four members delivering of a full curriculum update to CCSS Wonders 2020 curriculum over three years.",
+            "Created core curriculum assessments. This involved managing online material, designing material for print, proofreading, and version control through regular updates.",
+            "Created supplementary digital material for distribution at six company branches, used regularly by over 65% of employees."
+          ]
+        },
+        {
+          "role": "Head Teacher",
+          "company": "BigByte Education",
+          "location": "Taipei, Taiwan",
+          "dates": "August 2020 - October 2023",
+          "responsibilities": [
+            "Managed and trained four full-time employees at a private education branch each year, specialized in teaching supplementary English lessons.",
+            "Created a welcoming and engaging environment by proactively identifying student needs and implementing targeted strategies.",
+            "Managed three different branches over, each year assigned to the branch that represented the biggest challenge for the company.",
+            "Maintained 85%+ student retention through strategic leadership and targeted interventions.",
+            "Taught at least 10 hours per week of 2-hour lessons each year with students aged 7 to 18 in English-immersion environments.",
+            "Interviewed and recruited employees over three years resulting in seven successful hires and four employees staying over two years."
+          ]
+        },
+        {
+          "role": "Full-time Educator",
+          "company": "AGI Language Institute",
+          "location": "Seoul, South Korea",
+          "dates": "2014 - 2018"
+        },
+        {
+          "role": "Full-time Educator",
+          "company": "ENI Language",
+          "location": "Anyang, South Korea",
+          "dates": "2012 - 2014"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "degrees": [
+        {
+          "degree": "BSc. Economics",
+          "institution": "University of East Anglia, UK",
+          "dates": "September 2006 - June 2009"
+        }
+      ]
+    },
+    "technicalProficiency": {
+      "title": "Technical Proficiencies",
+      "content": [
+        {
+          "id": 1,
+          "title": "Web Technologies",
+          "content": ["HTML", "JavaScript", "TypeScript", "React", "NextJS"]
+        },
+        {
+          "id": 2,
+          "title": "Back-end and Databases",
+          "content": ["Node.js", "MongoDB", "PostgreSQL"]
+        },
+        {
+          "id": 3,
+          "title": "Styling & Design",
+          "content": ["CSS", "Tailwind", "Three.js"]
+        },
+        {
+          "id": 4,
+          "title": "Authentication & APIs",
+          "content": ["NextAuth", "Clerk", "SendGrid", "ChatGPT API"]
+        },
+        {
+          "id": 5,
+          "title": "State Management",
+          "content": ["React Context", "Redux Toolkit", "React Hook Form"]
+        },
+        {
+          "id": 6,
+          "title": "Internationalization",
+          "content": ["i18n"]
+        },
+        {
+          "id": 7,
+          "title": "UI & File Handling",
+          "content": ["Slate.js", "jsPDF"]
+        },
+        {
+          "id": 8,
+          "title": "Rendering & SEO",
+          "content": ["Server-Side Rendering (SSR)", "SEO optimisation"]
+        },
+        {
+          "id": 9,
+          "title": "Tooling & Version Control",
+          "content": ["GitHub", "ESLint"]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "list": [
+        {
+          "language": "English",
+          "level": "C2"
+        },
+        {
+          "language": "French",
+          "level": "C1"
+        },
+        {
+          "language": "Mandarin",
+          "level": "B2"
+        },
+        {
+          "language": "Spanish",
+          "level": "B2"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Additional Skills & Proficiencies",
+      "list": [
+        {
+          "name": "InDesign",
+          "icon": "/images/indesign.png"
+        },
+        {
+          "name": "Premiere Pro",
+          "icon": "/images/premiere-pro.svg"
+        },
+        {
+          "name": "After Effects",
+          "icon": "/images/after-effects.svg"
+        },
+        {
+          "name": "Ableton",
+          "icon": "/images/ableton.png"
+        }
+      ]
+    }
   }
 }

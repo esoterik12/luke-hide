@@ -2,7 +2,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useForm, Controller } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { InputField } from './InputField'
 import { TextareaInput } from './TextareaInput'
 import { zodResolver } from '@hookform/resolvers/zod'

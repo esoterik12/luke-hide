@@ -1,15 +1,7 @@
 'use client'
 import { useTheme } from 'next-themes'
 
-export default function IconNextJS({
-  classes,
-  hslColor,
-  fillHex
-}: {
-  classes: string
-  hslColor: string | undefined
-  fillHex: string | undefined
-}) {
+export default function IconNextJS({ classes }: { classes: string }) {
   const { theme } = useTheme()
 
   return (
@@ -21,7 +13,6 @@ export default function IconNextJS({
       xmlns='http://www.w3.org/2000/svg'
       preserveAspectRatio='xMidYMid'
       className={classes}
-      // style={{ color: `hsl(40%, 100%, 50%)` }}
     >
       <g>
         <path
