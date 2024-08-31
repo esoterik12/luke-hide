@@ -56,16 +56,6 @@
       ]
     },
     {
-      "title": "Marbella Luxury Cars",
-      "description": "Showroom interactif 3D de voitures de luxe alimenté par Three JS.",
-      "features": [
-        "Support i18n pour trois langues.",
-        "Showroom interactif 3D pour voitures et motos.",
-        "Page d'accueil dynamique et interactive en 3D.",
-        "Rendu côté serveur et optimisations SEO."
-      ]
-    },
-    {
       "title": "Protfolio Page",
       "description": "Page de portfolio SSR alimentée par NextJS et ThreeJS.",
       "features": [

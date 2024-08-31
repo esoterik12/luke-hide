@@ -29,17 +29,17 @@ function ThreeBackgroundScroll() {
         <Particles />
       </Scroll>
       <Scroll html>
-        <section className='flex w-[100vw] gap-y-24 flex-col items-center'>
+        <section className='flex w-[100vw]  gap-y-24 flex-col items-center'>
           <ProjectCardTest
             title='Next Chinese'
             image='/images/next-chinese-flashcard.png'
             url='https://next-chinese.vercel.app/'
             techStack={[
-              { name: 'NextJS', icon: 'nextjs' },
-              { name: 'React', icon: 'reactjs' },
-              { name: 'TypeScript', icon: 'typescript' },
-              { name: 'Tailwind', icon: 'tailwind' },
-              { name: 'MongoDB', icon: 'mongodb' }
+              { name: 'NextJS', icon: 'NextJS' },
+              { name: 'React', icon: 'React' },
+              { name: 'TypeScript', icon: 'TypeScript' },
+              { name: 'Tailwind', icon: 'Tailwind' },
+              { name: 'MongoDB', icon: 'MongoDB' }
             ]}
             description='Traditional Mandarin flashcard app with 8,000 words and sentence generation.'
             features={[
@@ -55,11 +55,11 @@ function ThreeBackgroundScroll() {
             image='/images/next-chinese-flashcard.png'
             url='https://next-chinese.vercel.app/'
             techStack={[
-              { name: 'NextJS', icon: 'nextjs' },
-              { name: 'React', icon: 'reactjs' },
-              { name: 'TypeScript', icon: 'typescript' },
-              { name: 'Tailwind', icon: 'tailwind' },
-              { name: 'MongoDB', icon: 'mongodb' }
+              { name: 'NextJS', icon: 'NextJS' },
+              { name: 'React', icon: 'React' },
+              { name: 'TypeScript', icon: 'TypeScript' },
+              { name: 'Tailwind', icon: 'Tailwind' },
+              { name: 'MongoDB', icon: 'MongoDB' }
             ]}
             description='Traditional Mandarin flashcard app with 8,000 words and sentence generation.'
             features={[

@@ -56,16 +56,6 @@
       ]
     },
     {
-      "title": "Marbella Luxury Cars",
-      "description": "由 Three JS 提供支持的交互式3D豪華汽車展廳。",
-      "features": [
-        "支持三種語言的 i18n。",
-        "汽車和摩托車的3D互動展廳。",
-        "動態和交互式3D登陸頁面。",
-        "服務器端渲染和SEO優化。"
-      ]
-    },
-    {
       "title": "Protfolio Page",
       "description": "由 NextJS 和 ThreeJS 提供支持的 SSR 個人作品集頁面。",
       "features": ["支持四種語言的 i18n。", "動態和交互式3D登陸頁面。"]

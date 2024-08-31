@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react'
 import { Mesh, MeshStandardMaterial, ACESFilmicToneMapping } from 'three'
 import { useAppContext } from '@/lib/context/AppContext'
 
-function ThreeCube() {
+export function ThreeCube() {
   const { value, setRandomColorValue } = useAppContext()
   const cubeRef = useRef<Mesh>(null)
 

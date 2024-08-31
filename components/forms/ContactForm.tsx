@@ -12,16 +12,21 @@ import { ContactFormText } from '@/lib/types/types'
 import Loading from '../ui/Loading'
 
 export default function ContactForm({
-  title,
-  nameLabel,
-  emailLabel,
-  messageLabel,
-  buttonText,
-  sendingText,
-  loadingText
-}: ContactFormText) {
+  langProps
+}: {
+  langProps: ContactFormText
+}) {
   const [serverResponse, setServerResponse] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const {
+    title,
+    nameLabel,
+    emailLabel,
+    messageLabel,
+    buttonText,
+    sendingText,
+    loadingText
+  } = langProps
 
   const {
     control,

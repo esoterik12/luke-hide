@@ -10,8 +10,9 @@ export default function ThreeCanvasComp({
   children: React.ReactNode
 }) {
   return (
-    <main className='absolute -z-10 h-full w-full'>
+    <main className='absolute h-full -z-10 w-full'>
       <Canvas
+        resize={{ scroll: false }} // Stops rerender
         flat
         gl={{
           antialias: true,

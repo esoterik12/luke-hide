@@ -28,7 +28,7 @@ const ProjectCardTest = ({
   repo
 }: ProjectCardProps) => {
   return (
-    <main className='relative flex w-full flex-col px-24 pt-12 md:w-[760px] md:px-0'>
+    <main className='relative flex w-full flex-col md:w-[760px] md:px-0'>
       {/* Top Title + Tech Section */}
       <div className='absolute -z-10 h-full w-full rounded-xl bg-gray-800 opacity-70'></div>
       <section className='flex flex-col justify-between gap-x-4 p-2 md:flex-row'>
@@ -42,7 +42,7 @@ const ProjectCardTest = ({
               key={item.name}
               className='mt-4 flex flex-col items-center md:mt-0'
             >
-              <SelectIcon iconClasses='w-9 h-9' iconSelection={item.icon} />
+              <SelectIcon iconClasses='w-9 h-9' iconSelection={item.name} />
               <p className='mt-1 text-xs font-semibold'>{item.name}</p>
             </div>
           ))}
@@ -58,7 +58,7 @@ const ProjectCardTest = ({
               alt={`${title} image`}
               width={550}
               height={400}
-              className='w-full rounded-md shadow-lg ml-6'
+              className='ml-6 w-full rounded-md shadow-lg'
             />
           </Link>
         </div>

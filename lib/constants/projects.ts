@@ -80,20 +80,6 @@ export const projectsArrayTech = [
   },
   {
     id: 5,
-    title: 'Marbella Luxury Cars',
-    image: '/images/marbella-cars.png',
-    url: 'https://social-app-skeleton-five.vercel.app/',
-    repo: 'https://github.com/esoterik12/social-app-skeleton',
-    tech: [
-      { name: 'NextJS', icon: 'nextjs' },
-      { name: 'React', icon: 'reactjs' },
-      { name: 'TypeScript', icon: 'typescript' },
-      { name: 'Tailwind', icon: 'tailwind' },
-      { name: 'Three.js', icon: 'threejs' }
-    ]
-  },
-  {
-    id: 6,
     title: 'Protfolio Page',
     image: '/images/portfolio-v1-homepage.png',
     url: 'https://social-app-skeleton-five.vercel.app/',
