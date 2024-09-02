@@ -22,13 +22,13 @@ const BotBarMobileOnly = async ({ lang }: { lang: Locale }) => {
     {
       id: 3,
       link: '/resume',
-      name: navigation.projects,
+      name: navigation.resume,
       icon: 'academic'
     }
   ]
 
   return (
-    <section className='bg-glassmorphism xs:px-7 fixed bottom-0 z-10 w-full rounded-t-3xl py-1 px-6 backdrop-blur-lg sm:hidden'>
+    <section className='xs:px-7 fixed bottom-0 z-10 w-full rounded-t-3xl py-1 px-6 backdrop-blur-lg sm:hidden'>
       <div className='xs:gap-5 flex flex-row items-center justify-between gap-3'>
         {sideBarLinks.map(item => (
           <div key={item.id} className='m-2 flex flex-col items-center gap-2'>
@@ -37,7 +37,7 @@ const BotBarMobileOnly = async ({ lang }: { lang: Locale }) => {
               href={item.link}
             >
               <SelectIcon iconClasses='h-6 w-6' iconSelection={item.icon} />
-              <p className='text-xs'>{item.name}</p>
+              <p className='text-[15px]'>{item.name}</p>
             </NavLink>
           </div>
         ))}

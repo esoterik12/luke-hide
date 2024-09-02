@@ -4,6 +4,8 @@ import { useTheme } from 'next-themes'
 export default function IconNextJS({ classes }: { classes: string }) {
   const { theme } = useTheme()
 
+  console.log('theme in icon next js', theme)
+
   return (
     <svg
       width='800px'

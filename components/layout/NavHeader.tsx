@@ -11,7 +11,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='z-20 py-2'>
+    <header className='z-20 dark:bg-gray-800 bg-slate-100 py-2 fixed w-full'>
       {/* <MobileNavHeader lang={lang} /> */}
       <nav className='flex items-center justify-between'>
         {/* Logo - Left Side */}
@@ -26,7 +26,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
 
         {/* NavLinks */}
         <div className='hidden w-1/2 flex-row justify-center sm:block md:flex'>
-          <ul className='flex gap-x-5 sm:text-md'>
+          <ul className='flex gap-x-5 sm:text-lg'>
             {/* KEY: These links include the lang / locale in their href */}
             <li>
               <NavLink href={`/${lang}/contact`}>{navigation.contact}</NavLink>

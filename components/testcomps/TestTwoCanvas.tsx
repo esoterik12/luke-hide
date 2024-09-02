@@ -4,9 +4,10 @@ import { Canvas } from '@react-three/fiber'
 import { Interface } from './Interface'
 import { useState } from 'react'
 import { ScrollManager } from './ScrollManager'
+import { MergedProject } from '@/lib/types/types'
 
 // UNFINISHED - temporary any type
-export default function TestTwoCanvas({ projects }: { projects: any }) {
+export default function TestTwoCanvas({ projects }: { projects: MergedProject[] }) {
   const [section, setSection] = useState(0)
 
   return (
@@ -16,7 +17,7 @@ export default function TestTwoCanvas({ projects }: { projects: any }) {
         <ScrollControls pages={6} damping={0.1}>
           <ScrollManager section={section} setSection={setSection} />
           <Scroll html>
-            <Interface projects={projects} setSection={setSection} />
+            <Interface projects={projects} setSection={setSection} section={section} />
           </Scroll>
         </ScrollControls>
       </Canvas>

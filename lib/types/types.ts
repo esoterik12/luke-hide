@@ -22,3 +22,20 @@ export interface ContactFormText {
   sendingText: string
   loadingText: string
 }
+
+export interface MergedProject {
+  id: number
+  title: string
+  image: string
+  logo: string
+  url: string
+  repo: string
+  tech: Tech[]
+  description: string
+  features: string[]
+}
+
+export interface Tech {
+  name: string
+  icon: string
+}

@@ -19,9 +19,9 @@ const ResumePage = async ({
 
   return (
     <PageContainer>
-      {/* Top Personal Section */}
       <>
-        <section className='flex flex-row'>
+        {/* Top Personal Section */}
+        <section className='mt-12 flex flex-row'>
           <Image
             height={200}
             width={200}
@@ -37,9 +37,9 @@ const ResumePage = async ({
                 <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.titleOne}
                 </h2>
-                <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
+                {/* <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.titleTwo}
-                </h2>
+                </h2> */}
               </div>
               <Image
                 height={200}
@@ -52,7 +52,7 @@ const ResumePage = async ({
             <p className='mt-4'>{resume.headerSection.bio}</p>
             <Link
               className='py-2 text-sm text-red-400 hover:underline'
-              href='/projects'
+              href={`/${lang}/projects`}
             >
               {resume.headerSection.projectsLink}
             </Link>
@@ -89,12 +89,12 @@ const ResumePage = async ({
         <section className='mt-8 flex flex-col border-t-2 border-gray-500'>
           {/* Left side image / line */}
           {resume.experience.positions.map((item, index) => (
-            <div key={index} className='m-2 flex flex-row'>
+            <div key={index} className='my-2 flex flex-row'>
               <div className='flex flex-col items-center'>
-                <SelectIcon iconClasses='h-10 w-10' iconSelection='web' />
+                <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
                 <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
               </div>
-              <div className='ml-2 flex w-4/5 flex-col justify-start'>
+              <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
                 <h2 className='text-md text-lg font-semibold'>{item.role}</h2>
                 <h3 className='text-md text-md font-semibold'>
                   {item.location} - {item.company}
@@ -119,7 +119,10 @@ const ResumePage = async ({
           </h2>
           <div className='flex flex-row flex-wrap gap-y-6'>
             {resume.technicalProficiency.content.map((item, index) => (
-              <div className='ml-8 flex w-44 flex-col gap-2' key={item.id}>
+              <div
+                className='ml-4 flex w-44 flex-col gap-2 sm:ml-8'
+                key={item.id}
+              >
                 <p className='text-gray-400'>{item.title}:</p>
                 {item.content.map(item => (
                   <div className='flex flex-row gap-x-2' key={item}>
@@ -137,16 +140,16 @@ const ResumePage = async ({
         {/* Languages Section */}
         <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
           <div>
-            <h2 className='text-md mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
+            <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
               Languages
             </h2>
           </div>
 
-          <div className='m-2 ml-6 flex flex-row flex-wrap gap-4 p-2'>
+          <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
             {mergedArray.map(item => (
               <div
                 key={item.id}
-                className={`flex w-40 flex-row items-center rounded-full border-2 ${item.color}`}
+                className={`flex w-40 flex-row items-center rounded-full border-2`}
               >
                 <Image
                   src={item.flagImage}
@@ -155,7 +158,7 @@ const ResumePage = async ({
                   width={35}
                   className='m-1'
                 />
-                <p className={`ml-1 mr-4 font-semibold ${item.textColor}`}>
+                <p className={`ml-1 mr-4 font-semibold`}>
                   {item.language}&nbsp;
                   {item.level}
                 </p>
@@ -167,12 +170,12 @@ const ResumePage = async ({
         {/* Skills Section */}
         <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
           <div>
-            <h2 className='text-md mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
+            <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
               Additional Skills & Proficiences
             </h2>
           </div>
 
-          <div className='m-2 ml-6 flex flex-row flex-wrap gap-4 p-2'>
+          <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
             <div
               className={`flex flex-row items-center rounded-full border-2 px-2 py-1`}
             >

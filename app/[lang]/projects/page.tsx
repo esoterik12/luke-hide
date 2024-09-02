@@ -1,39 +1,29 @@
-import ProjectCard from '@/components/display/ProjectCard'
+import TestTwoCanvas from '@/components/testcomps/TestTwoCanvas'
+import React from 'react'
 import { Locale } from '@/i18n.config'
-import { projectsArrayTech } from '@/lib/constants/projects'
 import { getDictionary } from '@/lib/utils/dictionary'
+import { projectsArrayTech } from '@/lib/constants/projects'
+import { MergedProject } from '@/lib/types/types'
 
-const ProjectPage = async ({
+const TestPageTwo = async ({
   params: { lang }
 }: {
   params: { lang: Locale }
 }) => {
   const { projects } = await getDictionary(lang)
 
-  const mergedArray = projectsArrayTech.map((item, index) => {
+  // Combines with tech in separate file to not have to edit 4 times in 4 json dicts
+  const mergedArray: MergedProject[] = projectsArrayTech.map((item, index) => {
     return { ...item, ...projects[index] }
   })
 
+  console.log('mergedArray', mergedArray)
+
   return (
-    <main>
-      <section>
-        <div className='flex w-full flex-col items-center text-center'>
-          {mergedArray.map(project => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              image={project.image}
-              url={project.url}
-              techStack={project.tech}
-              description={project.description}
-              features={project.features}
-              repo={project.repo}
-            />
-          ))}
-        </div>
-      </section>
-    </main>
+    <div className='flex h-full w-full flex-col'>
+      <TestTwoCanvas projects={mergedArray} />
+    </div>
   )
 }
 
-export default ProjectPage
+export default TestPageTwo
