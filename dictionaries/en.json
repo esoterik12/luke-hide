@@ -6,11 +6,15 @@
     "resume": "Resume"
   },
   "homepage": {
-    "title": "Luke Hide",
-    "subtitle": "Professional Web Services",
-    "area": "Puerto Banus",
+    "title": "Hi, I'm Luke",
+    "subtitle": "Aspiring full-stack developer with passion for languages,",
+    "area": "coded and spoken.",
     "city": "Marbella",
     "country": "Spain"
+  },
+  "projectsLanding": {
+    "title": "Projects",
+    "subtitle": "My Work"
   },
   "projects": [
     {
@@ -60,12 +64,15 @@
       "description": "Animated portfolio page in four languages.",
       "features": [
         "i18n support for four languages.",
+        "Animations powered by Framer Motion",
         "Dynamic and interactive 3D landing page."
       ]
     }
   ],
   "contact": {
     "title": "Contact me",
+    "subtitleOne": "Send a quick message to my email with any inquiries!",
+    "subtitleTwo": "Or email me yourself at",
     "nameLabel": "Your name",
     "emailLabel": "Your email",
     "messageLabel": "Your message",
@@ -79,6 +86,8 @@
       "titleTwo": "Educational Technology Administrator",
       "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
       "projectsLink": "See my projects here.",
+      "nationalityTitle": "Nationality",
+      "nationalityText": "United Kingdom",
       "ageText": "Age",
       "address": "Address",
       "phone": "Phone"
@@ -155,11 +164,11 @@
         {
           "id": 3,
           "title": "Styling & Design",
-          "content": ["CSS", "Tailwind", "Three.js"]
+          "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
         },
         {
           "id": 4,
-          "title": "Authentication & APIs",
+          "title": "Auth & APIs",
           "content": ["NextAuth", "Clerk", "SendGrid", "ChatGPT API"]
         },
         {

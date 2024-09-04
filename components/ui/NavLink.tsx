@@ -4,13 +4,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
-interface INavLink {
+interface NavLink {
   href: string
-  className?: string
+  classes?: string
   children: React.ReactNode
 }
 
-const NavLink = ({ href, children, className, ...props }: INavLink) => {
+const NavLink = ({ href, children, classes, ...props }: NavLink) => {
   const pathname = usePathname()
   const isActiveLink = href === pathname
 
@@ -19,8 +19,8 @@ const NavLink = ({ href, children, className, ...props }: INavLink) => {
       {...props}
       href={href}
       className={clsx(
-        className,
-        isActiveLink && 'underline decoration-gray-500'
+        classes,
+        isActiveLink && 'underline'
       )}
     >
       {children}

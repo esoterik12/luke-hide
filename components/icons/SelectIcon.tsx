@@ -31,6 +31,7 @@ import IconNextAuth from './tech-icons/IconNextAuth'
 import IconReactContext from './tech-icons/IconReactContext'
 import IconRTK from './tech-icons/IconRTK'
 import IconReactHookForm from './tech-icons/IconReactHookForm'
+import IconFramerMotion from './tech-icons/IconFramerMotion'
 
 interface SelectIconProps {
   iconSelection: string
@@ -137,6 +138,9 @@ export default function SelectIcon({
       break
     case 'React Hook Form':
       icon = <IconReactHookForm classes={iconClasses} />
+      break
+    case 'Framer Motion':
+      icon = <IconFramerMotion classes={iconClasses} />
       break
     default:
       icon = <p className='text-red-500'>Error: No Icon Found</p>

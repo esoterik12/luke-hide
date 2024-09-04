@@ -21,7 +21,7 @@ const ResumePage = async ({
     <PageContainer>
       <>
         {/* Top Personal Section */}
-        <section className='mt-12 flex flex-row'>
+        <section className='mt-12 flex flex-row md:mt-20'>
           <Image
             height={200}
             width={200}
@@ -34,7 +34,7 @@ const ResumePage = async ({
             <div className='flex flex-row justify-between'>
               <div>
                 <h1 className='text-3xl font-bold'>Luke Hide</h1>
-                <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
+                <h2 className='text-xl font-semibold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.titleOne}
                 </h2>
                 {/* <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
@@ -49,14 +49,31 @@ const ResumePage = async ({
                 className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-red-200 shadow-xl md:hidden'
               />
             </div>
-            <p className='mt-4'>{resume.headerSection.bio}</p>
-            <Link
-              className='py-2 text-sm text-red-400 hover:underline'
-              href={`/${lang}/projects`}
-            >
-              {resume.headerSection.projectsLink}
-            </Link>
-            <div className='mt-4 flex flex-row flex-wrap gap-6 text-sm'>
+            <p className='para-text mt-4'>{resume.headerSection.bio}</p>
+
+            {/* Projcets and PDF download links div */}
+            <div className='para-text flex flex-row flex-wrap gap-x-8'>
+              <Link
+                className='py-2 text-red-400 hover:underline'
+                href={`/${lang}/projects`}
+              >
+                {resume.headerSection.projectsLink}
+              </Link>
+              <a
+                className='py-2 text-red-400 hover:underline'
+                href='/images/luke-hide-resume-2024.pdf'
+                target='_blank'
+              >
+                Download PDF. - json / edit pdf!!
+              </a>
+            </div>
+            <div className='para-text mt-4 flex flex-row flex-wrap gap-6'>
+              <div className='flex flex-col'>
+                <p className='font-bold text-gray-600 dark:text-gray-400'>
+                  {resume.headerSection.nationalityTitle}
+                </p>
+                <p>{resume.headerSection.nationalityText}</p>
+              </div>
               <div className='flex flex-col'>
                 <p className='font-bold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.ageText}
@@ -86,7 +103,7 @@ const ResumePage = async ({
         </section>
 
         {/* Experience Section */}
-        <section className='mt-8 flex flex-col border-t-2 border-gray-500'>
+        <section className='mt-8 flex flex-col border-t-2 border-gray-500 py-2'>
           {/* Left side image / line */}
           {resume.experience.positions.map((item, index) => (
             <div key={index} className='my-2 flex flex-row'>
@@ -95,16 +112,18 @@ const ResumePage = async ({
                 <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
               </div>
               <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
-                <h2 className='text-md text-lg font-semibold'>{item.role}</h2>
-                <h3 className='text-md text-md font-semibold'>
+                <h2 className='para-text font-semibold'>{item.role}</h2>
+                <h3 className='para-text font-semibold'>
                   {item.location} - {item.company}
                 </h3>
-                <p className='mb-3 text-sm text-gray-600 dark:text-gray-400'>
+                <p className='para-text mb-3 text-gray-600 dark:text-gray-400'>
                   {item.dates}
                 </p>
                 <ul className='list ml-4 list-disc'>
                   {item.responsibilities?.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className='para-text' key={index}>
+                      {item}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -123,13 +142,13 @@ const ResumePage = async ({
                 className='ml-4 flex w-44 flex-col gap-2 sm:ml-8'
                 key={item.id}
               >
-                <p className='text-gray-400'>{item.title}:</p>
+                <p className='para-text text-gray-400'>{item.title}:</p>
                 {item.content.map(item => (
                   <div className='flex flex-row gap-x-2' key={item}>
                     {index < 5 && (
                       <SelectIcon iconClasses='h-6 w-6' iconSelection={item} />
                     )}
-                    <p>{item}</p>
+                    <p className='para-text'>{item}</p>
                   </div>
                 ))}
               </div>
@@ -149,7 +168,7 @@ const ResumePage = async ({
             {mergedArray.map(item => (
               <div
                 key={item.id}
-                className={`flex w-40 flex-row items-center rounded-full border-2`}
+                className={`w-42 flex flex-row items-center rounded-full border-2`}
               >
                 <Image
                   src={item.flagImage}
@@ -158,7 +177,7 @@ const ResumePage = async ({
                   width={35}
                   className='m-1'
                 />
-                <p className={`ml-1 mr-4 font-semibold`}>
+                <p className={`para-text ml-1 mr-4 font-semibold`}>
                   {item.language}&nbsp;
                   {item.level}
                 </p>
@@ -168,7 +187,7 @@ const ResumePage = async ({
         </section>
 
         {/* Skills Section */}
-        <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
+        <section className='mt-4 flex flex-col border-gray-500'>
           <div>
             <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
               Additional Skills & Proficiences
@@ -177,54 +196,58 @@ const ResumePage = async ({
 
           <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
             <div
-              className={`flex flex-row items-center rounded-full border-2 px-2 py-1`}
+              className={`flex h-12 w-40 flex-row items-center gap-x-2 rounded-full border-2`}
             >
               <Image
                 src='/images/indesign.png'
                 alt='ableton'
-                height={35}
-                width={35}
-                className='m-1 rounded-xl'
+                height={30}
+                width={30}
+                className='ml-2 rounded-xl'
               />
-              <p className={`ml-1 mr-4 font-semibold`}>InDesign</p>
+              <p className='para-text ml-1 mr-4 font-semibold'>InDesign</p>
             </div>
             <div
-              className={`flex flex-row items-center rounded-full border-2 px-2 py-1`}
-            >
+              className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
+              >
               <Image
                 src='/images/premiere-pro.svg'
                 alt='ableton'
-                height={35}
-                width={35}
+                height={30}
+                width={30}
                 className='m-1 rounded-xl'
               />
-              <p className={`ml-1 mr-4 font-semibold`}>Premiere Pro</p>
+              <p className='para-text ml-1 mr-4 font-semibold'>Premiere Pro</p>
             </div>
             <div
-              className={`flex flex-row items-center rounded-full border-2 px-2 py-1`}
-            >
+              className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
+              >
               <Image
                 src='/images/after-effects.svg'
                 alt='ableton'
-                height={35}
-                width={35}
+                height={30}
+                width={30}
                 className='m-1 rounded-xl'
               />
-              <p className={`ml-1 mr-4 font-semibold`}>After Effects</p>
+              <p className='para-text ml-1 mr-4 font-semibold'>After Effects</p>
             </div>
             <div
-              className={`flex flex-row items-center rounded-full border-2 px-2 py-1`}
-            >
+              className={`flex h-12 w-40 flex-row items-center gap-x-2 rounded-full border-2`}
+              >
               <Image
                 src='/images/ableton.png'
                 alt='ableton'
-                height={35}
-                width={35}
-                className='m-1 rounded-xl'
+                height={30}
+                width={30}
+                className='ml-3 rounded-xl'
               />
-              <p className={`ml-1 mr-4 font-semibold`}>Ableton</p>
+              <p className='para-text ml-1 mr-4 font-semibold'>Ableton</p>
             </div>
           </div>
+        </section>
+
+        <section className='mt-20 flex flex-row justify-center gap-10 border-gray-500'>
+<p>ssadasdasdas asd</p>
         </section>
       </>
     </PageContainer>

@@ -10,18 +10,16 @@ const TestPageTwo = async ({
 }: {
   params: { lang: Locale }
 }) => {
-  const { projects } = await getDictionary(lang)
+  const { projects, projectsLanding } = await getDictionary(lang)
 
   // Combines with tech in separate file to not have to edit 4 times in 4 json dicts
   const mergedArray: MergedProject[] = projectsArrayTech.map((item, index) => {
     return { ...item, ...projects[index] }
   })
 
-  console.log('mergedArray', mergedArray)
-
   return (
     <div className='flex h-full w-full flex-col'>
-      <TestTwoCanvas projects={mergedArray} />
+      <TestTwoCanvas projects={mergedArray} projectsLanding={projectsLanding} />
     </div>
   )
 }

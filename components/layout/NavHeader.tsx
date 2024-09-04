@@ -11,7 +11,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='z-20 dark:bg-gray-800 bg-slate-100 py-2 fixed w-full'>
+    <header className='fixed z-20 w-full bg-slate-100 py-2 dark:bg-gray-800'>
       {/* <MobileNavHeader lang={lang} /> */}
       <nav className='flex items-center justify-between'>
         {/* Logo - Left Side */}
@@ -25,25 +25,38 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
         </div>
 
         {/* NavLinks */}
-        <div className='hidden w-1/2 flex-row justify-center sm:block md:flex'>
+        <div className='hidden w-1/2 flex-row justify-center sm:flex'>
           <ul className='flex gap-x-5 sm:text-lg'>
             {/* KEY: These links include the lang / locale in their href */}
             <li>
-              <NavLink href={`/${lang}/contact`}>{navigation.contact}</NavLink>
+              <NavLink
+                classes='custom-transition-class font-semibold text-xl'
+                href={`/${lang}/contact`}
+              >
+                {navigation.contact}
+              </NavLink>
             </li>
             <li>
-              <NavLink href={`/${lang}/projects`}>
+              <NavLink
+                classes='custom-transition-class font-semibold text-xl'
+                href={`/${lang}/projects`}
+              >
                 {navigation.projects}
               </NavLink>
             </li>{' '}
             <li>
-              <NavLink href={`/${lang}/resume`}>{navigation.resume}</NavLink>
+              <NavLink
+                classes='custom-transition-class font-semibold text-xl'
+                href={`/${lang}/resume`}
+              >
+                {navigation.resume}
+              </NavLink>
             </li>{' '}
           </ul>
         </div>
 
         {/* Buttons */}
-        <div className='mr-4 flex w-1/4 flex-row justify-end gap-6'>
+        <div className='flex w-1/4 flex-row justify-end gap-6 p-2'>
           <LocaleSwitcher />
         </div>
       </nav>

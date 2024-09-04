@@ -1,8 +1,9 @@
+"use"
 import { motion } from 'framer-motion'
 import ProjectCardTest from '../display/ProjectCardTest'
 import { SetStateAction } from 'react'
 import SelectIcon from '../icons/SelectIcon'
-import { MergedProject, Tech } from '@/lib/types/types'
+import { MergedProject, ProjectsLanding, Tech } from '@/lib/types/types'
 import Image from 'next/image'
 
 const Section = ({ children }: { children: React.ReactNode }) => {
@@ -38,19 +39,25 @@ const Section = ({ children }: { children: React.ReactNode }) => {
 // UNFINISHED - temporary any type
 export const Interface = ({
   projects,
+  projectsLanding,
   setSection,
-  section
+  section,
 }: {
   projects: MergedProject[]
+  projectsLanding: ProjectsLanding
   setSection: React.Dispatch<SetStateAction<number>>
   section: number
 }) => {
   return (
     <div className='flex w-screen flex-col items-center'>
       <Section>
-        <h1 className='text-6xl font-bold text-gray-200'>Projects</h1>
+        <h1 className='text-6xl font-bold dark:text-gray-200'>
+          {projectsLanding.title}
+        </h1>
         <br />
-        <span className='mt-4 text-2xl text-gray-500'>My Work</span>
+        <span className='mt-4 text-2xl dark:text-gray-500'>
+          {projectsLanding.subtitle}
+        </span>
 
         <motion.div
           className='mt-4 gap-4 space-y-4'
@@ -60,11 +67,12 @@ export const Interface = ({
         >
           {projects.map((project, index) => (
             <div
+              key={project.id}
               className='flex flex-col items-center hover:cursor-pointer'
               onClick={() => setSection(project.id)}
             >
               {/* Image and Title */}
-              <div className='flex flex-row items-center text-center gap-3'>
+              <div className='flex flex-row items-center gap-3 text-center'>
                 {index < 4 ? (
                   <Image
                     src={project.logo}
@@ -73,25 +81,29 @@ export const Interface = ({
                     height={35}
                   />
                 ) : (
-                  <p className='ml-2 text-xl font-bold tracking-wide bg-gray-700 p-1 rounded-full text-white'>LH</p>
+                  <p className='ml-2 rounded-full bg-gray-700 p-1 text-xl font-bold tracking-wide text-white'>
+                    LH
+                  </p>
                 )}
 
-                <h3 className='text-2xl font-semibold text-gray-200 hover:text-red-300'>
+                <h3 className='text-xl font-semibold transition-colors duration-300 hover:text-red-300 dark:hover:text-red-300 dark:text-gray-200 md:text-2xl'>
                   {project.title}
                 </h3>
               </div>
-              {/* Description */} 
-              <p className='text-xl text-gray-400  text-center '>{project.description}</p>
+              {/* Description */}
+              <p className='text-center text-lg text-gray-600 dark:text-gray-400 md:text-xl'>
+                {project.description}
+              </p>
             </div>
           ))}
         </motion.div>
       </Section>
 
-      {projects.map((project) => (
+      {projects.map(project => (
         <Section key={project.id}>
           <div className='flex flex-row'>
             {/* Left side selectors */}
-            <div className='my-12 hidden md:flex flex-col justify-between p-6'>
+            <div className='my-12 hidden flex-col justify-between p-6 md:flex'>
               {projects.map((project, index) => (
                 <motion.div
                   key={project.id}
@@ -132,7 +144,8 @@ export const Interface = ({
             />
 
             {/* Tech right side animation */}
-            <div className='hidden md:flex flex-col justify-center'>
+            {/* Only visible on md+ // Alternative for sm is in the Project comp */}
+            <div className='hidden flex-col justify-center md:flex'>
               {project.tech.map((item: Tech, index: number) => (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -149,7 +162,7 @@ export const Interface = ({
                   className='flex flex-col items-center justify-center p-4'
                 >
                   <SelectIcon iconClasses='w-9 h-9' iconSelection={item.name} />
-                  <p className='mt-1 text-xs font-semibold'>{item.name}</p>
+                  <p className='mt-1 text-sm font-semibold'>{item.name}</p>
                 </motion.div>
               ))}
             </div>

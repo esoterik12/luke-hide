@@ -33,7 +33,7 @@ const BotBarMobileOnly = async ({ lang }: { lang: Locale }) => {
         {sideBarLinks.map(item => (
           <div key={item.id} className='m-2 flex flex-col items-center gap-2'>
             <NavLink
-              className='text-subtle-medium text-light-1 flex flex-col items-center text-sm'
+              classes='text-light-1 flex flex-col items-center text-sm'
               href={item.link}
             >
               <SelectIcon iconClasses='h-6 w-6' iconSelection={item.icon} />

@@ -20,6 +20,8 @@ export default function ContactForm({
   const [loading, setLoading] = useState(false)
   const {
     title,
+    subtitleOne,
+    subtitleTwo,
     nameLabel,
     emailLabel,
     messageLabel,
@@ -87,7 +89,14 @@ export default function ContactForm({
 
   return (
     <div className='mb-16 max-w-[700px]'>
-      <h1 className='mt-6 py-3 text-3xl font-semibold'>{title}</h1>
+      <h1 className='ml-1 text-3xl font-semibold'>{title}</h1>
+      <p className='text-md ml-1 pt-2 text-gray-600 dark:text-gray-400 md:text-lg'>
+        {subtitleOne}
+      </p>
+      <div className='text-md mb-2 ml-1 flex flex-row flex-wrap pb-2 md:text-lg'>
+        <p className='text-gray-600 dark:text-gray-400 para-text'>{subtitleTwo}&nbsp;</p>
+        <p className='font-semibold para-text'>luke.hide@gmail.com</p>
+      </div>
       <div>
         <form className='' noValidate action={action}>
           <div className='flex flex-col gap-x-10 md:flex-row'>
@@ -97,7 +106,8 @@ export default function ContactForm({
               id='name'
               loading={loading}
               label={nameLabel}
-              inputClasses='pl-2'
+              labelClasses='para-text'
+              inputClasses='pl-2 w-full'
               {...register('name')}
               error={errors.name}
             />
@@ -108,7 +118,8 @@ export default function ContactForm({
               id='email'
               loading={loading}
               label={emailLabel}
-              inputClasses='pl-2'
+              labelClasses='para-text'
+              inputClasses='pl-2 w-full'
               {...register('email')}
               error={errors.email}
             />
@@ -120,14 +131,15 @@ export default function ContactForm({
               loading={loading}
               label={messageLabel}
               placeholder=''
-              inputClasses='w-full pl-2 h-32 border border-gray-300 rounded-md resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none'
+              labelClasses='para-text'
+              inputClasses='w-full pl-2 h-20 md:h-32 border border-gray-300 rounded-md resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none'
               {...register('text')}
               error={errors.text}
             />
           </div>
           <button
             type='submit'
-            className={`ml-1 mt-3 w-32 rounded-xl bg-red-200 p-2 text-xl font-semibold text-gray-800 transition-colors duration-300 hover:text-white ${loading ? 'bg-gray-400' : 'hover:bg-gray-300 dark:hover:bg-blue-500'}`}
+            className={`ml-1 w-32 rounded-xl bg-red-200 p-2 text-xl font-semibold text-gray-800 transition-colors duration-300 hover:text-white ${loading ? 'bg-gray-400' : 'hover:bg-gray-400 dark:hover:bg-blue-500'}`}
             disabled={loading}
           >
             {loading ? `${sendingText}` : `${buttonText}`}

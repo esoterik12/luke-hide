@@ -12,6 +12,10 @@
     "city": "Marbella",
     "country": "España"
   },
+  "projectsLanding" : {
+    "title": "Projects",
+    "subtitle": "My Work"
+  },
   "projects": [
     {
       "title": "Next Chinese",
@@ -60,6 +64,7 @@
       "description": "Página de portafolio SSR potenciada por NextJS y ThreeJS.",
       "features": [
         "Soporte i18n para cuatro idiomas.",
+        "Animations powered by Framer Motion",
         "Página de aterrizaje dinámica e interactiva en 3D."
       ]
     }
@@ -67,6 +72,8 @@
   "contact": {
     "title": "Contácteme",
     "nameLabel": "Su nombre",
+    "subtitleOne": "Send a quick message to my email with any inquiries!",
+    "subtitleTwo": "Or email me yourself at",
     "emailLabel": "Su email",
     "messageLabel": "Su mensaje",
     "buttonText": "Enviar",
@@ -79,6 +86,8 @@
       "titleTwo": "Administrador de Tecnología Educativa",
       "bio": "Desarrollador full-stack autodidacta con más de 18 meses de estudio a tiempo completo, especializado en la creación de aplicaciones dinámicas con React, Next.js y MongoDB. Adaptable, deseoso de aprender nuevas herramientas y comprometido a contribuir positivamente en entornos de equipo.",
       "projectsLink": "Ver mis proyectos aquí.",
+      "nationalityTitle": "Nationality",
+      "nationalityText": "United Kingdom",
       "ageText": "Edad",
       "address": "Dirección",
       "phone": "Teléfono"

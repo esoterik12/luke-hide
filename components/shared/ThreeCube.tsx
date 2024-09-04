@@ -18,12 +18,12 @@ export function ThreeCube() {
     }
   }, [value])
 
-  useFrame((state, delta) => {
-    if (cubeRef.current) {
-      cubeRef.current.rotation.x -= delta * 0.12
-      cubeRef.current.rotation.y -= delta * 0.25
-    }
-  })
+  // useFrame((state, delta) => {
+  //   if (cubeRef.current) {
+  //     cubeRef.current.rotation.x -= delta * 0.12
+  //     cubeRef.current.rotation.y -= delta * 0.25
+  //   }
+  // })
 
   const eventHandler = () => {
     setRandomColorValue()
@@ -49,7 +49,7 @@ export function ThreeCube() {
           }}
         >
           
-          <boxGeometry args={[1.5, 1.5, 1.5]} />
+          <boxGeometry args={[0.5, 0.5, 0.5]} />
           <meshStandardMaterial
             // color='hotpink'
             polygonOffset

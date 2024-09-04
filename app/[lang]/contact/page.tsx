@@ -1,4 +1,5 @@
 import ContactForm from '@/components/forms/ContactForm'
+import PageContainer from '@/components/shared/PageContainer'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
 
@@ -10,9 +11,11 @@ const ContactPage = async ({
   const { contact } = await getDictionary(lang)
 
   return (
-    <main className='flex flex-col items-center px-4 py-4'>
-      <ContactForm langProps={contact} />
-    </main>
+    <PageContainer>
+      <main className='flex min-h-screen flex-col items-center justify-center '>
+        <ContactForm langProps={contact} />
+      </main>
+    </PageContainer>
   )
 }
 

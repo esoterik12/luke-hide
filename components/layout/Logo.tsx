@@ -10,7 +10,7 @@ const Logo = async ({ image, text, lang }: LogoProps) => {
         className='flex flex-row items-center gap-1 text-xl font-bold tracking-wide'
       >
         {/* <Image src={image} alt={text} width={50} height={50} className='p-1'/> */}
-        <p className='ml-2 text-xl font-bold tracking-wide'>LH</p>
+        <p className='ml-2 text-xl font-bold tracking-wide'>L<span className='text-blue-400'>.</span>H</p>
       </Link>
     </div>
   )

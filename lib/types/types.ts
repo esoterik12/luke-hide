@@ -15,6 +15,8 @@ export interface ContactFormData {
 
 export interface ContactFormText {
   title: string
+  subtitleOne: string
+  subtitleTwo: string
   nameLabel: string
   emailLabel: string
   messageLabel: string
@@ -38,4 +40,9 @@ export interface MergedProject {
 export interface Tech {
   name: string
   icon: string
+}
+
+export interface ProjectsLanding {
+  title: string
+  subtitle: string
 }

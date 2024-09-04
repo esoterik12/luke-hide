@@ -14,7 +14,7 @@ export default function ThreeBackground() {
 
   // Initialize positions once
   if (positions.current.length === 0) {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 250; i++) {
       positions.current.push([
         (Math.random() - 0.5) * 10,
         (Math.random() - 0.5) * 8,
@@ -29,9 +29,9 @@ export default function ThreeBackground() {
   }, [value, boxMaterial])
 
   useFrame((state) => {
-    const angle = state.clock.elapsedTime * 0.05
-    state.camera.position.x = Math.sin(angle) * 8
-    state.camera.position.z = Math.cos(angle) * 4
+    const angle = state.clock.elapsedTime * 0.02
+    state.camera.position.x = Math.sin(angle) * 2
+    state.camera.position.z = Math.cos(angle) * 1
     state.camera.lookAt(0, 0, 0)
   })
 
@@ -43,7 +43,7 @@ export default function ThreeBackground() {
             cubesArray.current[index] = element
           }}
           key={index}
-          geometry={new BoxGeometry(0.02, 0.02, 0.02)}
+          geometry={new BoxGeometry(0.01, 0.01, 0.01)}
           material={boxMaterial}
           position={position}
           receiveShadow

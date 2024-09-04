@@ -1,19 +1,8 @@
-'use client'
-import { useTheme } from 'next-themes'
-
-export default function IconPostgres({
-  classes,
-  fillHex
-}: {
-  classes: string
-  fillHex: string | undefined
-}) {
-  const { theme } = useTheme()
-
+export default function IconPostgres({ classes }: { classes: string }) {
   return (
     <svg
-    fill={theme === 'light' ? '#000000' : '#ffffff'}
-    width='800px'
+        fill='#4b5563'
+        width='800px'
       height='800px'
       viewBox='0 0 32 32'
       xmlns='http://www.w3.org/2000/svg'

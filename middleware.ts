@@ -37,7 +37,5 @@ export function middleware(request: NextRequest) {
 
 // Negative look aheads to skip files in these folders
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
-  // matcher: ['/((?!api|_next/static|_next/image|e-nite|favicon.ico).*)']
-  matcher: ['/((?!api|_next/static|_next/image|e-nite|images|favicon.ico).*)']
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico).*)']
 }
