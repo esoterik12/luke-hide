@@ -89,7 +89,7 @@ export default function SelectIcon({
       icon = <IconCSS classes={iconClasses} />
       break
     case 'PostgreSQL':
-      icon = <IconPostgres classes={iconClasses} fillHex={fillHex} />
+      icon = <IconPostgres classes={iconClasses} />
       break
     case 'rightArrowCircle':
       icon = <IconRightArrowCircle classes={iconClasses} />
