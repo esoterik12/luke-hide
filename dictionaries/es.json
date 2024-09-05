@@ -6,11 +6,14 @@
     "resume": "Currículum"
   },
   "homepage": {
-    "title": "Luke Hide",
-    "subtitle": "Servicios Web Profesionales",
-    "area": "Puerto Banus",
-    "city": "Marbella",
-    "country": "España"
+    "title": "Hi, I'm Luke.",
+    "subtitle": "Aspiring full-stack developer",
+    "lineOne": "With a love of languages, spoken and",
+    "lineOneHighlight": "coded",
+    "lineTwo": "Thank you for checking out my portfolio!",
+    "resumeButton": "My Resume",
+    "projectsButton": "My Projects",
+    "contactButton": "Contact Me"
   },
   "projectsLanding" : {
     "title": "Projects",

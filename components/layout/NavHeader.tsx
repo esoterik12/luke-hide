@@ -56,7 +56,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
         </div>
 
         {/* Buttons */}
-        <div className='flex w-1/4 flex-row justify-end gap-6 p-2'>
+        <div className='flex w-1/4 flex-row justify-end gap-6 p-2 mr-3'>
           <LocaleSwitcher />
         </div>
       </nav>

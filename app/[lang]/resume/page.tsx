@@ -209,7 +209,7 @@ const ResumePage = async ({
             </div>
             <div
               className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
-              >
+            >
               <Image
                 src='/images/premiere-pro.svg'
                 alt='ableton'
@@ -221,7 +221,7 @@ const ResumePage = async ({
             </div>
             <div
               className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
-              >
+            >
               <Image
                 src='/images/after-effects.svg'
                 alt='ableton'
@@ -233,7 +233,7 @@ const ResumePage = async ({
             </div>
             <div
               className={`flex h-12 w-40 flex-row items-center gap-x-2 rounded-full border-2`}
-              >
+            >
               <Image
                 src='/images/ableton.png'
                 alt='ableton'
@@ -246,8 +246,23 @@ const ResumePage = async ({
           </div>
         </section>
 
-        <section className='mt-20 flex flex-row justify-center gap-10 border-gray-500'>
-<p>ssadasdasdas asd</p>
+        <section className='para-text mt-12 flex flex-col items-center gap-10 border-t-2 border-gray-500'>
+          <p className='para-text  mt-6'>References available on request.</p>
+          <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>
+            <Link
+              className='py-2 text-red-400 hover:underline'
+              href={`/${lang}/projects`}
+            >
+              {resume.headerSection.projectsLink}
+            </Link>
+            <a
+              className='py-2 text-red-400 hover:underline'
+              href='/images/luke-hide-resume-2024.pdf'
+              target='_blank'
+            >
+              Download PDF.
+            </a>
+          </div>
         </section>
       </>
     </PageContainer>

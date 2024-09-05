@@ -32,16 +32,15 @@ This is a [Next.js] project bootstrapped with [`create-next-app`]
 - projects
   - NextJS and Postgres and ThreeJS Icon
 
-## TODO - Today (09/04)
-
-- resume
-  - contact link / projects link at bottom
-  - clean up iconless profs
+- resume:
   - make smaller skills
+  - contact link / projects link at bottom
 
 - homepage:
   - general concept based on framer
   - buttons animated etc
+
+## TODO - Today (09/04)
 
 - SEO basics from e-nite website
 
@@ -56,6 +55,7 @@ This is a [Next.js] project bootstrapped with [`create-next-app`]
 
 ## Final:
 - i18n:
+  - add all new text
   - update all eng text in others
   - proofread
 

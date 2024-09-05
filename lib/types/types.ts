@@ -46,3 +46,14 @@ export interface ProjectsLanding {
   title: string
   subtitle: string
 }
+
+export interface HomepageTextProps {
+  title: string
+  subtitle: string
+  lineOne: string
+  lineOneHighlight: string
+  lineTwo: string
+  resumeButton: string
+  projectsButton: string
+  contactButton: string
+}
