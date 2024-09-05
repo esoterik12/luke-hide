@@ -18,41 +18,41 @@ const HomepageText = ({ homepage }: { homepage: HomepageTextProps }) => {
         duration: 0.22
       }}
     >
-      <h1 className='text-[72px] font-black text-gray-800 dark:text-white'>
+      <h1 className='custom-header-large font-black text-gray-800 dark:text-white'>
         {homepage.title}
       </h1>
-      <h2 className='mb-4 text-4xl font-semibold text-blue-500 dark:text-blue-400'>
+      <h2 className='mb-4 custom-subheader font-semibold text-blue-500 dark:text-blue-400'>
         {homepage.subtitle}
       </h2>
-      <h2 className='mb-4 font-mono text-2xl font-semibold'>
+      <h2 className='mb-4 font-mono custom-text font-semibold'>
         {homepage.lineOne}
         <span className='text-red-500 dark:text-red-400'>
           &nbsp;{homepage.lineOneHighlight}
         </span>
         .
       </h2>
-      <h2 className='mb-4 font-mono text-2xl font-semibold'>
+      <h2 className='mb-4 font-mono custom-text font-semibold'>
         {homepage.lineTwo}
       </h2>
       <Socials />
-      <div className='flex flex-row gap-x-6'>
+      <div className='flex flex-row gap-x-4'>
         <Link href='./resume' className='mt-4'>
-          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-6'>
-            <p className='text-center text-xl font-bold text-white'>
+          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
+            <p className='text-center custom-text font-bold text-white'>
               {homepage.resumeButton}
             </p>
           </div>
         </Link>
         <Link href='./projects' className='mt-4'>
-          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-6'>
-            <p className='text-center text-xl font-bold text-white'>
+          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
+            <p className='text-center custom-text font-bold text-white'>
               {homepage.projectsButton}
             </p>
           </div>
         </Link>
         <Link href='./contact' className='mt-4'>
-          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-6'>
-            <p className='text-center text-xl font-bold text-white'>
+          <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
+            <p className='text-center custom-text font-bold text-white'>
               {homepage.contactButton}
             </p>
           </div>

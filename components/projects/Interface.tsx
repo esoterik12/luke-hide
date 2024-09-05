@@ -1,47 +1,17 @@
-"use"
+'use client'
 import { motion } from 'framer-motion'
 import ProjectCardTest from '../display/ProjectCardTest'
 import { SetStateAction } from 'react'
 import SelectIcon from '../icons/SelectIcon'
 import { MergedProject, ProjectsLanding, Tech } from '@/lib/types/types'
 import Image from 'next/image'
+import ScrollSection from './ScrollSection'
 
-const Section = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <motion.section
-      className='mx-auto flex h-screen w-screen max-w-screen-2xl flex-col items-center justify-center p-3 md:p-8'
-      initial={{
-        opacity: 0,
-        y: 50
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 0.8,
-          delay: 0.3
-        }
-      }}
-      exit={{
-        opacity: 0,
-        y: -50,
-        transition: {
-          duration: 0.5
-        }
-      }}
-      viewport={{ once: false }}
-    >
-      {children}
-    </motion.section>
-  )
-}
-
-// UNFINISHED - temporary any type
 export const Interface = ({
   projects,
   projectsLanding,
   setSection,
-  section,
+  section
 }: {
   projects: MergedProject[]
   projectsLanding: ProjectsLanding
@@ -49,13 +19,14 @@ export const Interface = ({
   section: number
 }) => {
   return (
-    <div className='flex w-screen flex-col items-center'>
-      <Section>
-        <h1 className='text-6xl font-bold dark:text-gray-200'>
+    <div className='flex w-screen flex-col items-center justify-center'>
+      {/* Title and Summary Section */}
+      <ScrollSection>
+        <h1 className='custom-header font-bold dark:text-gray-200'>
           {projectsLanding.title}
         </h1>
         <br />
-        <span className='mt-4 text-2xl dark:text-gray-500'>
+        <span className='custom-subheader mt-4 dark:text-gray-500'>
           {projectsLanding.subtitle}
         </span>
 
@@ -86,24 +57,25 @@ export const Interface = ({
                   </p>
                 )}
 
-                <h3 className='text-xl font-semibold transition-colors duration-300 hover:text-red-300 dark:hover:text-red-300 dark:text-gray-200 md:text-2xl'>
+                <h3 className='custom-subheader font-semibold transition-colors duration-300 hover:text-red-300 dark:text-gray-200 dark:hover:text-red-300 md:text-2xl'>
                   {project.title}
                 </h3>
               </div>
               {/* Description */}
-              <p className='text-center text-lg text-gray-600 dark:text-gray-400 md:text-xl'>
+              <p className='custom-small-text text-center text-gray-600 dark:text-gray-400'>
                 {project.description}
               </p>
             </div>
           ))}
         </motion.div>
-      </Section>
+      </ScrollSection>
 
+      {/* Beginning of Projects mapped */}
       {projects.map(project => (
-        <Section key={project.id}>
+        <ScrollSection key={project.id}>
           <div className='flex flex-row'>
             {/* Left side selectors */}
-            <div className='my-12 hidden flex-col justify-between p-6 md:flex'>
+            <div className='my-12 hidden flex-col justify-between px-6 md:flex'>
               {projects.map((project, index) => (
                 <motion.div
                   key={project.id}
@@ -143,7 +115,7 @@ export const Interface = ({
               repo={project.repo}
             />
 
-            {/* Tech right side animation */}
+            {/* Tech right side tech MD+ screens only */}
             {/* Only visible on md+ // Alternative for sm is in the Project comp */}
             <div className='hidden flex-col justify-center md:flex'>
               {project.tech.map((item: Tech, index: number) => (
@@ -159,15 +131,15 @@ export const Interface = ({
                     delay: 0.1 + index * 0.1
                   }} // consider staggerChildren instead of delay
                   key={item.name}
-                  className='flex flex-col items-center justify-center p-4'
+                  className='flex flex-col items-center justify-center p-3'
                 >
-                  <SelectIcon iconClasses='w-9 h-9' iconSelection={item.name} />
+                  <SelectIcon iconClasses='w-7 h-7' iconSelection={item.name} />
                   <p className='mt-1 text-sm font-semibold'>{item.name}</p>
                 </motion.div>
               ))}
             </div>
           </div>
-        </Section>
+        </ScrollSection>
       ))}
     </div>
   )

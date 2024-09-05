@@ -27,6 +27,10 @@ This is a [Next.js] project bootstrapped with [`create-next-app`]
 - navbar
   - link hover effect
 
+- homepage
+  - buttons animated etc
+
+
 ## Done Today (09/04):
 
 - projects
@@ -38,15 +42,13 @@ This is a [Next.js] project bootstrapped with [`create-next-app`]
 
 - homepage:
   - general concept based on framer
-  - buttons animated etc
-
-## TODO - Today (09/04)
-
-- SEO basics from e-nite website
 
 - file structure:
   - clean up old files
 
+## TODO - Today (09/04)
+
+- SEO basics from e-nite website
 - error pages
 - error handlging like in contact
 - not found

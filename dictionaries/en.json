@@ -44,11 +44,11 @@
       "title": "Classroom Reactor",
       "description": "Learning management system.",
       "features": [
-        "Rich Text Editor powered by Slate.js.",
-        "CRUD functionality for users, courses, modules, and comments.",
+        "Text Editor powered by Slate.js.",
+        "CRUD for users, courses, modules, and comments.",
         "Server actions.",
-        "Complex database functions such as recent activity.",
-        "Clerk user authentication, user roles, and permissions."
+        "Recent activity feed.",
+        "Clerk authentication, user roles, permissions."
       ]
     },
     {

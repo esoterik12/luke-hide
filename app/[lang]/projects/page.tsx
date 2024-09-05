@@ -1,5 +1,4 @@
-import TestTwoCanvas from '@/components/testcomps/TestTwoCanvas'
-import React from 'react'
+import TestTwoCanvas from '@/components/projects/TestTwoCanvas'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
 import { projectsArrayTech } from '@/lib/constants/projects'

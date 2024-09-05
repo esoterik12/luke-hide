@@ -11,7 +11,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='fixed z-20 w-full bg-slate-100 py-2 dark:bg-gray-800'>
+    <header className='fixed z-20 w-full bg-slate-100 py-1 dark:bg-gray-800'>
       {/* <MobileNavHeader lang={lang} /> */}
       <nav className='flex items-center justify-between'>
         {/* Logo - Left Side */}
@@ -26,11 +26,11 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
 
         {/* NavLinks */}
         <div className='hidden w-1/2 flex-row justify-center sm:flex'>
-          <ul className='flex gap-x-5 sm:text-lg'>
+          <ul className='flex gap-x-5 custom-para-text'>
             {/* KEY: These links include the lang / locale in their href */}
             <li>
               <NavLink
-                classes='custom-transition-class font-semibold text-xl'
+                classes='custom-transition-class '
                 href={`/${lang}/contact`}
               >
                 {navigation.contact}
@@ -38,7 +38,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             </li>
             <li>
               <NavLink
-                classes='custom-transition-class font-semibold text-xl'
+                classes='custom-transition-class '
                 href={`/${lang}/projects`}
               >
                 {navigation.projects}
@@ -46,7 +46,7 @@ export default async function NavHeader({ lang }: { lang: Locale }) {
             </li>{' '}
             <li>
               <NavLink
-                classes='custom-transition-class font-semibold text-xl'
+                classes='custom-transition-class '
                 href={`/${lang}/resume`}
               >
                 {navigation.resume}
