@@ -1,10 +1,15 @@
-import TestTwoCanvas from '@/components/projects/TestTwoCanvas'
+import React from 'react'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
-import { projectsArrayTech } from '@/lib/constants/projects'
 import { MergedProject } from '@/lib/types/types'
+import { projectsArrayTech } from '@/lib/constants/projects'
+import PageContainer from '@/components/shared/PageContainer'
 
-const TestPageTwo = async ({
+// Disables pre-rendering for the ScrollSnap client component - see NextJS docs
+import dynamic from 'next/dynamic'
+const ScrollSnap = dynamic(() => import('@/components/projects/ScrollSnap'), { ssr: false })
+
+const ScrollPage = async ({
   params: { lang }
 }: {
   params: { lang: Locale }
@@ -17,10 +22,10 @@ const TestPageTwo = async ({
   })
 
   return (
-    <div className='flex h-full w-full flex-col'>
-      <TestTwoCanvas projects={mergedArray} projectsLanding={projectsLanding} />
-    </div>
+    <PageContainer>
+      <ScrollSnap projects={mergedArray} projectsLanding={projectsLanding} />
+    </PageContainer>
   )
 }
 
-export default TestPageTwo
+export default ScrollPage
