@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { MergedProject, ProjectsLanding } from '@/lib/types/types'
+import IconDownArrow from '../icons/IconDownArrow'
 
 const ProjectPageLanding = ({
   projectsLanding,
@@ -33,14 +34,12 @@ const ProjectPageLanding = ({
         }
       }}
       viewport={{ once: false }}
-      className='flex min-h-screen flex-col items-center mt-12 md:mt-0 md:justify-center'
+      className='mt-12 flex min-h-screen flex-col items-center md:mt-0 md:justify-center'
     >
-      <h1 className='custom-header font-bold dark:text-gray-200'>
+      <h1 className='custom-header hidden md:block md:mb-4 font-bold dark:text-gray-200'>
         {projectsLanding.title}
       </h1>
-      <span className='custom-subheader mt-4 dark:text-gray-500'>
-        {projectsLanding.subtitle}
-      </span>
+
 
       <motion.div
         className='mt-4 gap-4 space-y-4'
@@ -49,10 +48,7 @@ const ProjectPageLanding = ({
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className='flex flex-col items-center hover:cursor-pointer'
-          >
+          <div key={project.id} className='flex flex-col items-center'>
             {/* Image and Title */}
             <div className='flex flex-row items-center gap-3 text-center'>
               {index < 4 ? (
@@ -68,7 +64,7 @@ const ProjectPageLanding = ({
                 </p>
               )}
 
-              <h3 className='custom-subheader font-semibold transition-colors duration-300 hover:text-red-300 dark:text-gray-200 dark:hover:text-red-300 md:text-2xl'>
+              <h3 className='custom-subheader font-semibold md:text-2xl'>
                 {project.title}
               </h3>
             </div>
@@ -79,6 +75,7 @@ const ProjectPageLanding = ({
           </div>
         ))}
       </motion.div>
+      <IconDownArrow classes='w-20 h-20 mt-2 md:mt-12 text-red-300' />
     </motion.section>
   )
 }
