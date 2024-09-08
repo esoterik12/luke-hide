@@ -4,8 +4,7 @@ import { getDictionary } from '@/lib/utils/dictionary'
 import { MergedProject } from '@/lib/types/types'
 import { projectsArrayTech } from '@/lib/constants/projects'
 import PageContainer from '@/components/shared/PageContainer'
-import ProjectPageLanding from '@/components/projects/ProjectPageLanding'
-import ProjectsScroll from '@/components/projects/ProjectsScroll'
+import ProjectsDisplay from '@/components/projects/ProjectsDisplay'
 
 const ScrollPage = async ({
   params: { lang }
@@ -23,13 +22,14 @@ const ScrollPage = async ({
 
   return (
     <PageContainer>
-      <>
+      <ProjectsDisplay projects={mergedProjectsArray} projectsLanding={projectsLanding} />
+      {/* <>
         <ProjectPageLanding
           projectsLanding={projectsLanding}
           projects={mergedProjectsArray}
         />
         <ProjectsScroll projects={mergedProjectsArray} />
-      </>
+      </> */}
     </PageContainer>
   )
 }

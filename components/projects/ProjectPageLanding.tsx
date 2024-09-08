@@ -1,7 +1,7 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { MergedProject, ProjectsLanding } from '@/lib/types/types'
 import IconDownArrow from '../icons/IconDownArrow'
 
@@ -12,6 +12,21 @@ const ProjectPageLanding = ({
   projectsLanding: ProjectsLanding
   projects: MergedProject[]
 }) => {
+  const [hasScrolled, setHasScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleDetectScroll = () => {
+      if (window.scrollY > 50) {
+        setHasScrolled(true)
+      }
+    }
+
+    window.addEventListener('scroll', handleDetectScroll)
+    return () => {
+      window.removeEventListener('scroll', handleDetectScroll)
+    }
+  }, [])
+
   return (
     <motion.section
       initial={{
@@ -36,10 +51,9 @@ const ProjectPageLanding = ({
       viewport={{ once: false }}
       className='mt-12 flex min-h-screen flex-col items-center md:mt-0 md:justify-center'
     >
-      <h1 className='custom-header hidden md:block md:mb-4 font-bold dark:text-gray-200'>
+      <h1 className='custom-header hidden font-bold dark:text-gray-200 md:mb-4 md:block'>
         {projectsLanding.title}
       </h1>
-
 
       <motion.div
         className='mt-4 gap-4 space-y-4'
@@ -75,7 +89,21 @@ const ProjectPageLanding = ({
           </div>
         ))}
       </motion.div>
-      <IconDownArrow classes='w-20 h-20 mt-2 md:mt-12 text-red-300' />
+      <AnimatePresence>
+        {!hasScrolled && (
+          <motion.div
+            className='mt-2 h-20 w-20 text-red-300 md:mt-12'
+            initial={{ opacity: 1 }}
+            animate={{
+              y: [0, -20, 0], // Move up and down
+              transition: { y: { repeat: Infinity, duration: 1.5 } } // Loop the animation
+            }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }} // Fade out on scroll
+          >
+            <IconDownArrow classes='w-20 h-20 mt-2 md:mt-12 text-red-300' />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.section>
   )
 }
