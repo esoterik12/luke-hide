@@ -3,9 +3,10 @@ import { motion } from 'framer-motion'
 import Socials from '../shared/Socials'
 import Link from 'next/link'
 import { HomepageTextProps } from '@/lib/types/types'
+import { Locale } from '@/i18n.config'
 
 // Unfinished any type
-const HomepageText = ({ homepage }: { homepage: HomepageTextProps }) => {
+const HomepageText = ({ homepage, lang }: { homepage: HomepageTextProps, lang: Locale }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -36,21 +37,21 @@ const HomepageText = ({ homepage }: { homepage: HomepageTextProps }) => {
       </h2>
       <Socials />
       <div className='flex flex-col md:flex-row gap-x-4'>
-        <Link href='./resume' className='mt-4'>
+        <Link href={`/${lang}/resume`} className='mt-4'>
           <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
             <p className='text-center custom-text font-bold text-white'>
               {homepage.resumeButton}
             </p>
           </div>
         </Link>
-        <Link href='./projects' className='mt-4'>
+        <Link href={`/${lang}/projects`} className='mt-4'>
           <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
             <p className='text-center custom-text font-bold text-white'>
               {homepage.projectsButton}
             </p>
           </div>
         </Link>
-        <Link href='./contact' className='mt-4'>
+        <Link href={`/${lang}/contact`} className='mt-4'>
           <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
             <p className='text-center custom-text font-bold text-white'>
               {homepage.contactButton}

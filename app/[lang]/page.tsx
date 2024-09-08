@@ -20,7 +20,7 @@ export default async function Home({
 
       {/* Center-Left Text Content */}
       <div className='flex min-h-screen w-4/5 md:w-2/5 flex-col justify-start pt-20 md:pt-40 text-left'>
-        <HomepageText homepage={homepage} />
+        <HomepageText lang={lang} homepage={homepage} />
       </div>
 
       {/* Right Side Animation */}
