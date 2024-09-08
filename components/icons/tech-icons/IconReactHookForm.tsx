@@ -1,9 +1,7 @@
 export default function IconReactHookForm({
   classes,
-  fillHex = '#000000'
 }: {
   classes: string
-  fillHex?: string
 }) {
   return (
     <svg className={classes} role='img' fill="#EC5990" viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>

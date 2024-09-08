@@ -35,7 +35,7 @@ const HomepageText = ({ homepage }: { homepage: HomepageTextProps }) => {
         {homepage.lineTwo}
       </h2>
       <Socials />
-      <div className='flex flex-row gap-x-4'>
+      <div className='flex flex-col md:flex-row gap-x-4'>
         <Link href='./resume' className='mt-4'>
           <div className='custom-hover-effect w-44 rounded-xl bg-blue-400 py-4'>
             <p className='text-center custom-text font-bold text-white'>

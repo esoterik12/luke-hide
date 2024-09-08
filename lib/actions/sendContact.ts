@@ -34,24 +34,29 @@ export async function sendContact(data: ContactFormData) {
       console.log('Email sent')
     } catch (error: unknown) {
       console.error('Failed to send email due to an unexpected error.')
-      let errorMessage = 'An unknown error occurred.'
-      let errorCode = 'UNKNOWN_ERROR'
 
       if (error instanceof Error) {
         console.error('Error message:', error.message)
         // If the error is from SendGrid and includes a response
         if ('response' in error && error.response) {
-          const sgError = error as any
-          errorCode = sgError.response?.statusCode || 'SENDGRID_ERROR'
+          const errorCode = 'SENDGRID_ERROR'
+          const errorMessage = 'An error occurred with the Sendgrid API.'
           console.error('SendGrid error response:', error.response)
+          return {
+            error: { message: errorMessage, code: errorCode },
+            message: 'Request Failed'
+          }
         }
       } else {
+        const errorMessage = 'An unknown error occurred.'
+        const errorCode = 'UNKNOWN_ERROR'
+
         // Not an Error object
         console.error('Unexpected error:', error)
-      }
-      return {
-        error: { message: errorMessage, code: errorCode },
-        message: 'Request Failed'
+        return {
+          error: { message: errorMessage, code: errorCode },
+          message: 'Request Failed'
+        }
       }
     }
 

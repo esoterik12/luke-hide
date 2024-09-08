@@ -1,15 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'locomotive-scroll/dist/locomotive-scroll.css';
-
-.canvas-container {
-  pointer-events: none;
-}
-
-.canvas-content {
-  pointer-events: auto;
-}
 
 @layer utilities {
   .custom-transition-class {

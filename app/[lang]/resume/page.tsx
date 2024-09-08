@@ -5,6 +5,7 @@ import { getDictionary } from '@/lib/utils/dictionary'
 import Image from 'next/image'
 import { languagesArray } from '@/lib/constants/langauges'
 import Link from 'next/link'
+import { skillsContent } from '@/lib/constants/skills'
 
 const ResumePage = async ({
   params: { lang }
@@ -61,10 +62,10 @@ const ResumePage = async ({
               </Link>
               <a
                 className='py-2 text-red-400 hover:underline'
-                href='/images/luke-hide-resume-2024.pdf'
+                href='/luke-hide-cv-developer.pdf'
                 target='_blank'
               >
-                Download PDF. - json / edit pdf!!
+                {resume.headerSection.downloadPdf}
               </a>
             </div>
             <div className='para-text mt-4 flex flex-row flex-wrap gap-6'>
@@ -88,7 +89,7 @@ const ResumePage = async ({
               </div>
               <div className='flex flex-col'>
                 <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  Email
+                  {resume.headerSection.emailTitle}
                 </p>
                 <p>luke.hide@gmail.com</p>
               </div>
@@ -160,7 +161,7 @@ const ResumePage = async ({
         <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
           <div>
             <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
-              Languages
+              {resume.languages.title}
             </h2>
           </div>
 
@@ -168,7 +169,7 @@ const ResumePage = async ({
             {mergedArray.map(item => (
               <div
                 key={item.id}
-                className={`w-42 flex flex-row items-center rounded-full border-2`}
+                className={`flex min-w-44 flex-row items-center rounded-full border-2`}
               >
                 <Image
                   src={item.flagImage}
@@ -190,77 +191,46 @@ const ResumePage = async ({
         <section className='mt-4 flex flex-col border-gray-500'>
           <div>
             <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
-              Additional Skills & Proficiences
+              {resume.skillsSection.title}
             </h2>
           </div>
 
           <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
-            <div
-              className={`flex h-12 w-40 flex-row items-center gap-x-2 rounded-full border-2`}
-            >
-              <Image
-                src='/images/indesign.png'
-                alt='ableton'
-                height={30}
-                width={30}
-                className='ml-2 rounded-xl'
-              />
-              <p className='para-text ml-1 mr-4 font-semibold'>InDesign</p>
-            </div>
-            <div
-              className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
-            >
-              <Image
-                src='/images/premiere-pro.svg'
-                alt='ableton'
-                height={30}
-                width={30}
-                className='m-1 rounded-xl'
-              />
-              <p className='para-text ml-1 mr-4 font-semibold'>Premiere Pro</p>
-            </div>
-            <div
-              className={`flex h-12 w-48 flex-row items-center gap-x-2 rounded-full border-2`}
-            >
-              <Image
-                src='/images/after-effects.svg'
-                alt='ableton'
-                height={30}
-                width={30}
-                className='m-1 rounded-xl'
-              />
-              <p className='para-text ml-1 mr-4 font-semibold'>After Effects</p>
-            </div>
-            <div
-              className={`flex h-12 w-40 flex-row items-center gap-x-2 rounded-full border-2`}
-            >
-              <Image
-                src='/images/ableton.png'
-                alt='ableton'
-                height={30}
-                width={30}
-                className='ml-3 rounded-xl'
-              />
-              <p className='para-text ml-1 mr-4 font-semibold'>Ableton</p>
-            </div>
+            {skillsContent.map(item => (
+              <div
+                key={item.id}
+                className={`flex h-12 w-44 flex-row items-center gap-x-2 rounded-full border-2`}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  height={30}
+                  width={30}
+                  className='ml-2 rounded-xl'
+                />
+                <p className='para-text ml-1 mr-4 font-semibold'>
+                  {item.title}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
         <section className='para-text mt-12 flex flex-col items-center gap-10 border-t-2 border-gray-500'>
-          <p className='para-text  mt-6'>References available on request.</p>
+          <p className='para-text mt-6'>{resume.footerSection.references}</p>
           <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>
             <Link
               className='py-2 text-red-400 hover:underline'
               href={`/${lang}/projects`}
             >
-              {resume.headerSection.projectsLink}
+              {resume.footerSection.projectsLink}
             </Link>
             <a
               className='py-2 text-red-400 hover:underline'
-              href='/images/luke-hide-resume-2024.pdf'
+              href='/luke-hide-cv-developer.pdf'
               target='_blank'
             >
-              Download PDF.
+              {resume.footerSection.downloadPdf}
             </a>
           </div>
         </section>

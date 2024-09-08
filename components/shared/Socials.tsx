@@ -1,8 +1,6 @@
 import SelectIcon from '@/components/icons/SelectIcon'
 
-type Props = {}
-
-const Socials = (props: Props) => {
+const Socials = () => {
   return (
     <div className='flex flex-row gap-2'>
       <SelectIcon

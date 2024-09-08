@@ -1,9 +1,4 @@
-'use client'
-import { useTheme } from 'next-themes'
-
 export default function IconFramerMotion({ classes }: { classes: string }) {
-  const { theme } = useTheme()
-
   return (
     <svg
       height='2500'

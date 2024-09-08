@@ -1,68 +1,40 @@
-This is a [Next.js] project bootstrapped with [`create-next-app`]
+This is a [Next.js](https://nextjs.org) project bootstrapped with
+[`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Done:
+## Getting Started
 
-- contact page
-  - top margin
-  - expand
-  - add text
+# i18n support:
+- middleware.ts setup to redirect for locales en, fr, es, zh
+- uses json files in dictionaries folders
+- dependent on negotiator package / npm i negotiator / npm i --save-dev
+  @types/negotiator
+- npm i @formatjs/intl-localematcher
+- i18n.config.ts
+- [lang] folder for dynamic route in app directory
+- Add generateStaticParams to layout.tsx
+- LocaleSwitcher component uses on svg flags in /public/images/flags
 
-- projects
-  - add json text
-  - theme light text
-  - responsive text size
-  - NextJS logo wtf
-  - hover on repo link
-  - description text color - theme
-  - add framer motion to features of portfolio
-  - light theme background
-  - center features text horizontally
-  - tech text responsive
+# prettier and prettier plugin for tailwind
+- npm install -D prettier prettier-plugin-tailwindcss
 
-- resume
-  - text size
-  - pdf link
-  - add framwer motion to styling and design
+# Taiwlind custom classes:
+- A few tailwind custom classes for text in /app/[lang]/global.css
 
-- navbar
-  - link hover effect
+# Theme support:
+- Add darkMode: 'class' to tailwind.config.ts
+- npm i next-themes
+- wrap layout in <ThemeProvider>
+- Add attribute='class' defaultTheme='dark' props to ThemeProvider
 
-- homepage
-  - buttons animated etc
+# Icons:
+- Using custom svg icons (free svg code found online) with a SelectIcon
+  component to select icons in use - /components/icons
 
+# Framer-motion:
+- Used in basic fade in and out animations for homepage and projects page
 
-## Done Today (09/04):
-
-- projects
-  - NextJS and Postgres and ThreeJS Icon
-
-- resume:
-  - make smaller skills
-  - contact link / projects link at bottom
-
-- homepage:
-  - general concept based on framer
-
-- file structure:
-  - clean up old files
-
-## TODO - Today (09/04)
-
-- SEO basics from e-nite website
-- error pages
-- error handlging like in contact
-- not found
-- clean up console logs
-- loading pages
-
-## Final:
-- i18n:
-  - add all new text
-  - update all eng text in others
-  - proofread
-
-- add some comments
-
-- ADD a real CV
-
-- add actual socials links
+# React-hook-form /w zod:
+- Contact page uses react hook form with zod as dependencies
+- npm i react-hook-form zod @hookform/resolvers 
+- npm i @sendgrid/mail
+- Sendgrid used to send myself an email with server action

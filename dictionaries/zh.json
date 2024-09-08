@@ -1,9 +1,9 @@
 {
   "navigation": {
-    "home": "首頁",
-    "contact": "聯絡方式",
-    "projects": "項目",
-    "resume": "履歷"
+    "home": "Home",
+    "contact": "Contact",
+    "projects": "Projects",
+    "resume": "Resume"
   },
   "homepage": {
     "title": "Hi, I'm Luke.",
@@ -22,208 +22,218 @@
   "projects": [
     {
       "title": "Next Chinese",
-      "description": "傳統中文閃卡應用程序，包含8,000個單詞和句子生成。",
+      "description": "Flashcard app with 8,000 words & sentence generation.",
       "features": [
-        "ChatGPT API 生成上下文句子和翻譯。",
-        "根據學習結果更新數據庫。",
-        "數據庫搜索功能。",
-        "Clerk 身份驗證。"
+        "ChatGPT API generating context sentences & translations.",
+        "Database updates depending on learning outcome.",
+        "Database search.",
+        "Clerk authentication."
       ]
     },
     {
       "title": "E-Nite | Party Services",
-      "description": "燈光和音響租賃服務及網上商店。",
+      "description": "Online store and rental services.",
       "features": [
-        "支持三種語言的 i18n。",
-        "使用 Redux ToolKit 的購物車。",
-        "Sendgrid 電子郵件 API。",
-        "使用 React Hook Form 的聯繫頁面。"
+        "i18n support for three languages.",
+        "Redux ToolKit shopping cart.",
+        "Sendgrid email API.",
+        "React Hook Form-powered contact page."
       ]
     },
     {
       "title": "Classroom Reactor",
-      "description": "學習管理系統。",
+      "description": "Learning management system.",
       "features": [
-        "由 Slate.js 提供支持的富文本編輯器。",
-        "用於用戶、課程、模塊和評論的 CRUD 功能。",
-        "服務器操作。",
-        "複雜的數據庫功能，如最近活動管道。",
-        "Clerk 用戶身份驗證以及用戶角色和權限管理。"
+        "Text Editor powered by Slate.js.",
+        "CRUD for users, courses, modules, and comments.",
+        "Server actions.",
+        "Recent activity feed.",
+        "Clerk authentication, user roles, permissions."
       ]
     },
     {
       "title": "Reactive Games",
-      "description": "教師的課堂遊戲和工作表生成器。",
+      "description": "Classroom game and worksheet generator for teachers.",
       "features": [
-        "由 NextAuth 和 PostgreSQL 提供支持的身份驗證。",
-        "Redux Tool Kit 狀態管理。",
-        "由 PostgreSQL 提供支持的用戶作品和創作的 CRUD 功能。",
-        "jsPDF 文件導出。",
-        "自定義輸入驗證功能。"
+        "NextAuth and PostgeSQL-powered authentication.",
+        "Redux Tool Kit state management.",
+        "PostgreSQL-powered CRUD functionality for user work and creations.",
+        "jsPDF file exports.",
+        "Custom input validation functions."
       ]
     },
     {
       "title": "Protfolio Page",
-      "description": "由 NextJS 和 ThreeJS 提供支持的 SSR 個人作品集頁面。",
+      "description": "Animated portfolio page in four languages.",
       "features": [
-        "支持四種語言的 i18n。",
+        "i18n support for four languages.",
         "Animations powered by Framer Motion",
-        "動態和交互式3D登陸頁面。"
+        "Dynamic and interactive 3D landing page."
       ]
     }
   ],
   "contact": {
-    "title": "聯絡我",
-    "nameLabel": "您的名字",
+    "title": "Contact me",
     "subtitleOne": "Send a quick message to my email with any inquiries!",
     "subtitleTwo": "Or email me yourself at",
-    "emailLabel": "您的電子郵件",
-    "messageLabel": "您的訊息",
-    "buttonText": "發送",
-    "sendingText": "發送中...",
-    "loadingText": "載入中..."
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "buttonText": "Send",
+    "sendingText": "Sending...",
+    "loadingText": "Loading..."
   },
   "resume": {
     "headerSection": {
-      "titleOne": "專注於React與Next.js的全端開發者",
-      "titleTwo": "教育技術管理員",
-      "bio": "自學全端開發者，擁有超過18個月的全職學習經驗，專注於使用React、Next.js和MongoDB開發動態應用程式。適應性強，渴望學習新工具，並致力於在團隊中積極貢獻。",
-      "projectsLink": "查看我的項目。",
+      "titleOne": "Aspiring Full-stack Developer with a Focus on React and Next.js",
+      "titleTwo": "Educational Technology Administrator",
+      "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
+      "projectsLink": "See my projects here.",
+      "downloadPdf": "Download PDF,",
       "nationalityTitle": "Nationality",
       "nationalityText": "United Kingdom",
-      "ageText": "年齡",
-      "address": "地址",
-      "phone": "電話"
+      "emailTitle": "Email",
+      "ageText": "Age",
+      "address": "Address",
+      "phone": "Phone"
+    },
+    "skillsSection": {
+      "title": "Additional Skills & Proficiences"
+    },
+    "footerSection": {
+      "references": "References available on request.",
+      "projectsLink": "See my projects here.",
+      "downloadPdf": "Download PDF,"
     },
     "experience": {
-      "title": "工作經驗",
+      "title": "Work Experience",
       "positions": [
         {
-          "role": "學習管理系統管理員",
-          "company": "BigByte 教育機構",
-          "location": "台北，台灣",
-          "dates": "2019年8月 - 2023年10月",
+          "role": "Learning Management System Administrator",
+          "company": "BigByte Education",
+          "location": "Taipei, Taiwan",
+          "dates": "August 2019 - October 2023",
           "responsibilities": [
-            "管理Canvas學習管理系統，為500-700名用戶提供穩定和一致的數據及用戶體驗。",
-            "負責用戶帳戶、權限以及內容更新的管理，注重可靠性與一致性。",
-            "通過創建易於使用的首頁，改善家長與學生的用戶體驗，提供每週學習內容的總結。",
-            "每天提供技術支持並為所有員工、學生和家長提供培訓。",
-            "領導一個四人小組，在三年間完成對CCSS Wonders 2020課程的全面更新。",
-            "創建核心課程評估，包括管理線上材料、設計印刷材料、校對及通過定期更新進行版本控制。",
-            "創建補充數位材料，分發至六個公司分支機構，並被65%以上的員工經常使用。"
+            "Administered the Canvas LMS for 500-700 users, focusing on data consistency and enhancing user experience.",
+            "Oversaw user accounts, permissions, and content updates with a focus on reliability and consistency.",
+            "Improved UX for parents and students by creating accessible homepages summarizing weekly content.",
+            "Provided daily technical support and training to all employees, students, and parents.",
+            "Led a team of four members delivering of a full curriculum update to CCSS Wonders 2020 curriculum over three years.",
+            "Created core curriculum assessments. This involved managing online material, designing material for print, proofreading, and version control through regular updates.",
+            "Created supplementary digital material for distribution at six company branches, used regularly by over 65% of employees."
           ]
         },
         {
-          "role": "主任教師",
-          "company": "BigByte 教育機構",
-          "location": "台北，台灣",
-          "dates": "2020年8月 - 2023年10月",
+          "role": "Head Teacher",
+          "company": "BigByte Education",
+          "location": "Taipei, Taiwan",
+          "dates": "August 2020 - October 2023",
           "responsibilities": [
-            "管理並培訓四名全職員工，專注於教授補充英語課程。",
-            "通過主動識別學生需求並實施針對性策略，創建一個熱情和有吸引力的學習環境。",
-            "管理三個不同的分支機構，每年被分配到最具挑戰性的分支。",
-            "通過戰略領導和針對性干預，保持85%以上的學生留存率。",
-            "每週教至少10小時的2小時課程，學生年齡從7歲到18歲，課程在全英語沉浸式環境中進行。",
-            "在三年內進行了員工面試和招聘，成功招聘了七名員工，其中四名員工工作時間超過兩年。"
+            "Managed and trained four full-time employees at a private education branch each year, specialized in teaching supplementary English lessons.",
+            "Created a welcoming and engaging environment by proactively identifying student needs and implementing targeted strategies.",
+            "Managed three different branches over, each year assigned to the branch that represented the biggest challenge for the company.",
+            "Maintained 85%+ student retention through strategic leadership and targeted interventions.",
+            "Taught at least 10 hours per week of 2-hour lessons each year with students aged 7 to 18 in English-immersion environments.",
+            "Interviewed and recruited employees over three years resulting in seven successful hires and four employees staying over two years."
           ]
         },
         {
-          "role": "全職教育工作者",
-          "company": "AGI語言學院",
-          "location": "首爾，韓國",
+          "role": "Full-time Educator",
+          "company": "AGI Language Institute",
+          "location": "Seoul, South Korea",
           "dates": "2014 - 2018"
         },
         {
-          "role": "全職教育工作者",
-          "company": "ENI語言",
-          "location": "安養市，韓國",
+          "role": "Full-time Educator",
+          "company": "ENI Language",
+          "location": "Anyang, South Korea",
           "dates": "2012 - 2014"
         }
       ]
     },
     "education": {
-      "title": "學歷",
+      "title": "Education",
       "degrees": [
         {
-          "degree": "經濟學學士",
-          "institution": "英國東英吉利亞大學",
-          "dates": "2006年9月 - 2009年6月"
+          "degree": "BSc. Economics",
+          "institution": "University of East Anglia, UK",
+          "dates": "September 2006 - June 2009"
         }
       ]
     },
     "technicalProficiency": {
-      "title": "技術能力",
+      "title": "Technical Proficiencies",
       "content": [
         {
           "id": 1,
-          "title": "Web技術",
+          "title": "Web Technologies",
           "content": ["HTML", "JavaScript", "TypeScript", "React", "NextJS"]
         },
         {
           "id": 2,
-          "title": "後端與資料庫",
+          "title": "Back-end and Databases",
           "content": ["Node.js", "MongoDB", "PostgreSQL"]
         },
         {
           "id": 3,
-          "title": "樣式與設計",
-          "content": ["CSS", "Tailwind", "Three.js"]
+          "title": "Styling & Design",
+          "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
         },
         {
           "id": 4,
-          "title": "認證與API",
+          "title": "Auth & APIs",
           "content": ["NextAuth", "Clerk", "SendGrid", "ChatGPT API"]
         },
         {
           "id": 5,
-          "title": "狀態管理",
+          "title": "State Management",
           "content": ["React Context", "Redux Toolkit", "React Hook Form"]
         },
         {
           "id": 6,
-          "title": "國際化",
+          "title": "Internationalization",
           "content": ["i18n"]
         },
         {
           "id": 7,
-          "title": "UI與文件管理",
+          "title": "UI & File Handling",
           "content": ["Slate.js", "jsPDF"]
         },
         {
           "id": 8,
-          "title": "渲染與SEO",
-          "content": ["伺服器端渲染 (SSR)", "SEO優化"]
+          "title": "Rendering & SEO",
+          "content": ["Server-Side Rendering (SSR)", "SEO optimisation"]
         },
         {
           "id": 9,
-          "title": "工具與版本控制",
+          "title": "Tooling & Version Control",
           "content": ["GitHub", "ESLint"]
         }
       ]
     },
     "languages": {
-      "title": "語言能力",
+      "title": "Languages",
       "list": [
         {
-          "language": "英文",
+          "language": "English",
           "level": "C2"
         },
         {
-          "language": "法文",
+          "language": "French",
           "level": "C1"
         },
         {
-          "language": "中文",
+          "language": "Mandarin",
           "level": "B2"
         },
         {
-          "language": "西班牙文",
+          "language": "Spanish",
           "level": "B2"
         }
       ]
     },
     "skills": {
-      "title": "其他技能與熟練度",
+      "title": "Additional Skills & Proficiencies",
       "list": [
         {
           "name": "InDesign",

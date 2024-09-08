@@ -6,94 +6,104 @@
     "resume": "Currículum"
   },
   "homepage": {
-    "title": "Hi, I'm Luke.",
-    "subtitle": "Aspiring full-stack developer",
-    "lineOne": "With a love of languages, spoken and",
-    "lineOneHighlight": "coded",
-    "lineTwo": "Thank you for checking out my portfolio!",
-    "resumeButton": "My Resume",
-    "projectsButton": "My Projects",
-    "contactButton": "Contact Me"
+    "title": "Hola, soy Luke.",
+    "subtitle": "Desarrollador full-stack aspirante",
+    "lineOne": "Con amor por los idiomas, tanto hablados como",
+    "lineOneHighlight": "codificados",
+    "lineTwo": "¡Gracias por visitar mi portafolio!",
+    "resumeButton": "Mi Currículum",
+    "projectsButton": "Mis Proyectos",
+    "contactButton": "Contáctame"
   },
-  "projectsLanding" : {
-    "title": "Projects",
-    "subtitle": "My Work"
+  "projectsLanding": {
+    "title": "Proyectos",
+    "subtitle": "Mi Trabajo"
   },
   "projects": [
     {
       "title": "Next Chinese",
-      "description": "Aplicación de tarjetas de memoria en mandarín tradicional con 8,000 palabras y generación de frases.",
+      "description": "Aplicación de tarjetas con 8,000 palabras y generación de oraciones.",
       "features": [
-        "API de ChatGPT generando frases de contexto y traducciones.",
+        "API de ChatGPT generando oraciones de contexto y traducciones.",
         "Actualizaciones de la base de datos según el resultado del aprendizaje.",
         "Búsqueda en la base de datos.",
         "Autenticación con Clerk."
       ]
     },
     {
-      "title": "E-Nite | Party Services",
-      "description": "Servicios de alquiler de luz y sonido y tienda en línea.",
+      "title": "E-Nite | Servicios para Fiestas",
+      "description": "Tienda en línea y servicios de alquiler.",
       "features": [
-        "Soporte i18n para tres idiomas.",
-        "Carrito de compras con Redux ToolKit.",
-        "API de correo electrónico Sendgrid.",
-        "Página de contacto potenciada por React Hook Form."
+        "Soporte de i18n para tres idiomas.",
+        "Carrito de compras con Redux Toolkit.",
+        "API de correo electrónico de Sendgrid.",
+        "Página de contacto impulsada por React Hook Form."
       ]
     },
     {
       "title": "Classroom Reactor",
-      "description": "Sistema de gestión del aprendizaje.",
+      "description": "Sistema de gestión de aprendizaje.",
       "features": [
-        "Editor de texto enriquecido potenciado por Slate.js.",
-        "Funcionalidad CRUD para usuarios, cursos, módulos y comentarios.",
-        "Acciones de servidor.",
-        "Funciones complejas de base de datos como el pipeline de actividad reciente.",
-        "Autenticación de usuario con Clerk y gestión de roles y permisos."
+        "Editor de texto impulsado por Slate.js.",
+        "CRUD para usuarios, cursos, módulos y comentarios.",
+        "Acciones del servidor.",
+        "Feed de actividad reciente.",
+        "Autenticación con Clerk, roles de usuario, permisos."
       ]
     },
     {
       "title": "Reactive Games",
-      "description": "Generador de juegos y hojas de trabajo para maestros.",
+      "description": "Generador de juegos y hojas de trabajo para profesores.",
       "features": [
-        "Autenticación potenciada por NextAuth y PostgreSQL.",
-        "Gestión de estado con Redux Tool Kit.",
-        "Funcionalidad CRUD potenciada por PostgreSQL para trabajos y creaciones de usuarios.",
+        "Autenticación con NextAuth y PostgreSQL.",
+        "Gestión de estado con Redux Toolkit.",
+        "Funcionalidad CRUD con PostgreSQL para el trabajo y creaciones de los usuarios.",
         "Exportación de archivos con jsPDF.",
-        "Funciones personalizadas de validación de entrada."
+        "Funciones de validación de entrada personalizadas."
       ]
     },
     {
-      "title": "Protfolio Page",
-      "description": "Página de portafolio SSR potenciada por NextJS y ThreeJS.",
+      "title": "Página de Portafolio",
+      "description": "Página de portafolio animada en cuatro idiomas.",
       "features": [
-        "Soporte i18n para cuatro idiomas.",
-        "Animations powered by Framer Motion",
-        "Página de aterrizaje dinámica e interactiva en 3D."
+        "Soporte de i18n para cuatro idiomas.",
+        "Animaciones impulsadas por Framer Motion.",
+        "Página de inicio dinámica e interactiva en 3D."
       ]
     }
   ],
   "contact": {
-    "title": "Contácteme",
-    "nameLabel": "Su nombre",
-    "subtitleOne": "Send a quick message to my email with any inquiries!",
-    "subtitleTwo": "Or email me yourself at",
-    "emailLabel": "Su email",
-    "messageLabel": "Su mensaje",
+    "title": "Contáctame",
+    "subtitleOne": "¡Envíame un mensaje rápido a mi correo con cualquier consulta!",
+    "subtitleTwo": "O envíame un correo directamente a",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Tu correo electrónico",
+    "messageLabel": "Tu mensaje",
     "buttonText": "Enviar",
     "sendingText": "Enviando...",
     "loadingText": "Cargando..."
   },
   "resume": {
     "headerSection": {
-      "titleOne": "Desarrollador Full-stack en Formación con Enfoque en React y Next.js",
+      "titleOne": "Desarrollador Full-stack Aspirante con un Enfoque en React y Next.js",
       "titleTwo": "Administrador de Tecnología Educativa",
-      "bio": "Desarrollador full-stack autodidacta con más de 18 meses de estudio a tiempo completo, especializado en la creación de aplicaciones dinámicas con React, Next.js y MongoDB. Adaptable, deseoso de aprender nuevas herramientas y comprometido a contribuir positivamente en entornos de equipo.",
-      "projectsLink": "Ver mis proyectos aquí.",
-      "nationalityTitle": "Nationality",
-      "nationalityText": "United Kingdom",
+      "bio": "Desarrollador full-stack autodidacta con más de 18 meses de estudio a tiempo completo, enfocado en la creación de aplicaciones dinámicas usando React, Next.js y MongoDB. Adaptable, con ganas de aprender nuevas herramientas y comprometido a contribuir positivamente en entornos de equipo.",
+      "projectsLink": "Mira mis proyectos aquí.",
+      "downloadPdf": "Descargar PDF",
+      "nationalityTitle": "Nacionalidad",
+      "nationalityText": "Reino Unido",
+      "emailTitle": "Correo Electrónico",
       "ageText": "Edad",
       "address": "Dirección",
       "phone": "Teléfono"
+    },
+    "skillsSection": {
+      "title": "Habilidades y Competencias Adicionales"
+    },
+    "footerSection": {
+      "references": "Referencias disponibles bajo petición.",
+      "projectsLink": "Mira mis proyectos aquí.",
+      "downloadPdf": "Descargar PDF"
     },
     "experience": {
       "title": "Experiencia Laboral",
@@ -104,22 +114,22 @@
           "location": "Taipéi, Taiwán",
           "dates": "Agosto 2019 - Octubre 2023",
           "responsibilities": [
-            "Administré el LMS Canvas para 500-700 usuarios, enfocándome en la consistencia de datos y mejorando la experiencia del usuario.",
-            "Supervisé cuentas de usuarios, permisos y actualizaciones de contenido con un enfoque en la fiabilidad y la coherencia.",
-            "Mejoré la UX para padres y estudiantes creando páginas de inicio accesibles que resumían el contenido semanal.",
-            "Brindé soporte técnico diario y capacitación a todos los empleados, estudiantes y padres.",
-            "Lideré un equipo de cuatro miembros en la entrega de una actualización completa del plan de estudios CCSS Wonders 2020 durante tres años.",
-            "Creé evaluaciones del currículo central, gestionando material en línea, diseñando material impreso, revisando y controlando versiones con actualizaciones regulares.",
-            "Creé material digital complementario para distribución en seis sucursales de la empresa, utilizado regularmente por más del 65% de los empleados."
+            "Administré el LMS de Canvas para 500-700 usuarios, centrándome en la coherencia de datos y mejorando la experiencia del usuario.",
+            "Supervisé las cuentas de usuario, permisos y actualizaciones de contenido con un enfoque en la fiabilidad y consistencia.",
+            "Mejoré la experiencia de usuario para padres y estudiantes creando páginas de inicio accesibles que resumían el contenido semanal.",
+            "Proporcioné soporte técnico diario y formación a todos los empleados, estudiantes y padres.",
+            "Lideré un equipo de cuatro personas que entregó una actualización completa del currículo CCSS Wonders 2020 durante tres años.",
+            "Creé evaluaciones del currículo principal. Esto incluyó la gestión de material en línea, el diseño de material impreso, la corrección de pruebas y el control de versiones mediante actualizaciones regulares.",
+            "Creé material digital complementario para su distribución en seis sucursales de la empresa, utilizado regularmente por más del 65% de los empleados."
           ]
         },
         {
-          "role": "Profesor Principal",
+          "role": "Profesor Jefe",
           "company": "BigByte Education",
           "location": "Taipéi, Taiwán",
           "dates": "Agosto 2020 - Octubre 2023",
           "responsibilities": [
-            "Gestioné y capacité a cuatro empleados a tiempo completo en una sucursal privada especializada en la enseñanza de clases de inglés complementarias.",
+            "Gestioné y entrené a cuatro empleados a tiempo completo en una sucursal privada cada año, especializado en la enseñanza de clases complementarias de inglés.",
             "Creé un ambiente acogedor y atractivo al identificar proactivamente las necesidades de los estudiantes e implementar estrategias específicas.",
             "Gestioné tres sucursales diferentes, asignado cada año a la sucursal que representaba el mayor desafío para la empresa.",
             "Mantuve una retención estudiantil superior al 85% mediante un liderazgo estratégico y una intervención focalizada.",
@@ -128,13 +138,13 @@
           ]
         },
         {
-          "role": "Profesor a Tiempo Completo",
+          "role": "Educador a Tiempo Completo",
           "company": "AGI Language Institute",
           "location": "Seúl, Corea del Sur",
           "dates": "2014 - 2018"
         },
         {
-          "role": "Profesor a Tiempo Completo",
+          "role": "Educador a Tiempo Completo",
           "company": "ENI Language",
           "location": "Anyang, Corea del Sur",
           "dates": "2012 - 2014"
@@ -167,7 +177,7 @@
         {
           "id": 3,
           "title": "Estilización y Diseño",
-          "content": ["CSS", "Tailwind", "Three.js"]
+          "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
         },
         {
           "id": 4,
@@ -192,10 +202,7 @@
         {
           "id": 8,
           "title": "Renderizado y SEO",
-          "content": [
-            "Renderizado en el Lado del Servidor (SSR)",
-            "Optimización SEO"
-          ]
+          "content": ["Renderizado en el Lado del Servidor (SSR)", "Optimización SEO"]
         },
         {
           "id": 9,
@@ -226,7 +233,7 @@
       ]
     },
     "skills": {
-      "title": "Habilidades y Competencias Adicionales",
+      "title": "Habilidades Adicionales y Competencias",
       "list": [
         {
           "name": "InDesign",

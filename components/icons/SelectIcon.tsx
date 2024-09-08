@@ -77,13 +77,7 @@ export default function SelectIcon({
       icon = <IconTypeScript classes={iconClasses} hslColor={hslColor} />
       break
     case 'Three.js':
-      icon = (
-        <IconThreeJS
-          classes={iconClasses}
-          hslColor={hslColor}
-          fillHex={fillHex}
-        />
-      )
+      icon = <IconThreeJS classes={iconClasses} hslColor={hslColor} />
       break
     case 'CSS':
       icon = <IconCSS classes={iconClasses} />

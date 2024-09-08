@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from 'next-themes'
 import NavHeader from '@/components/layout/NavHeader'
-import Providers from '@/components/shared/Providers'
 import BotBarMobileOnly from '@/components/layout/BotBarMobileOnly'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -56,13 +56,13 @@ export default function RootLayout({
   return (
     <html lang={params.lang} suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-white w-full text-gray-900 dark:bg-gray-900 dark:text-white`}
+        className={`${inter.className} w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-white`}
       >
-        <Providers>
+        <ThemeProvider attribute='class' defaultTheme='dark'>
           <NavHeader lang={params.lang} />
           <BotBarMobileOnly lang={params.lang} />
           {children}
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )

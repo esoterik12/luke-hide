@@ -4,11 +4,9 @@ import { useTheme } from 'next-themes'
 export default function IconThreeJS({
   classes,
   hslColor,
-  fillHex = '#00ffff'
 }: {
   classes: string
   hslColor: string | undefined
-  fillHex: string | undefined
 }) {
   const { theme } = useTheme()
 

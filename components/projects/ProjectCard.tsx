@@ -19,7 +19,7 @@ type ProjectCardProps = {
   repo: string
 }
 
-const ProjectCardTest = ({
+const ProjectCard = ({
   title,
   image,
   url,
@@ -92,4 +92,4 @@ const ProjectCardTest = ({
   )
 }
 
-export default ProjectCardTest
+export default ProjectCard

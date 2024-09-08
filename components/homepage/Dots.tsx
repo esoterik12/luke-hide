@@ -7,7 +7,7 @@ const circleArray = [1, 2, 3, 4, 5, 6, 7]
 
 const Dots = () => {
   return (
-    <div className='flex flex-row items-end gap-8 p-6'>
+    <div className='flex flex-row items-end gap-2 md:gap-8 p-2 md:p-6'>
       {rowArray.map((item, outerIdx) => (
         <motion.div
           initial={{
@@ -35,10 +35,10 @@ const Dots = () => {
           }}
           viewport={{ once: false }}
           key={item}
-          className='flex flex-col gap-10'
+          className='flex flex-col gap-4 md:gap-10'
         >
           {circleArray.map(item => (
-            <div key={item} className='h-4 w-4 rounded-full bg-red-400'></div>
+            <div key={item} className='h-2 w-2 md:h-4 md:w-4 rounded-full bg-red-400'></div>
           ))}
         </motion.div>
       ))}

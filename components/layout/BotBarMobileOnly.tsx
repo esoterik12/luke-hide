@@ -34,7 +34,7 @@ const BotBarMobileOnly = async ({ lang }: { lang: Locale }) => {
           <div key={item.id} className='m-2 flex flex-col items-center gap-2'>
             <NavLink
               classes='text-light-1 flex flex-col items-center text-sm'
-              href={`/${lang}/item.link`}
+              href={`/${lang}/${item.link}`}
             >
               <SelectIcon iconClasses='h-6 w-6' iconSelection={item.icon} />
               <p className='text-[15px]'>{item.name}</p>

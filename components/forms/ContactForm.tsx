@@ -31,7 +31,6 @@ export default function ContactForm({
   } = langProps
 
   const {
-    control,
     register,
     handleSubmit,
     formState: { errors }

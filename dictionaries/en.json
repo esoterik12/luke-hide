@@ -89,11 +89,21 @@
       "titleTwo": "Educational Technology Administrator",
       "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
       "projectsLink": "See my projects here.",
+      "downloadPdf": "Download PDF",
       "nationalityTitle": "Nationality",
       "nationalityText": "United Kingdom",
+      "emailTitle": "Email",
       "ageText": "Age",
       "address": "Address",
       "phone": "Phone"
+    },
+    "skillsSection": {
+      "title": "Additional Skills & Proficiences"
+    },
+    "footerSection": {
+      "references": "References available on request.",
+      "projectsLink": "See my projects here.",
+      "downloadPdf": "Download PDF"
     },
     "experience": {
       "title": "Work Experience",
