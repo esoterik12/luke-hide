@@ -21,7 +21,7 @@ const ProjectPageLanding = ({
         opacity: 1,
         y: 0,
         transition: {
-          duration: 0.5,
+          duration: 0.3,
           delay: 0.3
         }
       }}
@@ -33,7 +33,7 @@ const ProjectPageLanding = ({
         }
       }}
       viewport={{ once: false }}
-      className='flex min-h-screen flex-col items-center justify-center'
+      className='flex min-h-screen flex-col items-center mt-12 md:mt-0 md:justify-center'
     >
       <h1 className='custom-header font-bold dark:text-gray-200'>
         {projectsLanding.title}
