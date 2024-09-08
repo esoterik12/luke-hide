@@ -17,8 +17,8 @@ export const viewport: Viewport = {
 // Unfinished: i18n integration
 export const metadata: Metadata = {
   // Unfinished: Update URL and description
-  title: 'Luke Hide | Web Services',
-  description: 'Unfinished',
+  title: 'Luke Hide | Full-stack Developer',
+  description: 'Aspiring Full-stack developer with a focus on React and Next.js',
   metadataBase: new URL('https://nextjs-i18n-enite-test.vercel.app/en'),
   openGraph: {
     siteName: 'Luke Hide | Web Services',
