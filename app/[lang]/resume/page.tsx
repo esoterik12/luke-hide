@@ -62,7 +62,7 @@ const ResumePage = async ({
               </Link>
               <a
                 className='py-2 text-red-400 hover:underline'
-                href='/luke-hide-cv-developer.pdf'
+                href='/images/luke-hide-cv-developer.pdf'
                 target='_blank'
               >
                 {resume.headerSection.downloadPdf}
@@ -140,7 +140,7 @@ const ResumePage = async ({
           <div className='flex flex-row flex-wrap gap-y-6'>
             {resume.technicalProficiency.content.map((item, index) => (
               <div
-                className='ml-4 flex w-44 flex-col gap-2 sm:ml-8'
+                className='ml-4 flex w-40 flex-col gap-2 sm:ml-8'
                 key={item.id}
               >
                 <p className='para-text text-gray-400'>{item.title}:</p>
@@ -227,7 +227,7 @@ const ResumePage = async ({
             </Link>
             <a
               className='py-2 text-red-400 hover:underline'
-              href='/luke-hide-cv-developer.pdf'
+              href='/images/luke-hide-cv-developer.pdf'
               target='_blank'
             >
               {resume.footerSection.downloadPdf}

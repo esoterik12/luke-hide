@@ -21,13 +21,14 @@
   },
   "projects": [
     {
-      "title": "Next Chinese",
-      "description": "Aplicación de tarjetas con 8,000 palabras y generación de oraciones.",
+      "title": "Classroom Reactor",
+      "description": "Sistema de gestión de aprendizaje.",
       "features": [
-        "API de ChatGPT generando oraciones de contexto y traducciones.",
-        "Actualizaciones de la base de datos según el resultado del aprendizaje.",
-        "Búsqueda en la base de datos.",
-        "Autenticación con Clerk."
+        "Editor de texto impulsado por Slate.js.",
+        "CRUD para usuarios, cursos, módulos y comentarios.",
+        "Acciones del servidor.",
+        "Feed de actividad reciente.",
+        "Autenticación con Clerk, roles de usuario, permisos."
       ]
     },
     {
@@ -41,14 +42,13 @@
       ]
     },
     {
-      "title": "Classroom Reactor",
-      "description": "Sistema de gestión de aprendizaje.",
+      "title": "Next Chinese",
+      "description": "Aplicación de tarjetas con 8,000 palabras y generación de oraciones.",
       "features": [
-        "Editor de texto impulsado por Slate.js.",
-        "CRUD para usuarios, cursos, módulos y comentarios.",
-        "Acciones del servidor.",
-        "Feed de actividad reciente.",
-        "Autenticación con Clerk, roles de usuario, permisos."
+        "API de ChatGPT generando oraciones de contexto y traducciones.",
+        "Actualizaciones de la base de datos según el resultado del aprendizaje.",
+        "Búsqueda en la base de datos.",
+        "Autenticación con Clerk."
       ]
     },
     {
@@ -202,7 +202,10 @@
         {
           "id": 8,
           "title": "Renderizado y SEO",
-          "content": ["Renderizado en el Lado del Servidor (SSR)", "Optimización SEO"]
+          "content": [
+            "Renderizado en el Lado del Servidor (SSR)",
+            "Optimización SEO"
+          ]
         },
         {
           "id": 9,

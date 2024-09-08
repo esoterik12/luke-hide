@@ -21,13 +21,14 @@
   },
   "projects": [
     {
-      "title": "Next Chinese",
-      "description": "Application de flashcards avec 8 000 mots et génération de phrases.",
+      "title": "Classroom Reactor",
+      "description": "Système de gestion de l'apprentissage.",
       "features": [
-        "API ChatGPT générant des phrases contextuelles et des traductions.",
-        "Mise à jour de la base de données en fonction des résultats d'apprentissage.",
-        "Recherche dans la base de données.",
-        "Authentification via Clerk."
+        "Éditeur de texte avec Slate.js.",
+        "CRUD pour les utilisateurs, cours, modules et commentaires.",
+        "Actions côté serveur.",
+        "Flux d'activité récente.",
+        "Authentification avec Clerk, rôles utilisateur, permissions."
       ]
     },
     {
@@ -41,14 +42,13 @@
       ]
     },
     {
-      "title": "Classroom Reactor",
-      "description": "Système de gestion de l'apprentissage.",
+      "title": "Next Chinese",
+      "description": "Application de flashcards avec 8 000 mots et génération de phrases.",
       "features": [
-        "Éditeur de texte avec Slate.js.",
-        "CRUD pour les utilisateurs, cours, modules et commentaires.",
-        "Actions côté serveur.",
-        "Flux d'activité récente.",
-        "Authentification avec Clerk, rôles utilisateur, permissions."
+        "API ChatGPT générant des phrases contextuelles et des traductions.",
+        "Mise à jour de la base de données en fonction des résultats d'apprentissage.",
+        "Recherche dans la base de données.",
+        "Authentification via Clerk."
       ]
     },
     {

@@ -1,239 +1,239 @@
 {
   "navigation": {
-    "home": "Home",
-    "contact": "Contact",
-    "projects": "Projects",
-    "resume": "Resume"
+    "home": "首頁",
+    "contact": "聯絡",
+    "projects": "專案",
+    "resume": "履歷"
   },
   "homepage": {
-    "title": "Hi, I'm Luke.",
-    "subtitle": "Aspiring full-stack developer",
-    "lineOne": "With a love of languages, spoken and",
-    "lineOneHighlight": "coded",
-    "lineTwo": "Thank you for checking out my portfolio!",
-    "resumeButton": "My Resume",
-    "projectsButton": "My Projects",
-    "contactButton": "Contact Me"
+    "title": "嗨，我是 Luke。",
+    "subtitle": "準備成為全端開發者",
+    "lineOne": "對語言充滿熱愛，不論是口語還是",
+    "lineOneHighlight": "程式碼",
+    "lineTwo": "感謝您查看我的作品集！",
+    "resumeButton": "我的履歷",
+    "projectsButton": "我的專案",
+    "contactButton": "聯絡我"
   },
   "projectsLanding": {
-    "title": "Projects",
-    "subtitle": "My Work"
+    "title": "專案",
+    "subtitle": "我的作品"
   },
   "projects": [
     {
-      "title": "Next Chinese",
-      "description": "Flashcard app with 8,000 words & sentence generation.",
-      "features": [
-        "ChatGPT API generating context sentences & translations.",
-        "Database updates depending on learning outcome.",
-        "Database search.",
-        "Clerk authentication."
-      ]
-    },
-    {
-      "title": "E-Nite | Party Services",
-      "description": "Online store and rental services.",
-      "features": [
-        "i18n support for three languages.",
-        "Redux ToolKit shopping cart.",
-        "Sendgrid email API.",
-        "React Hook Form-powered contact page."
-      ]
-    },
-    {
       "title": "Classroom Reactor",
-      "description": "Learning management system.",
+      "description": "學習管理系統。",
       "features": [
-        "Text Editor powered by Slate.js.",
-        "CRUD for users, courses, modules, and comments.",
-        "Server actions.",
-        "Recent activity feed.",
-        "Clerk authentication, user roles, permissions."
+        "由 Slate.js 驅動的文字編輯器。",
+        "用戶、課程、模組和評論的 CRUD 功能。",
+        "伺服器操作。",
+        "近期活動流。",
+        "Clerk 認證、用戶角色、權限。"
+      ]
+    },
+    {
+      "title": "E-Nite | 派對服務",
+      "description": "線上商店和租賃服務。",
+      "features": [
+        "支援三種語言的 i18n。",
+        "使用 Redux ToolKit 的購物車。",
+        "Sendgrid 電子郵件 API。",
+        "由 React Hook Form 提供的聯絡頁面。"
+      ]
+    },
+    {
+      "title": "Next Chinese",
+      "description": "包含 8,000 個單詞和句子生成的閃卡應用。",
+      "features": [
+        "ChatGPT API 生成上下文句子和翻譯。",
+        "根據學習結果更新數據庫。",
+        "數據庫搜尋功能。",
+        "Clerk 認證。"
       ]
     },
     {
       "title": "Reactive Games",
-      "description": "Classroom game and worksheet generator for teachers.",
+      "description": "為教師設計的課堂遊戲和工作表生成器。",
       "features": [
-        "NextAuth and PostgeSQL-powered authentication.",
-        "Redux Tool Kit state management.",
-        "PostgreSQL-powered CRUD functionality for user work and creations.",
-        "jsPDF file exports.",
-        "Custom input validation functions."
+        "由 NextAuth 和 PostgreSQL 驅動的認證。",
+        "使用 Redux Tool Kit 進行狀態管理。",
+        "使用 PostgreSQL 的 CRUD 功能，用於用戶工作和創作。",
+        "jsPDF 文件導出。",
+        "自訂輸入驗證功能。"
       ]
     },
     {
-      "title": "Protfolio Page",
-      "description": "Animated portfolio page in four languages.",
+      "title": "Portfolio Page",
+      "description": "四種語言的動畫作品集頁面。",
       "features": [
-        "i18n support for four languages.",
-        "Animations powered by Framer Motion",
-        "Dynamic and interactive 3D landing page."
+        "支援四種語言的 i18n。",
+        "由 Framer Motion 驅動的動畫。",
+        "動態且互動的 3D 登入頁面。"
       ]
     }
   ],
   "contact": {
-    "title": "Contact me",
-    "subtitleOne": "Send a quick message to my email with any inquiries!",
-    "subtitleTwo": "Or email me yourself at",
-    "nameLabel": "Your name",
-    "emailLabel": "Your email",
-    "messageLabel": "Your message",
-    "buttonText": "Send",
-    "sendingText": "Sending...",
-    "loadingText": "Loading..."
+    "title": "聯絡我",
+    "subtitleOne": "發送快速訊息到我的電子郵件，有任何詢問！",
+    "subtitleTwo": "或直接發送郵件到",
+    "nameLabel": "您的名字",
+    "emailLabel": "您的電子郵件",
+    "messageLabel": "您的訊息",
+    "buttonText": "發送",
+    "sendingText": "發送中...",
+    "loadingText": "載入中..."
   },
   "resume": {
     "headerSection": {
-      "titleOne": "Aspiring Full-stack Developer with a Focus on React and Next.js",
-      "titleTwo": "Educational Technology Administrator",
-      "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
-      "projectsLink": "See my projects here.",
-      "downloadPdf": "Download PDF,",
-      "nationalityTitle": "Nationality",
-      "nationalityText": "United Kingdom",
-      "emailTitle": "Email",
-      "ageText": "Age",
-      "address": "Address",
-      "phone": "Phone"
+      "titleOne": "準備成為全端開發者，專注於 React 和 Next.js",
+      "titleTwo": "教育科技管理員",
+      "bio": "自學的全端開發者，擁有超過 18 個月的全職學習經驗，專注於使用 React、Next.js 和 MongoDB 開發動態應用程式。適應力強，渴望學習新工具，致力於在團隊環境中做出積極貢獻。",
+      "projectsLink": "查看我的專案。",
+      "downloadPdf": "下載 PDF",
+      "nationalityTitle": "國籍",
+      "nationalityText": "英國",
+      "emailTitle": "電子郵件",
+      "ageText": "年齡",
+      "address": "地址",
+      "phone": "電話"
     },
     "skillsSection": {
-      "title": "Additional Skills & Proficiences"
+      "title": "額外技能與專長"
     },
     "footerSection": {
-      "references": "References available on request.",
-      "projectsLink": "See my projects here.",
-      "downloadPdf": "Download PDF,"
+      "references": "可按要求提供推薦信。",
+      "projectsLink": "查看我的專案。",
+      "downloadPdf": "下載 PDF"
     },
     "experience": {
-      "title": "Work Experience",
+      "title": "工作經驗",
       "positions": [
         {
-          "role": "Learning Management System Administrator",
+          "role": "學習管理系統管理員",
           "company": "BigByte Education",
-          "location": "Taipei, Taiwan",
-          "dates": "August 2019 - October 2023",
+          "location": "台北，台灣",
+          "dates": "2019 年 8 月 - 2023 年 10 月",
           "responsibilities": [
-            "Administered the Canvas LMS for 500-700 users, focusing on data consistency and enhancing user experience.",
-            "Oversaw user accounts, permissions, and content updates with a focus on reliability and consistency.",
-            "Improved UX for parents and students by creating accessible homepages summarizing weekly content.",
-            "Provided daily technical support and training to all employees, students, and parents.",
-            "Led a team of four members delivering of a full curriculum update to CCSS Wonders 2020 curriculum over three years.",
-            "Created core curriculum assessments. This involved managing online material, designing material for print, proofreading, and version control through regular updates.",
-            "Created supplementary digital material for distribution at six company branches, used regularly by over 65% of employees."
+            "管理 500-700 名用戶的 Canvas LMS，專注於數據一致性和提升用戶體驗。",
+            "監督用戶帳戶、權限和內容更新，確保可靠性和一致性。",
+            "通過創建可訪問的首頁來改善家長和學生的用戶體驗，總結每週內容。",
+            "提供每日技術支援和培訓給所有員工、學生和家長。",
+            "領導四人團隊，將完整課程更新交付至 CCSS Wonders 2020 課程，歷時三年。",
+            "創建核心課程評估，包括管理線上材料、設計印刷材料、校對和版本控制。",
+            "為公司六個分支創建補充數位材料，超過 65% 的員工定期使用。"
           ]
         },
         {
-          "role": "Head Teacher",
+          "role": "教學主任",
           "company": "BigByte Education",
-          "location": "Taipei, Taiwan",
-          "dates": "August 2020 - October 2023",
+          "location": "台北，台灣",
+          "dates": "2020 年 8 月 - 2023 年 10 月",
           "responsibilities": [
-            "Managed and trained four full-time employees at a private education branch each year, specialized in teaching supplementary English lessons.",
-            "Created a welcoming and engaging environment by proactively identifying student needs and implementing targeted strategies.",
-            "Managed three different branches over, each year assigned to the branch that represented the biggest challenge for the company.",
-            "Maintained 85%+ student retention through strategic leadership and targeted interventions.",
-            "Taught at least 10 hours per week of 2-hour lessons each year with students aged 7 to 18 in English-immersion environments.",
-            "Interviewed and recruited employees over three years resulting in seven successful hires and four employees staying over two years."
+            "每年管理和培訓四名全職員工，專注於補充英語課程的教學。",
+            "通過主動識別學生需求和實施目標策略來創建一個受歡迎且引人入勝的環境。",
+            "每年管理三個不同分支，每年分配至公司挑戰最大的分支。",
+            "通過策略性領導和目標干預保持 85% 以上的學生留存率。",
+            "每年教授至少 10 小時的 2 小時課程，對象為 7 至 18 歲的學生，在英語沉浸環境中進行。",
+            "在三年間進行員工面試和招聘，共成功招聘七名員工，其中四名員工在公司工作超過兩年。"
           ]
         },
         {
-          "role": "Full-time Educator",
+          "role": "全職教育工作者",
           "company": "AGI Language Institute",
-          "location": "Seoul, South Korea",
+          "location": "首爾，南韓",
           "dates": "2014 - 2018"
         },
         {
-          "role": "Full-time Educator",
+          "role": "全職教育工作者",
           "company": "ENI Language",
-          "location": "Anyang, South Korea",
+          "location": "安養，南韓",
           "dates": "2012 - 2014"
         }
       ]
     },
     "education": {
-      "title": "Education",
+      "title": "教育背景",
       "degrees": [
         {
-          "degree": "BSc. Economics",
-          "institution": "University of East Anglia, UK",
-          "dates": "September 2006 - June 2009"
+          "degree": "經濟學士",
+          "institution": "英國東英吉利大學",
+          "dates": "2006 年 9 月 - 2009 年 6 月"
         }
       ]
     },
     "technicalProficiency": {
-      "title": "Technical Proficiencies",
+      "title": "技術專長",
       "content": [
         {
           "id": 1,
-          "title": "Web Technologies",
+          "title": "網頁技術",
           "content": ["HTML", "JavaScript", "TypeScript", "React", "NextJS"]
         },
         {
           "id": 2,
-          "title": "Back-end and Databases",
+          "title": "後端和數據庫",
           "content": ["Node.js", "MongoDB", "PostgreSQL"]
         },
         {
           "id": 3,
-          "title": "Styling & Design",
+          "title": "樣式和設計",
           "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
         },
         {
           "id": 4,
-          "title": "Auth & APIs",
+          "title": "認證和 API",
           "content": ["NextAuth", "Clerk", "SendGrid", "ChatGPT API"]
         },
         {
           "id": 5,
-          "title": "State Management",
+          "title": "狀態管理",
           "content": ["React Context", "Redux Toolkit", "React Hook Form"]
         },
         {
           "id": 6,
-          "title": "Internationalization",
+          "title": "國際化",
           "content": ["i18n"]
         },
         {
           "id": 7,
-          "title": "UI & File Handling",
+          "title": "UI 和文件處理",
           "content": ["Slate.js", "jsPDF"]
         },
         {
           "id": 8,
-          "title": "Rendering & SEO",
-          "content": ["Server-Side Rendering (SSR)", "SEO optimisation"]
+          "title": "渲染和 SEO",
+          "content": ["伺服器端渲染 (SSR)", "SEO 優化"]
         },
         {
           "id": 9,
-          "title": "Tooling & Version Control",
+          "title": "工具和版本控制",
           "content": ["GitHub", "ESLint"]
         }
       ]
     },
     "languages": {
-      "title": "Languages",
+      "title": "語言能力",
       "list": [
         {
-          "language": "English",
+          "language": "英語",
           "level": "C2"
         },
         {
-          "language": "French",
+          "language": "法語",
           "level": "C1"
         },
         {
-          "language": "Mandarin",
+          "language": "中文",
           "level": "B2"
         },
         {
-          "language": "Spanish",
+          "language": "西班牙語",
           "level": "B2"
         }
       ]
     },
     "skills": {
-      "title": "Additional Skills & Proficiencies",
+      "title": "額外技能與專長",
       "list": [
         {
           "name": "InDesign",

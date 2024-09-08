@@ -21,13 +21,14 @@
   },
   "projects": [
     {
-      "title": "Next Chinese",
-      "description": "Flashcard app with 8,000 words & sentence generation.",
+      "title": "Classroom Reactor",
+      "description": "Learning management system.",
       "features": [
-        "ChatGPT API generating context sentences & translations.",
-        "Database updates depending on learning outcome.",
-        "Database search.",
-        "Clerk authentication."
+        "Text Editor powered by Slate.js.",
+        "CRUD for users, courses, modules, and comments.",
+        "Server actions.",
+        "Recent activity feed.",
+        "Clerk authentication, user roles, permissions."
       ]
     },
     {
@@ -41,14 +42,13 @@
       ]
     },
     {
-      "title": "Classroom Reactor",
-      "description": "Learning management system.",
+      "title": "Next Chinese",
+      "description": "Flashcard app with 8,000 words & sentence generation.",
       "features": [
-        "Text Editor powered by Slate.js.",
-        "CRUD for users, courses, modules, and comments.",
-        "Server actions.",
-        "Recent activity feed.",
-        "Clerk authentication, user roles, permissions."
+        "ChatGPT API generating context sentences & translations.",
+        "Database updates depending on learning outcome.",
+        "Database search.",
+        "Clerk authentication."
       ]
     },
     {
