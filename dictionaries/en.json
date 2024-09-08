@@ -81,7 +81,11 @@
     "messageLabel": "Your message",
     "buttonText": "Send",
     "sendingText": "Sending...",
-    "loadingText": "Loading..."
+    "loadingText": "Loading...",
+    "thankYou": "Thank you",
+    "yourMessage": "Your message:",
+    "hasBeenSentTo": "has been sent to",
+    "error": "There was an unexpected error!"
   },
   "resume": {
     "headerSection": {
@@ -91,7 +95,7 @@
       "projectsLink": "See my projects here.",
       "downloadPdf": "Download PDF",
       "nationalityTitle": "Nationality",
-      "nationalityText": "United Kingdom",
+      "nationalityText": "British",
       "emailTitle": "Email",
       "ageText": "Age",
       "address": "Address",

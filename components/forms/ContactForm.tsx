@@ -8,7 +8,7 @@ import { TextareaInput } from './TextareaInput'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { contactSchema } from '@/lib/schemas/schema'
 import { sendContact } from '@/lib/actions/sendContact'
-import { ContactFormText } from '@/lib/types/types'
+import { ContactFormText, SendgridResponse } from '@/lib/types/types'
 import Loading from '../ui/Loading'
 
 export default function ContactForm({
@@ -16,19 +16,11 @@ export default function ContactForm({
 }: {
   langProps: ContactFormText
 }) {
-  const [serverResponse, setServerResponse] = useState<string | null>(null)
+  const [serverResponse, setServerResponse] = useState<SendgridResponse | null>(
+    null
+  )
+
   const [loading, setLoading] = useState(false)
-  const {
-    title,
-    subtitleOne,
-    subtitleTwo,
-    nameLabel,
-    emailLabel,
-    messageLabel,
-    buttonText,
-    sendingText,
-    loadingText
-  } = langProps
 
   const {
     register,
@@ -53,10 +45,7 @@ export default function ContactForm({
       const response = await sendContact(data)
       console.log('server action response: ', response)
       if (response?.message) {
-        setServerResponse(response.message)
-      }
-      if (response?.error) {
-        setServerResponse(response.message)
+        setServerResponse(response)
       }
     } catch (error) {
       console.log('server action error: ', error)
@@ -69,32 +58,50 @@ export default function ContactForm({
     return (
       <div className='flex items-center justify-center px-4 pt-8'>
         <div className='h-24 w-full max-w-sm rounded-xl p-4 text-center shadow-sm'>
-          <p className='mb-4 text-xl'>{loadingText}</p>
+          <p className='mb-4 text-xl'>{langProps.loadingText}</p>
           <Loading />
         </div>
       </div>
     )
   }
 
-  if (serverResponse) {
+  if (serverResponse && serverResponse.code === 200 && serverResponse.data) {
+    return (
+      <div className='flex items-center justify-center px-4 pt-8'>
+        <div className='w-full rounded-xl border-gray-200 p-4 text-center shadow-sm'>
+          <p className='text-xl'>{langProps.thankYou}</p>
+          <p className='text-xl text-gray-500'>{langProps.yourMessage}</p>
+          <p className='m-2 rounded-lg border-2 border-red-300 bg-red-200 p-6 text-xl text-black'>
+            {serverResponse.data.text}
+          </p>
+          <p className='text-xl text-gray-500'>{langProps.hasBeenSentTo}</p>
+          <p className='text-xl'>luke.hide@gmail.com</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (serverResponse?.code === 400) {
     return (
       <div className='flex items-center justify-center px-4 pt-8'>
         <div className='h-24 w-full max-w-sm rounded-xl border-gray-200 p-4 text-center shadow-sm'>
-          <p className='text-xl'>{serverResponse}!</p>{' '}
+          <p className='text-xl'>{langProps.error}</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className='mb-16 max-w-[700px]'>
-      <h1 className='ml-1 text-3xl font-semibold'>{title}</h1>
+    <div className='mb-16 mt-10 max-w-[700px]'>
+      <h1 className='ml-1 text-3xl font-semibold'>{langProps.title}</h1>
       <p className='text-md ml-1 pt-2 text-gray-600 dark:text-gray-400 md:text-lg'>
-        {subtitleOne}
+        {langProps.subtitleOne}
       </p>
       <div className='text-md mb-2 ml-1 flex flex-row flex-wrap pb-2 md:text-lg'>
-        <p className='text-gray-600 dark:text-gray-400 para-text'>{subtitleTwo}&nbsp;</p>
-        <p className='font-semibold para-text'>luke.hide@gmail.com</p>
+        <p className='para-text text-gray-600 dark:text-gray-400'>
+          {langProps.subtitleTwo}&nbsp;
+        </p>
+        <p className='para-text font-semibold'>luke.hide@gmail.com</p>
       </div>
       <div>
         <form className='' noValidate action={action}>
@@ -104,7 +111,7 @@ export default function ContactForm({
               type='text'
               id='name'
               loading={loading}
-              label={nameLabel}
+              label={langProps.nameLabel}
               labelClasses='para-text'
               inputClasses='pl-2 w-full'
               {...register('name')}
@@ -116,7 +123,7 @@ export default function ContactForm({
               type='text'
               id='email'
               loading={loading}
-              label={emailLabel}
+              label={langProps.emailLabel}
               labelClasses='para-text'
               inputClasses='pl-2 w-full'
               {...register('email')}
@@ -128,7 +135,7 @@ export default function ContactForm({
             <TextareaInput
               id='text'
               loading={loading}
-              label={messageLabel}
+              label={langProps.messageLabel}
               placeholder=''
               labelClasses='para-text'
               inputClasses='w-full pl-2 h-20 md:h-32 border border-gray-300 rounded-md resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none'
@@ -141,7 +148,7 @@ export default function ContactForm({
             className={`ml-1 w-32 rounded-xl bg-red-200 p-2 text-xl font-semibold text-gray-800 transition-colors duration-300 hover:text-white ${loading ? 'bg-gray-400' : 'hover:bg-gray-400 dark:hover:bg-blue-500'}`}
             disabled={loading}
           >
-            {loading ? `${sendingText}` : `${buttonText}`}
+            {loading ? `${langProps.sendingText}` : `${langProps.buttonText}`}
           </button>
         </form>
       </div>

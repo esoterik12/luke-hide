@@ -81,7 +81,11 @@
     "messageLabel": "Votre message",
     "buttonText": "Envoyer",
     "sendingText": "Envoi...",
-    "loadingText": "Chargement..."
+    "loadingText": "Chargement...",
+    "thankYou": "Merci",
+    "yourMessage": "Votre message :",
+    "hasBeenSentTo": "a été envoyé à",
+    "error": "Une erreur inattendue s'est produite !"
   },
   "resume": {
     "headerSection": {

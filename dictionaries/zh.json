@@ -81,7 +81,11 @@
     "messageLabel": "您的訊息",
     "buttonText": "發送",
     "sendingText": "發送中...",
-    "loadingText": "載入中..."
+    "loadingText": "載入中...",
+    "thankYou": "謝謝",
+    "yourMessage": "您的訊息：",
+    "hasBeenSentTo": "已發送到",
+    "error": "發生了意外錯誤！"
   },
   "resume": {
     "headerSection": {

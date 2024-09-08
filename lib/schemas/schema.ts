@@ -6,7 +6,6 @@ export const contactSchema = z.object({
     .trim()
     .min(2, 'Name is required.')
     .max(255, 'Your name is too long.'),
-  organization: z.string().max(200, '200 is the character limit.').optional(),
   email: z.string().trim().email(),
   text: z
     .string()

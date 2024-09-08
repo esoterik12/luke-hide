@@ -8,7 +8,6 @@ export interface LogoProps {
 
 export interface ContactFormData {
   name: string
-  organization: string
   email: string
   text: string
 }
@@ -23,6 +22,16 @@ export interface ContactFormText {
   buttonText: string
   sendingText: string
   loadingText: string
+  thankYou: string
+  yourMessage: string
+  hasBeenSentTo: string
+  error: string
+}
+
+export interface SendgridResponse {
+  code: number
+  message: string
+  data?: ContactFormData
 }
 
 export interface MergedProject {

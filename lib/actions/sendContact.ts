@@ -6,7 +6,6 @@ import { ContactFormData } from '../types/types'
 export async function sendContact(data: ContactFormData) {
   const result = contactSchema.safeParse({
     name: data.name,
-    organization: data.organization,
     email: data.email,
     text: data.text
   })
@@ -23,7 +22,6 @@ export async function sendContact(data: ContactFormData) {
       text: 'You have recieved a contact request from your portfolio page.',
       html: `
         <p>Contact Name: ${result.data.name}</p>
-        <p>Contact Organization: ${result.data.organization}</p>
         <p>Contact Email: ${result.data.email}</p>
         <p>Message: ${result.data.text}</p>
       `
@@ -39,34 +37,25 @@ export async function sendContact(data: ContactFormData) {
         console.error('Error message:', error.message)
         // If the error is from SendGrid and includes a response
         if ('response' in error && error.response) {
-          const errorCode = 'SENDGRID_ERROR'
-          const errorMessage = 'An error occurred with the Sendgrid API.'
           console.error('SendGrid error response:', error.response)
           return {
-            error: { message: errorMessage, code: errorCode },
-            message: 'Request Failed'
+            code: 400,
+            message: 'An error occurred with the Sendgrid API.'
           }
         }
       } else {
-        const errorMessage = 'An unknown error occurred.'
-        const errorCode = 'UNKNOWN_ERROR'
-
         // Not an Error object
         console.error('Unexpected error:', error)
-        return {
-          error: { message: errorMessage, code: errorCode },
-          message: 'Request Failed'
-        }
+        return { code: 400, message: 'An unknown error occurred.' }
       }
     }
 
     // End sendgrid //
-
     return { code: 200, data: result.data, message: 'Request Successful' }
   }
 
   if (result.error) {
     console.log('error in _actions.ts: ', result.error)
-    return { error: result.error.format(), message: 'Request Failed' }
+    return { code: 400, message: 'Request Failed' }
   }
 }
