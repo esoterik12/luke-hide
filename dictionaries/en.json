@@ -91,7 +91,7 @@
     "headerSection": {
       "titleOne": "Full-stack developer focused on React and Next.js",
       "titleTwo": "Educational Technology Administrator",
-      "bio": "Full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. I am passionate about programming, have strong problem-solving skills, a love for continuous learning, and a background in technical support.",
+      "bio": "After five years working with educational technology, I have become focused on the solutions of programming itself. I have spent the last two years building dynamic applications using React, Next.js, and MongoDB. I am passionate about programming, have strong problem-solving skills, a love for continuous learning, and a background in technical support. I am an English native speaker, fluent in French, and have achieved advanced conversational Mandarin and Spanish.",
       "projectsLink": "See my projects here.",
       "downloadPdf": "Download PDF",
       "nationalityTitle": "Nationality",
@@ -118,12 +118,12 @@
           "location": "Taipei, Taiwan",
           "dates": "September 2018 - October 2023",
           "responsibilities": [
-            "Administered the learning management system (LMS) at a private educational institution with 500-700 users, focusing on data consistency and enhancing user experience.",
-            "Created an automated system for generating yearly reports with LMS data still used at the company today.",
-            "Created digital teaching material for distribution at six company branches, used daily by over 65% of employees.",
+            "Programmed an automated system for generating yearly reports with student data still used at the company today.",
+            "Improved user experience by writing dynamic homepages in HTML summarizing weekly content.",
+            "Created digital teaching materials for distribution at six company branches, used daily by over 65% of employees.",
             "Managed user accounts, permissions, and content updates with a focus on reliability and consistency.",
-            "Improved user experience by creating dynamic homepages summarizing weekly content.",
             "Provided daily technical support and training to all employees, students, and parents.",
+            "Administered the learning management system (LMS) at a private educational institution with 500-700 users, focusing on data consistency and enhancing user experience.",
             "Led a team of four members delivering a full curriculum update over three years."
           ]
         },
@@ -133,15 +133,15 @@
           "location": "Taipei, Taiwan",
           "dates": "April 2023 - Present",
           "responsibilities": [
-            "Built an online rental store for E-Nite Party Services in Lausanne Switzerland showing images, specifications, and pricing for over 100 different products and services using NextJS and React.",
-            "Created a concept for an in-house learning management system, Classroom Reactor, as a hobby project and proof of concept for BigByte Education in Taiwan using NextJS, React, and MongoDB.",
-            "Built an application, Reactive Games, for generating teaching material as a hobby project and resource for coworkers.",
-            "Created a flashcard application for personal use using NextJS, React, and MongoDB for daily study of 8,000 Chinese words."
+            "Using Next.js and React, built an online rental store for E-Nite Party Services in Lausanne Switzerland showing images, specifications, and pricing for over 100 different products and services.",
+            "Created a concept for an in-house learning management system using Next.js, React, and MongoDB, Classroom Reactor, as a hobby project and proof of concept for BigByte Education in Taiwan.",
+            "Built an application using Next.js and PostgreSQL, Reactive Games, for generating teaching material as a hobby project and resource for coworkers.",
+            "Using Next.js, React, and MongoDB, I created a flashcard application for personal use for daily study of 8,000 Chinese words."
           ]
         },
         {
           "role": "Chinese Language Student",
-          "company": "ShuoHao Language Institute",
+          "company": "ShuoHao Language Center",
           "location": "Taipei, Taiwan & Remote",
           "dates": "January 2023 - Present"
         },
@@ -170,7 +170,7 @@
           "dates": "2009 - 2010"
         },
         {
-          "role": "Bachelors of Science in Economics",
+          "role": "Bsc. Economics",
           "company": "University of East Anglia",
           "location": "Norwich, United Kingdom",
           "dates": "2006 - 2009"
