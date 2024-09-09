@@ -113,13 +113,16 @@ const ResumePage = async ({
                 <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
               </div>
               <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
-                <h2 className='para-text font-semibold'>{item.role}</h2>
-                <h3 className='para-text font-semibold'>
-                  {item.location} - {item.company}
-                </h3>
-                <p className='para-text mb-3 text-gray-600 dark:text-gray-400'>
+                <p className='para-text text-gray-600 dark:text-gray-400'>
                   {item.dates}
                 </p>
+                <h2 className='para-text font-semibold'>
+                  {item.role} - {item.location}{' '}
+                  {/* this conditional because freelance work has no company and is ' ' in the json */}
+                  {item.company !== ' ' && ` - ${item.company}`} 
+                </h2>
+                <h3 className='para-text font-semibold'></h3>
+
                 <ul className='list ml-4 list-disc'>
                   {item.responsibilities?.map((item, index) => (
                     <li className='para-text' key={index}>
@@ -140,7 +143,7 @@ const ResumePage = async ({
           <div className='flex flex-row flex-wrap gap-y-6'>
             {resume.technicalProficiency.content.map((item, index) => (
               <div
-                className='ml-4 flex w-40 flex-col gap-2 sm:ml-8'
+                className='ml-2 flex w-40 flex-col gap-2 sm:ml-8'
                 key={item.id}
               >
                 <p className='para-text text-gray-400'>{item.title}:</p>

@@ -89,14 +89,14 @@
   },
   "resume": {
     "headerSection": {
-      "titleOne": "Desarrollador full-stack aspirante con un enfoque en React y Next.js",
+      "titleOne": "Desarrollador full-stack enfocado en React y Next.js",
       "titleTwo": "Administrador de Tecnología Educativa",
-      "bio": "Desarrollador full-stack autodidacta con más de 18 meses de estudio a tiempo completo, enfocado en la creación de aplicaciones dinámicas usando React, Next.js y MongoDB. Adaptable, con ganas de aprender nuevas herramientas y comprometido a contribuir positivamente en entornos de equipo.",
-      "projectsLink": "Mira mis proyectos aquí.",
+      "bio": "Desarrollador full-stack con más de 18 meses de estudio a tiempo completo, enfocado en construir aplicaciones dinámicas usando React, Next.js y MongoDB. Me apasiona la programación, tengo fuertes habilidades para resolver problemas, amo el aprendizaje continuo y tengo experiencia en soporte técnico.",
+      "projectsLink": "Ver mis proyectos aquí.",
       "downloadPdf": "Descargar PDF",
       "nationalityTitle": "Nacionalidad",
-      "nationalityText": "Reino Unido",
-      "emailTitle": "Correo Electrónico",
+      "nationalityText": "Británico",
+      "emailTitle": "Correo electrónico",
       "ageText": "Edad",
       "address": "Dirección",
       "phone": "Teléfono"
@@ -110,36 +110,40 @@
       "downloadPdf": "Descargar PDF"
     },
     "experience": {
-      "title": "Experiencia Laboral",
+      "title": "Experiencia",
       "positions": [
         {
-          "role": "Administrador de Sistema de Gestión de Aprendizaje",
+          "role": "Administrador del Sistema de Gestión de Aprendizaje (LMS)",
           "company": "BigByte Education",
           "location": "Taipéi, Taiwán",
-          "dates": "Agosto 2019 - Octubre 2023",
+          "dates": "Septiembre 2018 - Octubre 2023",
           "responsibilities": [
-            "Administré el LMS de Canvas para 500-700 usuarios, centrándome en la coherencia de datos y mejorando la experiencia del usuario.",
-            "Supervisé las cuentas de usuario, permisos y actualizaciones de contenido con un enfoque en la fiabilidad y consistencia.",
-            "Mejoré la experiencia de usuario para padres y estudiantes creando páginas de inicio accesibles que resumían el contenido semanal.",
-            "Proporcioné soporte técnico diario y formación a todos los empleados, estudiantes y padres.",
-            "Lideré un equipo de cuatro personas que entregó una actualización completa del currículo CCSS Wonders 2020 durante tres años.",
-            "Creé evaluaciones del currículo principal. Esto incluyó la gestión de material en línea, el diseño de material impreso, la corrección de pruebas y el control de versiones mediante actualizaciones regulares.",
-            "Creé material digital complementario para su distribución en seis sucursales de la empresa, utilizado regularmente por más del 65% de los empleados."
+            "Administré el sistema de gestión de aprendizaje (LMS) en una institución educativa privada con 500-700 usuarios, enfocándome en la consistencia de los datos y mejorando la experiencia del usuario.",
+            "Creé un sistema automatizado para generar informes anuales con datos del LMS, que sigue utilizándose en la empresa.",
+            "Creé material didáctico digital para su distribución en seis sucursales de la empresa, utilizado diariamente por más del 65% de los empleados.",
+            "Gestioné cuentas de usuario, permisos y actualizaciones de contenido con un enfoque en la fiabilidad y consistencia.",
+            "Mejoré la experiencia del usuario creando páginas de inicio dinámicas que resumen el contenido semanal.",
+            "Proporcioné soporte técnico diario y capacitación a todos los empleados, estudiantes y padres.",
+            "Lideré un equipo de cuatro miembros para entregar una actualización completa del plan de estudios durante tres años."
           ]
         },
         {
-          "role": "Profesor Jefe",
-          "company": "BigByte Education",
+          "role": "Desarrollador Freelance",
+          "company": " ",
           "location": "Taipéi, Taiwán",
-          "dates": "Agosto 2020 - Octubre 2023",
+          "dates": "Abril 2023 - Presente",
           "responsibilities": [
-            "Gestioné y entrené a cuatro empleados a tiempo completo en una sucursal privada cada año, especializado en la enseñanza de clases complementarias de inglés.",
-            "Creé un ambiente acogedor y atractivo al identificar proactivamente las necesidades de los estudiantes e implementar estrategias específicas.",
-            "Gestioné tres sucursales diferentes, asignado cada año a la sucursal que representaba el mayor desafío para la empresa.",
-            "Mantuve una retención estudiantil superior al 85% mediante un liderazgo estratégico y una intervención focalizada.",
-            "Enseñé al menos 10 horas por semana de clases de 2 horas a estudiantes de 7 a 18 años en entornos de inmersión en inglés.",
-            "Entrevisté y recluté empleados durante tres años, resultando en siete contrataciones exitosas y cuatro empleados permaneciendo más de dos años."
+            "Construí una tienda de alquiler en línea para E-Nite Party Services en Lausana, Suiza, que muestra imágenes, especificaciones y precios de más de 100 productos y servicios diferentes utilizando NextJS y React.",
+            "Creé un concepto para un sistema de gestión de aprendizaje interno, Classroom Reactor, como proyecto personal y prueba de concepto para BigByte Education en Taiwán, utilizando NextJS, React y MongoDB.",
+            "Desarrollé una aplicación, Reactive Games, para generar material didáctico como proyecto personal y recurso para mis compañeros.",
+            "Creé una aplicación de tarjetas de memoria para uso personal, utilizando NextJS, React y MongoDB para estudiar diariamente 8,000 palabras en chino."
           ]
+        },
+        {
+          "role": "Estudiante de Lengua China",
+          "company": "ShuoHao Language Institute",
+          "location": "Taipéi, Taiwán & Remoto",
+          "dates": "Enero 2023 - Presente"
         },
         {
           "role": "Educador a Tiempo Completo",
@@ -152,16 +156,24 @@
           "company": "ENI Language",
           "location": "Anyang, Corea del Sur",
           "dates": "2012 - 2014"
-        }
-      ]
-    },
-    "education": {
-      "title": "Educación",
-      "degrees": [
+        },
         {
-          "degree": "Licenciatura en Economía",
-          "institution": "Universidad de East Anglia, Reino Unido",
-          "dates": "Septiembre 2006 - Junio 2009"
+          "role": "Educador a Tiempo Completo",
+          "company": "Anuban Lop Buri",
+          "location": "Lop Buri, Tailandia",
+          "dates": "2010 - 2012"
+        },
+        {
+          "role": "Entrevistador de Encuestas en Lengua Francesa",
+          "company": "Link Institute",
+          "location": "Lausana, Suiza",
+          "dates": "2009 - 2010"
+        },
+        {
+          "role": "Licenciatura en Ciencias Económicas",
+          "company": "University of East Anglia",
+          "location": "Norwich, Reino Unido",
+          "dates": "2006 - 2009"
         }
       ]
     },

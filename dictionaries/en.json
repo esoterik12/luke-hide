@@ -7,7 +7,7 @@
   },
   "homepage": {
     "title": "Hi, I'm Luke.",
-    "subtitle": "Aspiring full-stack developer",
+    "subtitle": "Full-stack developer",
     "lineOne": "With a love of languages, spoken and",
     "lineOneHighlight": "coded",
     "lineTwo": "Thank you for checking out my portfolio!",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "title": "Protfolio Page",
+      "title": "Portfolio Page",
       "description": "Animated portfolio page in four languages.",
       "features": [
         "i18n support for four languages.",
@@ -89,9 +89,9 @@
   },
   "resume": {
     "headerSection": {
-      "titleOne": "Aspiring full-stack developer with a focus on React and Next.js",
+      "titleOne": "Full-stack developer focused on React and Next.js",
       "titleTwo": "Educational Technology Administrator",
-      "bio": "Self-taught full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. Adaptable, eager to learn new tools, and committed to contributing positively within team environments.",
+      "bio": "Full-stack developer with 18+ months of full-time study, focused on building dynamic applications using React, Next.js, and MongoDB. I am passionate about programming, have strong problem-solving skills, a love for continuous learning, and a background in technical support.",
       "projectsLink": "See my projects here.",
       "downloadPdf": "Download PDF",
       "nationalityTitle": "Nationality",
@@ -102,7 +102,7 @@
       "phone": "Phone"
     },
     "skillsSection": {
-      "title": "Additional Skills & Proficiences"
+      "title": "Additional Skills & Proficienices"
     },
     "footerSection": {
       "references": "References available on request.",
@@ -110,36 +110,40 @@
       "downloadPdf": "Download PDF"
     },
     "experience": {
-      "title": "Work Experience",
+      "title": "Experience",
       "positions": [
         {
           "role": "Learning Management System Administrator",
           "company": "BigByte Education",
           "location": "Taipei, Taiwan",
-          "dates": "August 2019 - October 2023",
+          "dates": "September 2018 - October 2023",
           "responsibilities": [
-            "Administered the Canvas LMS for 500-700 users, focusing on data consistency and enhancing user experience.",
-            "Oversaw user accounts, permissions, and content updates with a focus on reliability and consistency.",
-            "Improved UX for parents and students by creating accessible homepages summarizing weekly content.",
+            "Administered the learning management system (LMS) at a private educational institution with 500-700 users, focusing on data consistency and enhancing user experience.",
+            "Created an automated system for generating yearly reports with LMS data still used at the company today.",
+            "Created digital teaching material for distribution at six company branches, used daily by over 65% of employees.",
+            "Managed user accounts, permissions, and content updates with a focus on reliability and consistency.",
+            "Improved user experience by creating dynamic homepages summarizing weekly content.",
             "Provided daily technical support and training to all employees, students, and parents.",
-            "Led a team of four members delivering of a full curriculum update to CCSS Wonders 2020 curriculum over three years.",
-            "Created core curriculum assessments. This involved managing online material, designing material for print, proofreading, and version control through regular updates.",
-            "Created supplementary digital material for distribution at six company branches, used regularly by over 65% of employees."
+            "Led a team of four members delivering a full curriculum update over three years."
           ]
         },
         {
-          "role": "Head Teacher",
-          "company": "BigByte Education",
+          "role": "Freelance Developer",
+          "company": " ",
           "location": "Taipei, Taiwan",
-          "dates": "August 2020 - October 2023",
+          "dates": "April 2023 - Present",
           "responsibilities": [
-            "Managed and trained four full-time employees at a private education branch each year, specialized in teaching supplementary English lessons.",
-            "Created a welcoming and engaging environment by proactively identifying student needs and implementing targeted strategies.",
-            "Managed three different branches over, each year assigned to the branch that represented the biggest challenge for the company.",
-            "Maintained 85%+ student retention through strategic leadership and targeted interventions.",
-            "Taught at least 10 hours per week of 2-hour lessons each year with students aged 7 to 18 in English-immersion environments.",
-            "Interviewed and recruited employees over three years resulting in seven successful hires and four employees staying over two years."
+            "Built an online rental store for E-Nite Party Services in Lausanne Switzerland showing images, specifications, and pricing for over 100 different products and services using NextJS and React.",
+            "Created a concept for an in-house learning management system, Classroom Reactor, as a hobby project and proof of concept for BigByte Education in Taiwan using NextJS, React, and MongoDB.",
+            "Built an application, Reactive Games, for generating teaching material as a hobby project and resource for coworkers.",
+            "Created a flashcard application for personal use using NextJS, React, and MongoDB for daily study of 8,000 Chinese words."
           ]
+        },
+        {
+          "role": "Chinese Language Student",
+          "company": "ShuoHao Language Institute",
+          "location": "Taipei, Taiwan & Remote",
+          "dates": "January 2023 - Present"
         },
         {
           "role": "Full-time Educator",
@@ -152,16 +156,24 @@
           "company": "ENI Language",
           "location": "Anyang, South Korea",
           "dates": "2012 - 2014"
-        }
-      ]
-    },
-    "education": {
-      "title": "Education",
-      "degrees": [
+        },
         {
-          "degree": "BSc. Economics",
-          "institution": "University of East Anglia, UK",
-          "dates": "September 2006 - June 2009"
+          "role": "Full-time Educator",
+          "company": "Anuban Lop Buri",
+          "location": "Lop Buri, Thailand",
+          "dates": "2010 - 2012"
+        },
+        {
+          "role": "French Language Survey Interviewer",
+          "company": "Link Institute",
+          "location": "Lausanne, Switzerland",
+          "dates": "2009 - 2010"
+        },
+        {
+          "role": "Bachelors of Science in Economics",
+          "company": "University of East Anglia",
+          "location": "Norwich, United Kingdom",
+          "dates": "2006 - 2009"
         }
       ]
     },
