@@ -178,12 +178,17 @@
       ]
     },
     "education": {
-      "title": "教育背景",
-      "degrees": [
+      "title": "教育",
+      "qualifications": [
         {
-          "degree": "經濟學士",
-          "institution": "英國東英吉利大學",
-          "dates": "2006 年 9 月 - 2009 年 6 月"
+          "qualification": "經濟學學士",
+          "location": "東英吉利大學，英國諾里奇",
+          "dates": "2006 - 2009"
+        },
+        {
+          "qualification": "國際文憑",
+          "location": "洛桑國際學校，瑞士",
+          "dates": "2004 - 2006"
         }
       ]
     },

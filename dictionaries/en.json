@@ -168,12 +168,21 @@
           "company": "Link Institute",
           "location": "Lausanne, Switzerland",
           "dates": "2009 - 2010"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "qualifications": [
+        {
+          "qualification": "Bsc. Economics",
+          "location": "University of East Anglia, Norwich, United Kingdom",
+          "dates": "2006 - 2009"
         },
         {
-          "role": "Bsc. Economics",
-          "company": "University of East Anglia",
-          "location": "Norwich, United Kingdom",
-          "dates": "2006 - 2009"
+          "qualification": "International Baccalaureate Diploma",
+          "location": "- International School of Lausanne, Switzerland",
+          "dates": "2004 - 2006"
         }
       ]
     },

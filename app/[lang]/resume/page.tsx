@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { languagesArray } from '@/lib/constants/langauges'
 import Link from 'next/link'
 import { skillsContent } from '@/lib/constants/skills'
+import ResumeSection from '@/components/shared/ResumeSection'
 
 const ResumePage = async ({
   params: { lang }
@@ -104,42 +105,63 @@ const ResumePage = async ({
         </section>
 
         {/* Experience Section */}
-        <section className='mt-8 flex flex-col border-t-2 border-gray-500 py-2'>
-          {/* Left side image / line */}
-          {resume.experience.positions.map((item, index) => (
-            <div key={index} className='my-2 flex flex-row'>
-              <div className='flex flex-col items-center'>
-                <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
-                <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
-              </div>
-              <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
-                <p className='para-text text-gray-600 dark:text-gray-400'>
-                  {item.dates}
-                </p>
-                <h2 className='para-text font-semibold'>
-                  {item.role} - {item.location}{' '}
-                  {/* this conditional because freelance work has no company and is ' ' in the json */}
-                  {item.company !== ' ' && ` - ${item.company}`} 
-                </h2>
-                <h3 className='para-text font-semibold'></h3>
+        <ResumeSection title={resume.experience.title}>
+          <>
+            {resume.experience.positions.map((item, index) => (
+              <div key={index} className='my-2 flex flex-row'>
+                <div className='flex flex-col items-center'>
+                  <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
+                  <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
+                </div>
+                <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
+                  <p className='para-text text-gray-600 dark:text-gray-400'>
+                    {item.dates}
+                  </p>
+                  <h2 className='para-text font-semibold'>
+                    {item.role} - {item.location}{' '}
+                    {/* this conditional because freelance work has no company and is ' ' in the json */}
+                    {item.company !== ' ' && ` - ${item.company}`}
+                  </h2>
+                  <h3 className='para-text font-semibold'></h3>
 
-                <ul className='list ml-4 list-disc'>
-                  {item.responsibilities?.map((item, index) => (
-                    <li className='para-text' key={index}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className='list ml-4 list-disc'>
+                    {item.responsibilities?.map((item, index) => (
+                      <li className='para-text' key={index}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
-        </section>
+            ))}
+          </>
+        </ResumeSection>
+
+        {/* Education Section */}
+        <ResumeSection title={resume.education.title}>
+          <>
+            {resume.education.qualifications.map((item, index) => (
+              <div key={index} className='my-2 flex flex-row'>
+                <div className='flex flex-col items-center'>
+                  <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
+                  <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
+                </div>
+                <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
+                  <p className='para-text text-gray-600 dark:text-gray-400'>
+                    {item.dates}
+                  </p>
+                  <h2 className='para-text font-semibold'>
+                    {item.qualification} - {item.location}
+                  </h2>
+                  <h3 className='para-text font-semibold'></h3>
+                </div>
+              </div>
+            ))}
+          </>
+        </ResumeSection>
 
         {/* Technical Proficiencies */}
-        <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
-          <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
-            {resume.technicalProficiency.title}
-          </h2>
+        <ResumeSection title={resume.technicalProficiency.title}>
           <div className='flex flex-row flex-wrap gap-y-6'>
             {resume.technicalProficiency.content.map((item, index) => (
               <div
@@ -158,17 +180,11 @@ const ResumePage = async ({
               </div>
             ))}
           </div>
-        </section>
+        </ResumeSection>
 
         {/* Languages Section */}
-        <section className='mt-6 flex flex-col border-t-2 border-gray-500'>
-          <div>
-            <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
-              {resume.languages.title}
-            </h2>
-          </div>
-
-          <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
+        <ResumeSection title={resume.languages.title}>
+          <div className='ml-4 mt-2 flex flex-row flex-wrap gap-4 sm:ml-8'>
             {mergedArray.map(item => (
               <div
                 key={item.id}
@@ -188,17 +204,11 @@ const ResumePage = async ({
               </div>
             ))}
           </div>
-        </section>
+        </ResumeSection>
 
         {/* Skills Section */}
-        <section className='mt-4 flex flex-col border-gray-500'>
-          <div>
-            <h2 className='text-md mb-3 mt-6 text-xl font-semibold text-gray-600 dark:text-gray-400'>
-              {resume.skillsSection.title}
-            </h2>
-          </div>
-
-          <div className='ml-4 flex flex-row flex-wrap gap-4 sm:ml-8'>
+        <ResumeSection title={resume.skillsSection.title}>
+          <div className='ml-4 mt-2 flex flex-row flex-wrap gap-4 sm:ml-8'>
             {skillsContent.map(item => (
               <div
                 key={item.id}
@@ -217,8 +227,9 @@ const ResumePage = async ({
               </div>
             ))}
           </div>
-        </section>
+        </ResumeSection>
 
+        {/* Footer */}
         <section className='para-text mt-12 flex flex-col items-center gap-10 border-t-2 border-gray-500'>
           <p className='para-text mt-6'>{resume.footerSection.references}</p>
           <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>

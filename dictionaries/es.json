@@ -177,6 +177,21 @@
         }
       ]
     },
+    "education": {
+      "title": "Educación",
+      "qualifications": [
+        {
+          "qualification": "Licenciatura en Economía",
+          "location": "Universidad de East Anglia, Norwich, Reino Unido",
+          "dates": "2006 - 2009"
+        },
+        {
+          "qualification": "Diploma de Bachillerato Internacional",
+          "location": "Escuela Internacional de Lausana, Suiza",
+          "dates": "2004 - 2006"
+        }
+      ]
+    },
     "technicalProficiency": {
       "title": "Competencias Técnicas",
       "content": [

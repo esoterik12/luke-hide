@@ -177,6 +177,21 @@
         }
       ]
     },
+    "education": {
+      "title": "Éducation",
+      "qualifications": [
+        {
+          "qualification": "Licence en Économie",
+          "location": "Université d'East Anglia, Norwich, Royaume-Uni",
+          "dates": "2006 - 2009"
+        },
+        {
+          "qualification": "Diplôme du Baccalauréat International",
+          "location": "École Internationale de Lausanne, Suisse",
+          "dates": "2004 - 2006"
+        }
+      ]
+    },
     "technicalProficiency": {
       "title": "Compétences Techniques",
       "content": [
