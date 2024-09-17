@@ -98,7 +98,8 @@
       "nationalityText": "Britannique",
       "emailTitle": "E-mail",
       "ageText": "Âge",
-      "address": "Adresse",
+      "addressTitle": "Adresse",
+      "address": "Londres, Royaume-Uni",
       "phone": "Téléphone"
     },
     "skillsSection": {
@@ -251,7 +252,7 @@
         },
         {
           "language": "Français",
-          "level": "C1"
+          "level": "C2"
         },
         {
           "language": "Mandarin",

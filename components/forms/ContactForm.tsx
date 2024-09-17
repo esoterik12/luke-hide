@@ -145,7 +145,7 @@ export default function ContactForm({
           </div>
           <button
             type='submit'
-            className={`ml-1 w-32 rounded-xl bg-red-200 p-2 text-xl font-semibold text-gray-800 transition-colors duration-300 hover:text-white ${loading ? 'bg-gray-400' : 'hover:bg-gray-400 dark:hover:bg-blue-500'}`}
+            className={`ml-1 w-32 text-white rounded-xl bg-blue-400 p-2 text-xl font-semibold ${loading ? 'bg-gray-400' : 'custom-hover-effect '}`}
             disabled={loading}
           >
             {loading ? `${langProps.sendingText}` : `${langProps.buttonText}`}

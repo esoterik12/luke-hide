@@ -98,7 +98,8 @@
       "nationalityText": "British",
       "emailTitle": "Email",
       "ageText": "Age",
-      "address": "Address",
+      "addressTitle": "Address",
+      "address": "London, UK",
       "phone": "Phone"
     },
     "skillsSection": {
@@ -130,7 +131,7 @@
         {
           "role": "Freelance Developer",
           "company": " ",
-          "location": "Taipei, Taiwan",
+          "location": "London, UK",
           "dates": "April 2023 - Present",
           "responsibilities": [
             "Using Next.js and React, built an online rental store for E-Nite Party Services in Lausanne Switzerland showing images, specifications, and pricing for over 100 different products and services.",
@@ -245,7 +246,7 @@
         },
         {
           "language": "French",
-          "level": "C1"
+          "level": "C2"
         },
         {
           "language": "Mandarin",

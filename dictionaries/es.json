@@ -98,7 +98,8 @@
       "nationalityText": "Británico",
       "emailTitle": "Correo electrónico",
       "ageText": "Edad",
-      "address": "Dirección",
+      "addressTitle": "Dirección",
+      "address": "Londres, Reino Unido",
       "phone": "Teléfono"
     },
     "skillsSection": {
@@ -130,7 +131,7 @@
         {
           "role": "Desarrollador Freelance",
           "company": " ",
-          "location": "Taipéi, Taiwán",
+          "location": "Londres, Reino Unido",
           "dates": "Abril 2023 - Presente",
           "responsibilities": [
             "Construí una tienda de alquiler en línea para E-Nite Party Services en Lausana, Suiza, que muestra imágenes, especificaciones y precios de más de 100 productos y servicios diferentes utilizando NextJS y React.",
@@ -254,7 +255,7 @@
         },
         {
           "language": "Francés",
-          "level": "C1"
+          "level": "C2"
         },
         {
           "language": "Mandarín",

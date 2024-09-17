@@ -24,7 +24,7 @@ const ProjectsDisplay = ({
 
   useEffect(() => {
     const handleDetectScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 150) {
         setHasScrolled(true)
       }
     }
@@ -59,14 +59,10 @@ const ProjectsDisplay = ({
           }
         }}
         viewport={{ once: false }}
-        className='mt-12 flex min-h-screen flex-col items-center md:mt-0 md:justify-center'
+        className='flex min-h-screen flex-col items-center md:mt-0 md:justify-center'
       >
-        <h1 className='custom-header hidden font-bold dark:text-gray-200 md:mb-4 md:block'>
-          {projectsLanding.title}
-        </h1>
-
         <motion.div
-          className='mt-4 gap-4 space-y-4'
+          className='gap-4 space-y-4'
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
@@ -101,21 +97,25 @@ const ProjectsDisplay = ({
             </div>
           ))}
         </motion.div>
-        <AnimatePresence>
-          {!hasScrolled && (
-            <motion.div
-              className='mt-2 h-20 w-20 text-red-300 md:mt-2'
-              initial={{ opacity: 1 }}
-              animate={{
-                y: [0, -20, 0], // Move up and down
-                transition: { y: { repeat: Infinity, duration: 1.5 } } // Loop the animation
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.5 } }} // Fade out on scroll
-            >
-              <IconDownArrow classes='w-20 h-20 mt-2 md:mt-12 text-red-300' />
-            </motion.div>
-          )}
-        </AnimatePresence>
+
+        {/* Scroll arrow */}
+        <div className='h-20'>
+          <AnimatePresence>
+            {!hasScrolled && (
+              <motion.div
+                className='mt-2 h-20 w-20 text-red-300 md:mt-2'
+                initial={{ opacity: 1 }}
+                animate={{
+                  y: [0, -20, 0], // Move up and down
+                  transition: { y: { repeat: Infinity, duration: 1.5 } } // Loop the animation
+                }}
+                exit={{ opacity: 0, transition: { duration: 0.5 } }} // Fade out on scroll
+              >
+                <IconDownArrow classes='w-20 h-20 mt-2 md:mt-12' />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </motion.section>
 
       {/* Individual Project Cards */}

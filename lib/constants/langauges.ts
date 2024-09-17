@@ -13,7 +13,6 @@ export const languagesArray = [
   },
   {
     id: 3,
-    level: 'B2',
     flagImage: '/images/flags/zh.svg',
     // color: 'border-yellow-500',
     // textColor: 'text-yellow-600 dark:text-yellow-500'

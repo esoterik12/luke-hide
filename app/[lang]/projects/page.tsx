@@ -23,13 +23,6 @@ const ScrollPage = async ({
   return (
     <PageContainer>
       <ProjectsDisplay projects={mergedProjectsArray} projectsLanding={projectsLanding} />
-      {/* <>
-        <ProjectPageLanding
-          projectsLanding={projectsLanding}
-          projects={mergedProjectsArray}
-        />
-        <ProjectsScroll projects={mergedProjectsArray} />
-      </> */}
     </PageContainer>
   )
 }

@@ -23,13 +23,13 @@ const ResumePage = async ({
     <PageContainer>
       <>
         {/* Top Personal Section */}
-        <section className='mt-12 flex flex-row md:mt-20'>
+        <section className='mt-12 flex flex-row items-center md:mt-20'>
           <Image
             height={200}
             width={200}
             alt='headshot'
             src='/images/headshot.jpg'
-            className='ml-2 mr-6 hidden rounded-full border-2 border-red-200 shadow-xl md:block md:h-52 md:w-52'
+            className='ml-2 mr-6 hidden rounded-full border-2 border-rose-300 shadow-xl md:block md:h-52 md:w-52'
           />
 
           <div className='flex flex-col'>
@@ -39,70 +39,67 @@ const ResumePage = async ({
                 <h2 className='text-xl font-semibold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.titleOne}
                 </h2>
-                {/* <h2 className='text-md font-semibold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.titleTwo}
-                </h2> */}
               </div>
               <Image
                 height={200}
                 width={200}
                 alt='headshot'
                 src='/images/headshot.jpg'
-                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-red-200 shadow-xl md:hidden'
+                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-rose-300 shadow-xl md:hidden'
               />
             </div>
             <p className='para-text mt-4'>{resume.headerSection.bio}</p>
-
-            {/* Projcets and PDF download links div */}
-            <div className='para-text flex flex-row flex-wrap gap-x-8'>
-              <Link
-                className='py-2 text-red-400 hover:underline'
-                href={`/${lang}/projects`}
-              >
-                {resume.headerSection.projectsLink}
-              </Link>
-              <a
-                className='py-2 text-red-400 hover:underline'
-                href='/images/luke-hide-cv-developer.pdf'
-                target='_blank'
-              >
-                {resume.headerSection.downloadPdf}
-              </a>
-            </div>
-            <div className='para-text mt-4 flex flex-row flex-wrap gap-6'>
-              <div className='flex flex-col'>
-                <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.nationalityTitle}
-                </p>
-                <p>{resume.headerSection.nationalityText}</p>
-              </div>
-              <div className='flex flex-col'>
-                <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.ageText}
-                </p>
-                <p>36</p>
-              </div>
-              <div className='flex flex-col'>
-                <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.address}
-                </p>
-                <p>Marbella, España</p>
-              </div>
-              <div className='flex flex-col'>
-                <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.emailTitle}
-                </p>
-                <p>luke.hide@gmail.com</p>
-              </div>
-              <div className='flex flex-col'>
-                <p className='font-bold text-gray-600 dark:text-gray-400'>
-                  {resume.headerSection.phone}
-                </p>
-                <p>+34 647 30 52 24</p>
-              </div>
-            </div>
           </div>
         </section>
+
+        <div className='para-text mt-4 flex flex-row flex-wrap gap-6'>
+          <div className='flex flex-col'>
+            <p className='font-bold text-gray-600 dark:text-gray-400'>
+              {resume.headerSection.nationalityTitle}
+            </p>
+            <p>{resume.headerSection.nationalityText}</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='font-bold text-gray-600 dark:text-gray-400'>
+              {resume.headerSection.ageText}
+            </p>
+            <p>36</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='font-bold text-gray-600 dark:text-gray-400'>
+              {resume.headerSection.addressTitle}
+            </p>
+            <p>{resume.headerSection.address}</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='font-bold text-gray-600 dark:text-gray-400'>
+              {resume.headerSection.emailTitle}
+            </p>
+            <p>luke.hide@gmail.com</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='font-bold text-gray-600 dark:text-gray-400'>
+              {resume.headerSection.phone}
+            </p>
+            <p>+34 647 30 52 24</p>
+          </div>
+          {/* Projcets and PDF download links div */}
+          <div className='para-text flex flex-row flex-wrap gap-x-8'>
+            <Link
+              className='text-rose-400 hover:underline'
+              href={`/${lang}/projects`}
+            >
+              {resume.headerSection.projectsLink}
+            </Link>
+            <a
+              className='text-rose-400 hover:underline'
+              href='/images/luke-hide-cv-developer.pdf'
+              target='_blank'
+            >
+              {resume.headerSection.downloadPdf}
+            </a>
+          </div>
+        </div>
 
         {/* Experience Section */}
         <ResumeSection title={resume.experience.title}>
@@ -111,7 +108,7 @@ const ResumePage = async ({
               <div key={index} className='my-2 flex flex-row'>
                 <div className='flex flex-col items-center'>
                   <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
-                  <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
+                  <div className='m-1 h-full w-1 rounded-full border-2 border-rose-200' />
                 </div>
                 <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
                   <p className='para-text text-gray-600 dark:text-gray-400'>
@@ -234,13 +231,13 @@ const ResumePage = async ({
           <p className='para-text mt-6'>{resume.footerSection.references}</p>
           <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>
             <Link
-              className='py-2 text-red-400 hover:underline'
+              className='py-2 text-rose-400 hover:underline'
               href={`/${lang}/projects`}
             >
               {resume.footerSection.projectsLink}
             </Link>
             <a
-              className='py-2 text-red-400 hover:underline'
+              className='py-2 text-rose-400 hover:underline'
               href='/images/luke-hide-cv-developer.pdf'
               target='_blank'
             >

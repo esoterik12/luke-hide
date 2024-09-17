@@ -27,7 +27,7 @@ const HomepageText = ({ homepage, lang }: { homepage: HomepageTextProps, lang: L
       </h2>
       <h2 className='mb-4 font-mono custom-text font-semibold'>
         {homepage.lineOne}
-        <span className='text-red-500 dark:text-red-400'>
+        <span className='text-rose-500 '>
           &nbsp;{homepage.lineOneHighlight}
         </span>
         .
