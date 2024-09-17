@@ -2,14 +2,12 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MergedProject, ProjectsLanding } from '@/lib/types/types'
+import { MergedProject } from '@/lib/types/types'
 import IconDownArrow from '../icons/IconDownArrow'
 
 const ProjectPageLanding = ({
-  projectsLanding,
   projects
 }: {
-  projectsLanding: ProjectsLanding
   projects: MergedProject[]
 }) => {
   const [hasScrolled, setHasScrolled] = useState(false)
@@ -51,9 +49,6 @@ const ProjectPageLanding = ({
       viewport={{ once: false }}
       className='mt-12 flex min-h-screen flex-col items-center md:mt-0 md:justify-center'
     >
-      <h1 className='custom-header hidden font-bold dark:text-gray-200 md:mb-4 md:block'>
-        {projectsLanding.title}
-      </h1>
 
       <motion.div
         className='mt-4 gap-4 space-y-4'

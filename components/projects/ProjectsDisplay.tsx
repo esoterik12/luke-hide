@@ -2,17 +2,15 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MergedProject, ProjectsLanding } from '@/lib/types/types'
+import { MergedProject } from '@/lib/types/types'
 import IconDownArrow from '../icons/IconDownArrow'
 import ProjectCard from './ProjectCard'
 import SelectIcon from '../icons/SelectIcon'
 import { Tech } from '@/lib/types/types'
 
 const ProjectsDisplay = ({
-  projectsLanding,
   projects
 }: {
-  projectsLanding: ProjectsLanding
   projects: MergedProject[]
 }) => {
   const [hasScrolled, setHasScrolled] = useState(false)

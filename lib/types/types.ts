@@ -51,11 +51,6 @@ export interface Tech {
   icon: string
 }
 
-export interface ProjectsLanding {
-  title: string
-  subtitle: string
-}
-
 export interface HomepageTextProps {
   title: string
   subtitle: string

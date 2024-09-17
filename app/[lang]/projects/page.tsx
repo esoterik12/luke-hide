@@ -11,7 +11,7 @@ const ScrollPage = async ({
 }: {
   params: { lang: Locale }
 }) => {
-  const { projects, projectsLanding } = await getDictionary(lang)
+  const { projects } = await getDictionary(lang)
 
   // Combines with tech in separate file to not have to edit 4 times in 4 json dicts
   const mergedProjectsArray: MergedProject[] = projectsArrayTech.map(
@@ -22,7 +22,7 @@ const ScrollPage = async ({
 
   return (
     <PageContainer>
-      <ProjectsDisplay projects={mergedProjectsArray} projectsLanding={projectsLanding} />
+      <ProjectsDisplay projects={mergedProjectsArray} />
     </PageContainer>
   )
 }
