@@ -19,12 +19,13 @@ export default async function Home({
       </div>
 
       {/* Center-Left Text Content */}
-      <div className='flex min-h-screen w-4/5 md:w-2/5 flex-col justify-start pt-20 md:pt-40 text-left'>
+      <div className='flex min-h-screen w-4/5 flex-col justify-start pt-20 text-left md:w-2/5 md:pt-40'>
         <HomepageText lang={lang} homepage={homepage} />
       </div>
 
       {/* Right Side Animation */}
-      <div className='mr-12 mt-12 flex w-0 md:w-2/5 flex-row items-center gap-10'></div>
+      <div className='mr-12 mt-12 flex w-0 flex-row items-center gap-10 lg:w-2/5'>
+      </div>
     </main>
   )
 }

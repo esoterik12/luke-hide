@@ -65,12 +65,12 @@ const ResumePage = async ({
             </p>
             <p>36</p>
           </div>
-          <div className='flex flex-col'>
+          {/* <div className='flex flex-col'>
             <p className='font-bold text-gray-600 dark:text-gray-400'>
               {resume.headerSection.addressTitle}
             </p>
             <p>{resume.headerSection.address}</p>
-          </div>
+          </div> */}
           <div className='flex flex-col'>
             <p className='font-bold text-gray-600 dark:text-gray-400'>
               {resume.headerSection.emailTitle}
