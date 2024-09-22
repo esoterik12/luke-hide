@@ -28,8 +28,8 @@ const ResumePage = async ({
             height={200}
             width={200}
             alt='headshot'
-            src='/images/headshot.jpg'
-            className='ml-2 mr-6 hidden rounded-full border-2 border-rose-300 shadow-xl md:block md:h-52 md:w-52'
+            src='/images/headshot-no-bg-square.png'
+            className='ml-2 mr-6 hidden rounded-full border-2 border-rose-300 bg-gray-800 shadow-xl md:block md:h-52 md:w-52'
           />
 
           <div className='flex flex-col'>
@@ -44,8 +44,8 @@ const ResumePage = async ({
                 height={200}
                 width={200}
                 alt='headshot'
-                src='/images/headshot.jpg'
-                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-rose-300 shadow-xl md:hidden'
+                src='/images/headshot-no-bg-square.png'
+                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-rose-300 bg-gray-800 shadow-xl md:hidden'
               />
             </div>
             <p className='para-text mt-4'>{resume.headerSection.bio}</p>
