@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Unfinished: Update URL and description
   title: 'Luke Hide | Full-stack Developer',
-  description: 'Aspiring Full-stack developer with a focus on React and Next.js',
+  description: 'Full-stack developer portfolio page',
   metadataBase: new URL('https://nextjs-i18n-enite-test.vercel.app/en'),
   openGraph: {
     siteName: 'Luke Hide | Web Services',

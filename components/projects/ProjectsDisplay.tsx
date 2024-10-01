@@ -131,7 +131,7 @@ const ProjectsDisplay = ({
               <motion.div
                 onClick={() => scrollToSection(project.id)}
                 key={project.id}
-                className={`${project.id === projectIndex + 1 ? 'bg-red-300' : ''} custom-hover-effect h-6 w-6 rounded-full border shadow-lg hover:cursor-pointer`}
+                className={`${project.id === projectIndex + 1 ? 'bg-rose-500' : ''} custom-hover-effect h-6 w-6 rounded-full border shadow-lg hover:cursor-pointer`}
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{

@@ -29,7 +29,7 @@ const ResumePage = async ({
             width={200}
             alt='headshot'
             src='/images/headshot-no-bg-square.png'
-            className='ml-2 mr-6 hidden rounded-full border-2 border-rose-300 bg-gray-800 shadow-xl md:block md:h-52 md:w-52'
+            className='ml-2 mr-6 hidden rounded-full border-2 border-blue-400 bg-gray-800 shadow-xl md:block md:h-52 md:w-52'
           />
 
           <div className='flex flex-col'>
@@ -86,13 +86,13 @@ const ResumePage = async ({
           {/* Projcets and PDF download links div */}
           <div className='para-text flex flex-row flex-wrap gap-x-8'>
             <Link
-              className='text-rose-400 hover:underline'
+              className='text-blue-400 hover:underline'
               href={`/${lang}/projects`}
             >
               {resume.headerSection.projectsLink}
             </Link>
             <a
-              className='text-rose-400 hover:underline'
+              className='text-blue-400 hover:underline'
               href='/images/luke-hide-cv-developer.pdf'
               target='_blank'
             >
@@ -108,7 +108,7 @@ const ResumePage = async ({
               <div key={index} className='my-2 flex flex-row'>
                 <div className='flex flex-col items-center'>
                   <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
-                  <div className='m-1 h-full w-1 rounded-full border-2 border-rose-200' />
+                  <div className='m-1 h-full w-1 rounded-full border-2 border-blue-400' />
                 </div>
                 <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
                   <p className='para-text text-gray-600 dark:text-gray-400'>
@@ -141,7 +141,7 @@ const ResumePage = async ({
               <div key={index} className='my-2 flex flex-row'>
                 <div className='flex flex-col items-center'>
                   <SelectIcon iconClasses='h-8 w-8' iconSelection='web' />
-                  <div className='m-1 h-full w-1 rounded-full border-2 border-red-200' />
+                  <div className='m-1 h-full w-1 rounded-full border-2 border-blue-400' />
                 </div>
                 <div className='flex w-4/5 flex-col justify-start sm:ml-2'>
                   <p className='para-text text-gray-600 dark:text-gray-400'>
@@ -231,13 +231,13 @@ const ResumePage = async ({
           <p className='para-text mt-6'>{resume.footerSection.references}</p>
           <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>
             <Link
-              className='py-2 text-rose-400 hover:underline'
+              className='py-2 text-blue-400 hover:underline'
               href={`/${lang}/projects`}
             >
               {resume.footerSection.projectsLink}
             </Link>
             <a
-              className='py-2 text-rose-400 hover:underline'
+              className='py-2 text-blue-400 hover:underline'
               href='/images/luke-hide-cv-developer.pdf'
               target='_blank'
             >
