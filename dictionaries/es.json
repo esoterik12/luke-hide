@@ -109,84 +109,78 @@
       "downloadPdf": "Descargar PDF"
     },
     "experience": {
-      "title": "Experiencia",
+      "title": "Experiencia Técnica",
       "positions": [
         {
-          "role": "Administrador del Sistema de Gestión de Aprendizaje (LMS)",
+          "role": "Desarrollador Freelance",
+          "company": " ",
+          "location": "Devon, Inglaterra & Marbella, España",
+          "dates": "Abril 2023 - Presente",
+          "responsibilities": [
+            "Construcción de una tienda de alquiler en línea escalable que presenta más de 100 productos y servicios, optimizando la experiencia de usuario y las funciones de precios para E-Nite Services en Lausana, Suiza.",
+            "Desarrollo de Classroom Reactor, un LMS como prueba de concepto diseñado para optimizar los procesos educativos, mejorando la gestión de datos y la entrega de contenido para BigByte Education.",
+            "Creación de Reactive Games, una herramienta que utiliza la API de ChatGPT para generar materiales de enseñanza, mejorando el aprendizaje de docentes y estudiantes.",
+            "Utilizando NodeJS, Express y MongoDB, construyó una aplicación de tarjetas de memoria personalizadas para aprender chino, con repetición espaciada e historial de revisiones."
+          ]
+        },
+        {
+          "role": "Administrador del Sistema de Gestión de Aprendizaje",
           "company": "BigByte Education",
           "location": "Taipéi, Taiwán",
           "dates": "Septiembre 2018 - Octubre 2023",
           "responsibilities": [
-            "Administré el sistema de gestión de aprendizaje (LMS) en una institución educativa privada con 500-700 usuarios, enfocándome en la consistencia de los datos y mejorando la experiencia del usuario.",
-            "Creé un sistema automatizado para generar informes anuales con datos del LMS, que sigue utilizándose en la empresa.",
-            "Creé material didáctico digital para su distribución en seis sucursales de la empresa, utilizado diariamente por más del 65% de los empleados.",
-            "Gestioné cuentas de usuario, permisos y actualizaciones de contenido con un enfoque en la fiabilidad y consistencia.",
-            "Mejoré la experiencia del usuario creando páginas de inicio dinámicas que resumen el contenido semanal.",
-            "Proporcioné soporte técnico diario y capacitación a todos los empleados, estudiantes y padres.",
-            "Lideré un equipo de cuatro miembros para entregar una actualización completa del plan de estudios durante tres años."
+            "Desarrollo de una herramienta de informes automatizados, reduciendo la carga de trabajo manual y ahorrando a la empresa el coste de contratar desarrolladores externos.",
+            "Mejora de la participación mediante la creación de páginas de inicio dinámicas basadas en HTML que resumen el contenido educativo semanal para más de 500 usuarios.",
+            "Coordinación con seis equipos de sucursales para desarrollar materiales educativos digitales, adoptados por el 65% del personal.",
+            "Gestión de un sistema de gestión de aprendizaje para 500 usuarios, asegurando un rendimiento fiable y la integridad de los datos para mejorar los resultados de aprendizaje.",
+            "Proporcionar soporte técnico diario y capacitación a todos los empleados, estudiantes y padres.",
+            "Lideró un equipo de cuatro miembros para entregar una actualización completa del currículo durante tres años."
           ]
-        },
-        {
-          "role": "Desarrollador Freelance",
-          "company": " ",
-          "location": "Londres, Reino Unido",
-          "dates": "Abril 2023 - Presente",
-          "responsibilities": [
-            "Construí una tienda de alquiler en línea para E-Nite Party Services en Lausana, Suiza, que muestra imágenes, especificaciones y precios de más de 100 productos y servicios diferentes utilizando NextJS y React.",
-            "Creé un concepto para un sistema de gestión de aprendizaje interno, Classroom Reactor, como proyecto personal y prueba de concepto para BigByte Education en Taiwán, utilizando NextJS, React y MongoDB.",
-            "Desarrollé una aplicación, Reactive Games, para generar material didáctico como proyecto personal y recurso para mis compañeros.",
-            "Creé una aplicación de tarjetas de memoria para uso personal, utilizando NextJS, React y MongoDB para estudiar diariamente 8,000 palabras en chino."
-          ]
-        },
-        {
-          "role": "Estudiante de Lengua China",
-          "company": "ShuoHao Language Institute",
-          "location": "Taipéi, Taiwán & Remoto",
-          "dates": "Enero 2023 - Presente"
-        },
-        {
-          "role": "Educador a Tiempo Completo",
-          "company": "AGI Language Institute",
-          "location": "Seúl, Corea del Sur",
-          "dates": "2014 - 2018"
-        },
-        {
-          "role": "Educador a Tiempo Completo",
-          "company": "ENI Language",
-          "location": "Anyang, Corea del Sur",
-          "dates": "2012 - 2014"
-        },
-        {
-          "role": "Educador a Tiempo Completo",
-          "company": "Anuban Lop Buri",
-          "location": "Lop Buri, Tailandia",
-          "dates": "2010 - 2012"
-        },
-        {
-          "role": "Entrevistador de Encuestas en Lengua Francesa",
-          "company": "Link Institute",
-          "location": "Lausana, Suiza",
-          "dates": "2009 - 2010"
-        },
-        {
-          "role": "Licenciatura en Ciencias Económicas",
-          "company": "University of East Anglia",
-          "location": "Norwich, Reino Unido",
-          "dates": "2006 - 2009"
         }
       ]
     },
+    "previousExperience": [
+      {
+        "role": "Educador a Tiempo Completo",
+        "company": "AGI Language Institute",
+        "location": "Seúl, Corea del Sur",
+        "dates": "2014 - 2018"
+      },
+      {
+        "role": "Educador a Tiempo Completo",
+        "company": "ENI Language",
+        "location": "Anyang, Corea del Sur",
+        "dates": "2012 - 2014"
+      },
+      {
+        "role": "Educador a Tiempo Completo",
+        "company": "Anuban Lop Buri",
+        "location": "Lop Buri, Tailandia",
+        "dates": "2010 - 2012"
+      },
+      {
+        "role": "Entrevistador de Encuestas Lingüísticas (Francés)",
+        "company": "Link Institute",
+        "location": "Lausana, Suiza",
+        "dates": "2009 - 2010"
+      }
+    ],
     "education": {
       "title": "Educación",
       "qualifications": [
+        {
+          "qualification": "Estudiante de Idioma Chino",
+          "location": "ShuoHao Language Center, Taipéi, Taiwán & Remoto",
+          "dates": "Enero 2023 - Presente"
+        },
         {
           "qualification": "Licenciatura en Economía",
           "location": "Universidad de East Anglia, Norwich, Reino Unido",
           "dates": "2006 - 2009"
         },
         {
-          "qualification": "Diploma de Bachillerato Internacional",
-          "location": "Escuela Internacional de Lausana, Suiza",
+          "qualification": "Diploma del Bachillerato Internacional",
+          "location": "- Escuela Internacional de Lausana, Suiza",
           "dates": "2004 - 2006"
         }
       ]
@@ -206,12 +200,12 @@
         },
         {
           "id": 3,
-          "title": "Estilización y Diseño",
-          "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
+          "title": "Estilización & Diseño",
+          "content": ["CSS", "Tailwind", "Framer Motion"]
         },
         {
           "id": 4,
-          "title": "Autenticación y APIs",
+          "title": "Autenticación & APIs",
           "content": ["NextAuth", "Clerk", "SendGrid", "ChatGPT API"]
         },
         {
@@ -221,25 +215,15 @@
         },
         {
           "id": 6,
-          "title": "Internacionalización",
-          "content": ["i18n"]
-        },
-        {
-          "id": 7,
-          "title": "UI y Manejo de Archivos",
-          "content": ["Slate.js", "jsPDF"]
-        },
-        {
-          "id": 8,
-          "title": "Renderizado y SEO",
+          "title": "Rendering & SEO",
           "content": [
-            "Renderizado en el Lado del Servidor (SSR)",
+            "Rendering del Lado del Servidor (SSR)",
             "Optimización SEO"
           ]
         },
         {
-          "id": 9,
-          "title": "Herramientas y Control de Versiones",
+          "id": 7,
+          "title": "Herramientas & Control de Versiones",
           "content": ["GitHub", "ESLint"]
         }
       ]
@@ -266,7 +250,7 @@
       ]
     },
     "skills": {
-      "title": "Habilidades Adicionales y Competencias",
+      "title": "Habilidades Adicionales",
       "list": [
         {
           "name": "InDesign",
@@ -279,10 +263,6 @@
         {
           "name": "After Effects",
           "icon": "/images/after-effects.svg"
-        },
-        {
-          "name": "Ableton",
-          "icon": "/images/ableton.png"
         }
       ]
     }

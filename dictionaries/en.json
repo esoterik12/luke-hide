@@ -89,9 +89,8 @@
   },
   "resume": {
     "headerSection": {
-      "titleOne": "Full-stack developer focused on React and Next.js",
-      "titleTwo": "Educational Technology Administrator",
-      "bio": "After five years working with educational technology, I have become focused on the solutions of programming itself. I have spent the last two years building dynamic applications using React, Next.js, and MongoDB. I am passionate about programming, have strong problem-solving skills, a love for continuous learning, and a background in technical support. I am an English native speaker, fluent in French, and have achieved advanced conversational Mandarin and Spanish.",
+      "titleOne": "Full-stack Developer - TypeScript, Next.js, React, & MongoDB",
+      "bio": "With five years in educational technology, I have cultivated a strong interest in software engineering. Over the past two years, I have developed full-stack applications using TypeScript, Next.js, and MongoDB, delivering solutions for both work and personal projects. I bring strong problem-solving skills, a passion for programming, and a commitment to life-long learning. My background in content and data management further enhances my ability to create efficient, user-focused applications.",
       "projectsLink": "See my projects here.",
       "downloadPdf": "Download PDF",
       "nationalityTitle": "Nationality",
@@ -109,79 +108,74 @@
       "downloadPdf": "Download PDF"
     },
     "experience": {
-      "title": "Experience",
+      "title": "Tech Experience",
       "positions": [
+        {
+          "role": "Freelance Developer",
+          "company": " ",
+          "location": "Devon, England & Marbella, Spain",
+          "dates": "April 2023 - Present",
+          "responsibilities": [
+            "Built a scalable online rental store showcasing over 100 products and services, optimizing UX and pricing features for E-Nite Services in Lausanne, Switzerland.",
+            "Developed Classroom Reactor, a proof-of-concept LMS designed to streamline educational processes, improving data management and content delivery for BigByte Education",
+            "Created Reactive Games, a tool leveraging the ChatGPT API to generate teaching materials, enhancing learning for educators and students alike.",
+            "Using NodeJS, Express and MongoDB, built a personalized flashcard app for learning Chinese, featuring spaced-repetition and review history."
+          ]
+        },
         {
           "role": "Learning Management System Administrator",
           "company": "BigByte Education",
           "location": "Taipei, Taiwan",
           "dates": "September 2018 - October 2023",
           "responsibilities": [
-            "Programmed an automated system for generating yearly reports with student data still used at the company today.",
-            "Improved user experience by writing dynamic homepages in HTML summarizing weekly content.",
-            "Created digital teaching materials for distribution at six company branches, used daily by over 65% of employees.",
-            "Managed user accounts, permissions, and content updates with a focus on reliability and consistency.",
+            "Developed an automated reporting tool, reducing manual workload, and saving the company the cost of hiring external developers.",
+            "Enhanced engagement by creating dynamic, HTML-based homepages summarizing weekly educational content for over 500 users.",
+            "Coordinated with six branch teams to develop digital teaching materials, adopted by 65% of staff.",
+            "Managed a learning management system for 500 users, ensuring reliable performance and data integrity to enhance learning outcomes.",
             "Provided daily technical support and training to all employees, students, and parents.",
-            "Administered the learning management system (LMS) at a private educational institution with 500-700 users, focusing on data consistency and enhancing user experience.",
             "Led a team of four members delivering a full curriculum update over three years."
           ]
-        },
-        {
-          "role": "Freelance Developer",
-          "company": " ",
-          "location": "London, UK",
-          "dates": "April 2023 - Present",
-          "responsibilities": [
-            "Using Next.js and React, built an online rental store for E-Nite Party Services in Lausanne Switzerland showing images, specifications, and pricing for over 100 different products and services.",
-            "Created a concept for an in-house learning management system using Next.js, React, and MongoDB, Classroom Reactor, as a hobby project and proof of concept for BigByte Education in Taiwan.",
-            "Built an application using Next.js and PostgreSQL, Reactive Games, for generating teaching material as a hobby project and resource for coworkers.",
-            "Using Next.js, React, and MongoDB, I created a flashcard application for personal use for daily study of 8,000 Chinese words."
-          ]
-        },
-        {
-          "role": "Chinese Language Student",
-          "company": "ShuoHao Language Center",
-          "location": "Taipei, Taiwan & Remote",
-          "dates": "January 2023 - Present"
-        },
-        {
-          "role": "Full-time Educator",
-          "company": "AGI Language Institute",
-          "location": "Seoul, South Korea",
-          "dates": "2014 - 2018"
-        },
-        {
-          "role": "Full-time Educator",
-          "company": "ENI Language",
-          "location": "Anyang, South Korea",
-          "dates": "2012 - 2014"
-        },
-        {
-          "role": "Full-time Educator",
-          "company": "Anuban Lop Buri",
-          "location": "Lop Buri, Thailand",
-          "dates": "2010 - 2012"
-        },
-        {
-          "role": "French Language Survey Interviewer",
-          "company": "Link Institute",
-          "location": "Lausanne, Switzerland",
-          "dates": "2009 - 2010"
         }
       ]
     },
+    "previousExperience": [
+      {
+        "role": "Full-time Educator",
+        "company": "AGI Language Institute",
+        "location": "Seoul, South Korea",
+        "dates": "2014 - 2018"
+      },
+      {
+        "role": "Full-time Educator",
+        "company": "ENI Language",
+        "location": "Anyang, South Korea",
+        "dates": "2012 - 2014"
+      },
+      {
+        "role": "Full-time Educator",
+        "company": "Anuban Lop Buri",
+        "location": "Lop Buri, Thailand",
+        "dates": "2010 - 2012"
+      },
+      {
+        "role": "French Language Survey Interviewer",
+        "company": "Link Institute",
+        "location": "Lausanne, Switzerland",
+        "dates": "2009 - 2010"
+      }
+    ],
     "education": {
       "title": "Education",
       "qualifications": [
         {
+          "qualification": "Chinese Language Student",
+          "location": "ShuoHao Language Center, Taipei, Taiwan & Remote",
+          "dates": "January 2023 - Present"
+        },
+        {
           "qualification": "Bsc. Economics",
           "location": "University of East Anglia, Norwich, United Kingdom",
           "dates": "2006 - 2009"
-        },
-        {
-          "qualification": "International Baccalaureate Diploma",
-          "location": "- International School of Lausanne, Switzerland",
-          "dates": "2004 - 2006"
         }
       ]
     },
@@ -201,7 +195,7 @@
         {
           "id": 3,
           "title": "Styling & Design",
-          "content": ["CSS", "Tailwind", "Three.js", "Framer Motion"]
+          "content": ["CSS", "Tailwind", "Framer Motion"]
         },
         {
           "id": 4,
@@ -215,21 +209,11 @@
         },
         {
           "id": 6,
-          "title": "Internationalization",
-          "content": ["i18n"]
-        },
-        {
-          "id": 7,
-          "title": "UI & File Handling",
-          "content": ["Slate.js", "jsPDF"]
-        },
-        {
-          "id": 8,
           "title": "Rendering & SEO",
           "content": ["Server-Side Rendering (SSR)", "SEO optimisation"]
         },
         {
-          "id": 9,
+          "id": 7,
           "title": "Tooling & Version Control",
           "content": ["GitHub", "ESLint"]
         }
@@ -270,10 +254,6 @@
         {
           "name": "After Effects",
           "icon": "/images/after-effects.svg"
-        },
-        {
-          "name": "Ableton",
-          "icon": "/images/ableton.png"
         }
       ]
     }

@@ -7,6 +7,7 @@ import { languagesArray } from '@/lib/constants/langauges'
 import Link from 'next/link'
 import { skillsContent } from '@/lib/constants/skills'
 import ResumeSection from '@/components/shared/ResumeSection'
+import Socials from '@/components/shared/Socials'
 
 const ResumePage = async ({
   params: { lang }
@@ -35,7 +36,10 @@ const ResumePage = async ({
           <div className='flex flex-col'>
             <div className='flex flex-row justify-between'>
               <div>
-                <h1 className='text-3xl font-bold'>Luke Hide</h1>
+                <div className='flex flex-row gap-2'>
+                  <h1 className='text-3xl font-bold'>Luke Hide</h1>
+                  <Socials />
+                </div>
                 <h2 className='text-xl font-semibold text-gray-600 dark:text-gray-400'>
                   {resume.headerSection.titleOne}
                 </h2>
@@ -65,12 +69,6 @@ const ResumePage = async ({
             </p>
             <p>36</p>
           </div>
-          {/* <div className='flex flex-col'>
-            <p className='font-bold text-gray-600 dark:text-gray-400'>
-              {resume.headerSection.addressTitle}
-            </p>
-            <p>{resume.headerSection.address}</p>
-          </div> */}
           <div className='flex flex-col'>
             <p className='font-bold text-gray-600 dark:text-gray-400'>
               {resume.headerSection.emailTitle}
@@ -101,7 +99,7 @@ const ResumePage = async ({
           </div>
         </div>
 
-        {/* Experience Section */}
+        {/* Tech Experience Section */}
         <ResumeSection title={resume.experience.title}>
           <>
             {resume.experience.positions.map((item, index) => (
