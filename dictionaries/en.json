@@ -6,7 +6,7 @@
     "resume": "Resume"
   },
   "homepage": {
-    "title": "Hi, I'm Luke.",
+    "title": "Hi, I'm Luke",
     "subtitle": "Full-stack developer",
     "lineOne": "With a love of languages, spoken and",
     "lineOneHighlight": "coded",
@@ -75,7 +75,7 @@
   "contact": {
     "title": "Contact me",
     "subtitleOne": "Send a quick message to my email with any inquiries!",
-    "subtitleTwo": "Or email me yourself at",
+    "subtitleTwo": "Or email me at",
     "nameLabel": "Your name",
     "emailLabel": "Your email",
     "messageLabel": "Your message",

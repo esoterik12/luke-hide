@@ -2,13 +2,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const rowArray = [30, 40, 50]
+const colArray = [30, 40, 50]
 const circleArray = [1, 2, 3, 4, 5, 6, 7]
 
 const Dots = () => {
   return (
     <div className='flex flex-row items-end gap-3 md:gap-6 p-2 md:p-6'>
-      {rowArray.map((item, outerIdx) => (
+      {colArray.map((item, outerIdx) => (
         <motion.div
           initial={{
             opacity: 0,

@@ -24,7 +24,7 @@ const ResumePage = async ({
     <PageContainer>
       <>
         {/* Top Personal Section */}
-        <section className='mt-12 flex flex-row items-center md:mt-20'>
+        <section className='flex flex-row items-center'>
           <Image
             height={200}
             width={200}
@@ -49,7 +49,7 @@ const ResumePage = async ({
                 width={200}
                 alt='headshot'
                 src='/images/headshot-no-bg-square.png'
-                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-rose-300 bg-gray-800 shadow-xl md:hidden'
+                className='ml-2 mr-6 h-28 w-28 rounded-full border-2 border-blue-400 bg-gray-800 shadow-xl md:hidden'
               />
             </div>
             <p className='para-text mt-4'>{resume.headerSection.bio}</p>
@@ -225,7 +225,7 @@ const ResumePage = async ({
         </ResumeSection>
 
         {/* Footer */}
-        <section className='para-text mt-12 flex flex-col items-center gap-10 border-t-2 border-gray-500'>
+        <section className='para-text mt-12 mb-4 flex flex-col items-center gap-10 border-t-2 border-gray-500'>
           <p className='para-text mt-6'>{resume.footerSection.references}</p>
           <div className='para-text flex flex-row justify-center gap-10 border-gray-500'>
             <Link

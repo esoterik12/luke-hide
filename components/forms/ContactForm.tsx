@@ -92,11 +92,11 @@ export default function ContactForm({
   }
 
   return (
-    <div className='mb-16 mt-10 max-w-[700px]'>
+    <div className=' max-w-[700px]'>
       <h1 className='ml-1 text-3xl font-semibold'>{langProps.title}</h1>
-      <p className='text-md ml-1 pt-2 text-gray-600 dark:text-gray-400 md:text-lg'>
+      {/* <p className='text-md ml-1 pt-2 text-gray-600 dark:text-gray-400 md:text-lg'>
         {langProps.subtitleOne}
-      </p>
+      </p> */}
       <div className='text-md mb-2 ml-1 flex flex-row flex-wrap pb-2 md:text-lg'>
         <p className='para-text text-gray-600 dark:text-gray-400'>
           {langProps.subtitleTwo}&nbsp;
@@ -113,7 +113,7 @@ export default function ContactForm({
               loading={loading}
               label={langProps.nameLabel}
               labelClasses='para-text'
-              inputClasses='pl-2 w-full'
+              inputClasses='pl-2 w-full max-w-[615px]'
               {...register('name')}
               error={errors.name}
             />
@@ -125,7 +125,7 @@ export default function ContactForm({
               loading={loading}
               label={langProps.emailLabel}
               labelClasses='para-text'
-              inputClasses='pl-2 w-full'
+              inputClasses='pl-2 w-full max-w-[615px]'
               {...register('email')}
               error={errors.email}
             />
@@ -138,7 +138,7 @@ export default function ContactForm({
               label={langProps.messageLabel}
               placeholder=''
               labelClasses='para-text'
-              inputClasses='w-full pl-2 h-20 md:h-32 border border-gray-300 rounded-md resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none'
+              inputClasses='w-full max-w-[615px] pl-2 h-20 md:h-32 border border-gray-300 rounded-md resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none'
               {...register('text')}
               error={errors.text}
             />

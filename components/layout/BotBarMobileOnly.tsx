@@ -28,7 +28,7 @@ const BotBarMobileOnly = async ({ lang }: { lang: Locale }) => {
   ]
 
   return (
-    <section className='xs:px-7 fixed bottom-0 z-10 w-full rounded-t-3xl py-1 px-6 backdrop-blur-lg sm:hidden'>
+    <section className='xs:px-7 fixed bottom-0 z-20 w-full rounded-t-3xl py-1 px-6 backdrop-blur-lg sm:hidden'>
       <div className='xs:gap-5 flex flex-row items-center justify-between gap-3'>
         {sideBarLinks.map(item => (
           <div key={item.id} className='m-2 flex flex-col items-center gap-2'>

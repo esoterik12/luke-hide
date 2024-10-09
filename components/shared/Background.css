@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: calc(100vh - 200px);;
+  background: #0c192c;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px);;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bubbles span {
+  position: absolute;
+  width: calc(2vw + 8px); /* Proportional size */
+  height: calc(2vw + 8px);
+  background: #60a5fa;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #4fc3dc44, 0 0 5px #60a5fa, 0 0 10px #60a5fa;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(200s / var(--i)); /* Adjusted for more randomness */
+  left: calc(100% * var(--i) / 30); /* Spread bubbles across width */
+  animation-delay: calc(-15s * var(--i) / 10); /* Randomized start time */
+}
+
+/* Every other bubble */
+.bubbles span:nth-child(even) {
+  background: #f43f5e;
+  box-shadow: 0 0 0 1px #ff2d7544, 0 0 5px #f43f5e, 0 0 10px #f43f5e;
+}
+
+/* Every odd bubble */
+.bubbles span:nth-child(odd) {
+  background: #60a5fa;
+  box-shadow: 0 0 0 2px #60a5fa44, 0 0 5px #60a5fa, 0 0 10px #60a5fa;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0.2); /* Start smaller */
+    opacity: 0; /* Fade in */
+  }
+  50% {
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5); /* End larger */
+    opacity: 0; /* Fade out */
+  }
+}

@@ -2,6 +2,7 @@ import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/utils/dictionary'
 import Dots from '@/components/homepage/Dots'
 import HomepageText from '@/components/homepage/HomepageText'
+import Background from '@/components/shared/Background'
 
 export default async function Home({
   params: { lang }
@@ -12,19 +13,21 @@ export default async function Home({
   const { homepage } = await getDictionary(lang)
 
   return (
-    <main className='flex w-full flex-row'>
-      {/* Left Side Circles */}
-      <div className='flex min-h-screen w-1/5 flex-row items-end pt-24'>
+    <main className='relative flex w-full flex-col md:flex-row'>
+      {/* Left Side Circles - hidden on small screens */}
+      <div className='hidden min-h-screen w-1/5 flex-row items-end pt-24 md:flex'>
         <Dots />
       </div>
 
       {/* Center-Left Text Content */}
-      <div className='flex min-h-screen w-4/5 flex-col justify-start pt-20 text-left md:w-2/5 md:pt-40'>
+      <div className='relative z-10 flex min-h-screen w-full flex-col justify-start p-4 pt-20 text-left md:w-2/5 md:p-0 md:pt-40'>
         <HomepageText lang={lang} homepage={homepage} />
       </div>
 
-      {/* Right Side Animation */}
-      <div className='mr-12 mt-12 flex w-0 flex-row items-center gap-10 lg:w-2/5'>
+      {/* Right Side Animation (Background) */}
+      <div className='absolute inset-0 -z-10 flex w-full flex-row items-center gap-10 md:relative md:inset-auto md:z-auto md:mt-12 md:w-2/5'>
+        <Background />
+        <div className='absolute inset-0 bg-gradient-to-t from-black/0 to-black/15 md:hidden'></div>
       </div>
     </main>
   )
